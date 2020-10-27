@@ -8,7 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animal View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="5tw-yB-Zec">
+            <objects>
+                <tabBarController storyboardIdentifier="UITabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tzo-Ai-B6W" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gMM-Xl-tes">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EfA-Dr-tXB" kind="relationship" relationship="viewControllers" id="ehb-Qf-9lb"/>
+                        <segue destination="IPk-kQ-D7R" kind="relationship" relationship="viewControllers" id="Vxe-LM-Ro6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69H-Sq-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="751"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="kn7-8G-zJ4">
             <objects>
                 <viewController storyboardIdentifier="AnimalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EfA-Dr-tXB" customClass="AnimalViewController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,11 +46,42 @@
                         <viewLayoutGuide key="safeArea" id="Qgz-4P-AGI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="lrY-EB-UY6"/>
                     <navigationItem key="navigationItem" id="QHF-xL-Fne"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cw3-i0-t0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="230" y="776"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="xmb-PK-oru">
+            <objects>
+                <tableViewController storyboardIdentifier="HabitTrackerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IPk-kQ-D7R" customClass="HabitTrackerController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cvX-zQ-brP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomTableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomTableCell" id="xoO-Um-6LN" customClass="CustomTableCell" customModule="Habit_Helper" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xoO-Um-6LN" id="hAf-lE-Cxx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="IPk-kQ-D7R" id="pOO-Yf-KQV"/>
+                            <outlet property="delegate" destination="IPk-kQ-D7R" id="sgF-Mh-cT6"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="QVd-1u-QrQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Yb-YF-QpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="1464.5089285714284"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="8nb-5e-u2d">

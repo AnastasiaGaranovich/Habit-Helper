@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
+		5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */; };
+		5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */; };
 		5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7AE254718D700184BB4 /* AppDelegate.swift */; };
 		5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */; };
 		5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7B2254718D700184BB4 /* LoginController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
+		5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
 		5D7BC7AB254718D700184BB4 /* Habit Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7BC7AE254718D700184BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				5D7BC7BF254718D900184BB4 /* Info.plist */,
 				5D7BC7B7254718D700184BB4 /* Habit_Helper.xcdatamodeld */,
 				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
+				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
+				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
+				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
 			);
 			path = "Habit Helper";
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
 				5D7BC7BB254718D900184BB4 /* Assets.xcassets in Resources */,
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
+				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +277,10 @@
 				5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */,
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
+				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
+				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
