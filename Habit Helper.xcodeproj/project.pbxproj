@@ -86,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D37C19625488287008C24EA /* CustomTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
+				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
+			);
+			path = CustomTableCell;
+			sourceTree = "<group>";
+		};
 		5D7BC7A2254718D700184BB4 = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +128,7 @@
 				5D7BC7B7254718D700184BB4 /* Habit_Helper.xcdatamodeld */,
 				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
 				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
-				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
-				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
+				5D37C19625488287008C24EA /* CustomTableCell */,
 			);
 			path = "Habit Helper";
 			sourceTree = "<group>";

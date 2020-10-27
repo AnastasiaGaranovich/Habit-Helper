@@ -3,18 +3,23 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="90" id="aob-hL-yxW">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="100" id="aob-hL-yxW" customClass="CustomTableCell" customModule="Habit_Helper" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CustomCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aob-hL-yxW" id="nOP-md-bvr" customClass="CustomTableCell" customModule="Habit_Helper" customModuleProvider="target">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aob-hL-yxW" id="nOP-md-bvr">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGW-hZ-uCx">
+                        <rect key="frame" x="10" y="10" width="394" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-1E-zxe">
                         <rect key="frame" x="30" y="62" width="309" height="4"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -24,20 +29,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-Us-xDx">
-                        <rect key="frame" x="86" y="24" width="42" height="21"/>
+                        <rect key="frame" x="86" y="24" width="253" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <connections>
-                    <outlet property="habitImage" destination="BGX-r6-2Kv" id="LQP-Z1-I24"/>
-                    <outlet property="habitName" destination="R5c-Us-xDx" id="7uD-Bu-sko"/>
-                    <outlet property="habitProgress" destination="OWq-1E-zxe" id="XNo-l0-mNN"/>
-                </connections>
+                <color key="backgroundColor" systemColor="separatorColor"/>
+                <constraints>
+                    <constraint firstItem="BGW-hZ-uCx" firstAttribute="leading" secondItem="nOP-md-bvr" secondAttribute="leading" constant="10" id="BPc-Tn-7pf"/>
+                    <constraint firstItem="BGW-hZ-uCx" firstAttribute="top" secondItem="nOP-md-bvr" secondAttribute="top" constant="10" id="Oot-gV-oPR"/>
+                    <constraint firstAttribute="bottom" secondItem="BGW-hZ-uCx" secondAttribute="bottom" constant="10" id="cUS-UD-Di0"/>
+                    <constraint firstAttribute="trailing" secondItem="BGW-hZ-uCx" secondAttribute="trailing" constant="10" id="t0u-Ch-V36"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-384" y="56"/>
+            <connections>
+                <outlet property="habitImage" destination="BGX-r6-2Kv" id="1qa-km-BjB"/>
+                <outlet property="habitName" destination="R5c-Us-xDx" id="8fu-VZ-z0I"/>
+                <outlet property="habitProgress" destination="OWq-1E-zxe" id="MoW-D6-0Sr"/>
+            </connections>
+            <point key="canvasLocation" x="-384.05797101449281" y="55.580357142857139"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
