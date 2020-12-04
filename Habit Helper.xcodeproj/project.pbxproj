@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D9A53257A33DC00753022 /* Registration.storyboard */; };
 		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
 		5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */; };
 		5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1D9A53257A33DC00753022 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
 		5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 		5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */,
 				5D7BC7B2254718D700184BB4 /* LoginController.swift */,
 				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
+				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
 				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
 				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
 				5D7BC7BF254718D900184BB4 /* Info.plist */,
@@ -286,6 +289,7 @@
 				5D9D9CA32561674300F5FEC0 /* CustomCollectionCell.xib in Resources */,
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
 				5D7BC7BB254718D900184BB4 /* Assets.xcassets in Resources */,
+				5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */,
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
