@@ -1,12 +1,13 @@
-//
-//  File.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 10/26/20.
-//
-
 import UIKit
 
 class AnimalViewController: UIViewController {
     
+    @IBOutlet weak var healthScale: UIProgressView!
+    @IBOutlet weak var hungerScale: UIProgressView!
+    @IBOutlet weak var moodScale: UIProgressView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 }

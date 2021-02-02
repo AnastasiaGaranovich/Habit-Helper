@@ -15,6 +15,10 @@
 		5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71CF162549A8FE002DCA76 /* SettingsCell.swift */; };
 		5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */; };
 		5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71CF262549BB94002DCA76 /* HabitManager.swift */; };
+		5D77821F25C9C1D5005B600B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77821E25C9C1D5005B600B /* Animal.swift */; };
+		5D77822525C9C684005B600B /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77822425C9C684005B600B /* Habit.swift */; };
+		5D77822D25C9CB04005B600B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77822C25C9CB04005B600B /* Action.swift */; };
+		5D77823225C9CC1F005B600B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77823125C9CC1F005B600B /* User.swift */; };
 		5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7AE254718D700184BB4 /* AppDelegate.swift */; };
 		5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */; };
 		5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7B2254718D700184BB4 /* LoginController.swift */; };
@@ -56,6 +60,10 @@
 		5D71CF162549A8FE002DCA76 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		5D71CF262549BB94002DCA76 /* HabitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitManager.swift; sourceTree = "<group>"; };
+		5D77821E25C9C1D5005B600B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		5D77822425C9C684005B600B /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		5D77822C25C9CB04005B600B /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		5D77823125C9CC1F005B600B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D7BC7AB254718D700184BB4 /* Habit Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7BC7AE254718D700184BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,17 @@
 			path = CustomTableCell;
 			sourceTree = "<group>";
 		};
+		5D77822325C9C661005B600B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D77821E25C9C1D5005B600B /* Animal.swift */,
+				5D77822425C9C684005B600B /* Habit.swift */,
+				5D77822C25C9CB04005B600B /* Action.swift */,
+				5D77823125C9CC1F005B600B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5D7BC7A2254718D700184BB4 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +153,7 @@
 		5D7BC7AD254718D700184BB4 /* Habit Helper */ = {
 			isa = PBXGroup;
 			children = (
+				5D77822325C9C661005B600B /* Model */,
 				5D9D9CA1256166DF00F5FEC0 /* CustomCollectionCell */,
 				5D7BC7AE254718D700184BB4 /* AppDelegate.swift */,
 				5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */,
@@ -320,14 +340,18 @@
 				5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */,
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */,
+				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
+				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
 				5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
+				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
+				5D77822D25C9CB04005B600B /* Action.swift in Sources */,
 				5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

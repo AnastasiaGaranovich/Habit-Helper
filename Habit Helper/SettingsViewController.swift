@@ -1,10 +1,3 @@
-//
-//  SettingsViewController.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 10/28/20.
-//
-
 import UIKit
 
 enum SelectedButtonTag: Int {

@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 10/26/20.
-//
-
 import UIKit
 import CoreData
 

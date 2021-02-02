@@ -1,17 +1,10 @@
-//
-//  ViewController.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 10/26/20.
-//
-
 import UIKit
 
 class LoginController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func signDonePressed(_ sender: UIButton) {

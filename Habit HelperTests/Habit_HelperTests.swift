@@ -1,10 +1,3 @@
-//
-//  Habit_HelperTests.swift
-//  Habit HelperTests
-//
-//  Created by Анастасия Гаранович on 10/26/20.
-//
-
 import XCTest
 @testable import Habit_Helper
 

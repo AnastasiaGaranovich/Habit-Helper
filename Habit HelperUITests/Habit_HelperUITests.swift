@@ -1,10 +1,3 @@
-//
-//  Habit_HelperUITests.swift
-//  Habit HelperUITests
-//
-//  Created by Анастасия Гаранович on 10/26/20.
-//
-
 import XCTest
 
 class Habit_HelperUITests: XCTestCase {

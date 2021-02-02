@@ -1,10 +1,3 @@
-//
-//  HabitTrackerController.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 10/27/20.
-//
-
 import UIKit
 
 extension UIColor {
