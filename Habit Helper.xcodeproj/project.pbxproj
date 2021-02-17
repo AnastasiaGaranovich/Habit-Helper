@@ -113,6 +113,8 @@
 		5D37C19625488287008C24EA /* CustomTableCell */ = {
 			isa = PBXGroup;
 			children = (
+				5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */,
+				5D71CF162549A8FE002DCA76 /* SettingsCell.swift */,
 				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
 				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
 			);
@@ -122,6 +124,7 @@
 		5D77822325C9C661005B600B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
 				5D77821E25C9C1D5005B600B /* Animal.swift */,
 				5D77822425C9C684005B600B /* Habit.swift */,
 				5D77822C25C9CB04005B600B /* Action.swift */,
@@ -153,25 +156,15 @@
 		5D7BC7AD254718D700184BB4 /* Habit Helper */ = {
 			isa = PBXGroup;
 			children = (
+				5DDED53825DD97B80027E070 /* Controllers */,
+				5DDED53725DD978A0027E070 /* Delegates */,
 				5D77822325C9C661005B600B /* Model */,
 				5D9D9CA1256166DF00F5FEC0 /* CustomCollectionCell */,
-				5D7BC7AE254718D700184BB4 /* AppDelegate.swift */,
-				5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */,
-				5D7BC7B2254718D700184BB4 /* LoginController.swift */,
-				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
-				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
+				5DDED53625DD97630027E070 /* Storyboards */,
 				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
-				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
 				5D7BC7BF254718D900184BB4 /* Info.plist */,
 				5D7BC7B7254718D700184BB4 /* Habit_Helper.xcdatamodeld */,
-				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
-				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
 				5D37C19625488287008C24EA /* CustomTableCell */,
-				5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */,
-				5D71CF162549A8FE002DCA76 /* SettingsCell.swift */,
-				5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */,
-				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
-				5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */,
 			);
 			path = "Habit Helper";
 			sourceTree = "<group>";
@@ -201,6 +194,37 @@
 				5D9D9CA7256168E900F5FEC0 /* CustomCollectionCell.swift */,
 			);
 			path = CustomCollectionCell;
+			sourceTree = "<group>";
+		};
+		5DDED53625DD97630027E070 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
+				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
+				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5DDED53725DD978A0027E070 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */,
+				5D7BC7AE254718D700184BB4 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5DDED53825DD97B80027E070 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */,
+				5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */,
+				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
+				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
+				5D7BC7B2254718D700184BB4 /* LoginController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
