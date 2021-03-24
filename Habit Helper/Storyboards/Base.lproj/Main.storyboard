@@ -268,6 +268,9 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="loginValueChanged:" destination="Syk-yT-bGo" eventType="editingChanged" id="tff-Yd-Cp1"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-sQ-hw0">
                                 <rect key="frame" x="47" y="384" width="262" height="34"/>
@@ -275,6 +278,9 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordValueChanged:" destination="Syk-yT-bGo" eventType="editingDidEnd" id="qpL-NM-YVP"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJO-vO-V2O">
                                 <rect key="frame" x="45" y="269" width="42" height="25"/>
@@ -295,11 +301,17 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="Syk-yT-bGo" eventType="touchUpInside" id="A8W-IY-u9h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbQ-qM-SBi">
                                 <rect key="frame" x="229" y="425" width="105" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Forgot the password?"/>
+                                <connections>
+                                    <action selector="forgotPassButtonPressed:" destination="Syk-yT-bGo" eventType="touchUpInside" id="pvD-Iy-AE9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1h-1c-1FV">
                                 <rect key="frame" x="184" y="488" width="37" height="30"/>
@@ -336,6 +348,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vhN-Q0-tk0"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="EED-6e-cba" id="976-kI-Yyn"/>
+                        <outlet property="passwordTextField" destination="JY3-sQ-hw0" id="7Ok-fp-8g2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8X-OU-hMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

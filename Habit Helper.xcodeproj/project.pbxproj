@@ -31,6 +31,7 @@
 		5D9D9CA32561674300F5FEC0 /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D9CA22561674300F5FEC0 /* CustomCollectionCell.xib */; };
 		5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9CA7256168E900F5FEC0 /* CustomCollectionCell.swift */; };
 		5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */; };
+		5DA1639F260B9C59003B0964 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1639E260B9C59003B0964 /* AppData.swift */; };
 		5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4128F254735420017C0EC /* AnimalViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		5D9D9CA22561674300F5FEC0 /* CustomCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
 		5D9D9CA7256168E900F5FEC0 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHabitController.swift; sourceTree = "<group>"; };
+		5DA1639E260B9C59003B0964 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		5DD4128F254735420017C0EC /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,11 +126,11 @@
 		5D77822325C9C661005B600B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
 				5D77821E25C9C1D5005B600B /* Animal.swift */,
 				5D77822425C9C684005B600B /* Habit.swift */,
 				5D77822C25C9CB04005B600B /* Action.swift */,
 				5D77823125C9CC1F005B600B /* User.swift */,
+				5DA1639E260B9C59003B0964 /* AppData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 		5DDED53825DD97B80027E070 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
 				5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */,
 				5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */,
 				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
@@ -374,6 +377,7 @@
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
+				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,
 				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
 				5D77822D25C9CB04005B600B /* Action.swift in Sources */,
 				5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */,
