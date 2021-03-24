@@ -314,7 +314,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1h-1c-1FV">
-                                <rect key="frame" x="184" y="488" width="37" height="30"/>
+                                <rect key="frame" x="184" y="508" width="37" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Done"/>
@@ -322,6 +322,12 @@
                                     <action selector="signDonePressed:" destination="Syk-yT-bGo" eventType="touchUpInside" id="VHZ-6l-JHJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-rO-wBJ">
+                                <rect key="frame" x="45" y="465" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNg-ca-WXH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -335,12 +341,14 @@
                             <constraint firstItem="gNg-ca-WXH" firstAttribute="trailing" secondItem="JY3-sQ-hw0" secondAttribute="trailing" constant="105" id="HDu-am-1mo"/>
                             <constraint firstItem="CGh-L8-2GM" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="45" id="K3v-WH-eug"/>
                             <constraint firstItem="EED-6e-cba" firstAttribute="top" secondItem="ZnC-UC-czo" secondAttribute="bottom" constant="60" id="LTF-fm-Jq8"/>
-                            <constraint firstItem="t1h-1c-1FV" firstAttribute="top" secondItem="JY3-sQ-hw0" secondAttribute="bottom" constant="70" id="R4Q-Ug-Kco"/>
+                            <constraint firstItem="t1h-1c-1FV" firstAttribute="top" secondItem="JY3-sQ-hw0" secondAttribute="bottom" constant="90" id="R4Q-Ug-Kco"/>
                             <constraint firstItem="aJO-vO-V2O" firstAttribute="top" secondItem="gNg-ca-WXH" secondAttribute="top" constant="225" id="RLc-gZ-7fw"/>
+                            <constraint firstItem="sK3-rO-wBJ" firstAttribute="top" secondItem="JY3-sQ-hw0" secondAttribute="bottom" constant="47" id="RSX-a2-Und"/>
                             <constraint firstItem="gNg-ca-WXH" firstAttribute="trailing" secondItem="hbQ-qM-SBi" secondAttribute="trailing" constant="80" id="W2N-kf-B8D"/>
                             <constraint firstItem="CGh-L8-2GM" firstAttribute="top" secondItem="EED-6e-cba" secondAttribute="bottom" constant="25" id="WcH-p5-594"/>
                             <constraint firstItem="ZnC-UC-czo" firstAttribute="top" secondItem="gNg-ca-WXH" secondAttribute="top" constant="155" id="YAe-fa-K8V"/>
                             <constraint firstItem="JY3-sQ-hw0" firstAttribute="top" secondItem="CGh-L8-2GM" secondAttribute="bottom" constant="5" id="Ydc-Jb-ifM"/>
+                            <constraint firstItem="sK3-rO-wBJ" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="45" id="Z2M-ru-qKm"/>
                             <constraint firstItem="Rk0-wJ-euM" firstAttribute="top" secondItem="gNg-ca-WXH" secondAttribute="top" constant="85" id="ZNy-8C-aen"/>
                             <constraint firstItem="EED-6e-cba" firstAttribute="top" secondItem="aJO-vO-V2O" secondAttribute="bottom" constant="5" id="ckJ-QH-RVl"/>
                             <constraint firstItem="aJO-vO-V2O" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="45" id="iKX-yV-RZZ"/>
@@ -349,6 +357,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vhN-Q0-tk0"/>
                     <connections>
+                        <outlet property="alertLabel" destination="sK3-rO-wBJ" id="1FS-L8-7lg"/>
                         <outlet property="loginTextField" destination="EED-6e-cba" id="976-kI-Yyn"/>
                         <outlet property="passwordTextField" destination="JY3-sQ-hw0" id="7Ok-fp-8g2"/>
                     </connections>

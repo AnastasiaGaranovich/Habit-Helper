@@ -33,6 +33,7 @@
 		5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */; };
 		5DA1639F260B9C59003B0964 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1639E260B9C59003B0964 /* AppData.swift */; };
 		5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4128F254735420017C0EC /* AnimalViewController.swift */; };
+		959176B8D4E6061E0D275E87 /* libPods-Habit Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7757F8B1F202262AC94B8C1 /* libPods-Habit Helper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.release.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.release.xcconfig"; sourceTree = "<group>"; };
 		5D1D9A53257A33DC00753022 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
 		5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
@@ -85,6 +87,8 @@
 		5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHabitController.swift; sourceTree = "<group>"; };
 		5DA1639E260B9C59003B0964 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		5DD4128F254735420017C0EC /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		CD23CC6DB34D70BA7E4C91A8 /* Pods-Habit Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.debug.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		E7757F8B1F202262AC94B8C1 /* libPods-Habit Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Habit Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959176B8D4E6061E0D275E87 /* libPods-Habit Helper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +147,8 @@
 				5D7BC7C7254718D900184BB4 /* Habit HelperTests */,
 				5D7BC7D2254718D900184BB4 /* Habit HelperUITests */,
 				5D7BC7AC254718D700184BB4 /* Products */,
+				7D62BF55A64DD861DEDAF449 /* Pods */,
+				70A2DD40CA3AE7291312FA4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +237,24 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		70A2DD40CA3AE7291312FA4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7757F8B1F202262AC94B8C1 /* libPods-Habit Helper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D62BF55A64DD861DEDAF449 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD23CC6DB34D70BA7E4C91A8 /* Pods-Habit Helper.debug.xcconfig */,
+				5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7BC7D8254718DA00184BB4 /* Build configuration list for PBXNativeTarget "Habit Helper" */;
 			buildPhases = (
+				0DA57F25977A6B3BA72B98DD /* [CP] Check Pods Manifest.lock */,
 				5D7BC7A7254718D700184BB4 /* Sources */,
 				5D7BC7A8254718D700184BB4 /* Frameworks */,
 				5D7BC7A9254718D700184BB4 /* Resources */,
@@ -358,6 +384,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DA57F25977A6B3BA72B98DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Habit Helper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D7BC7A7254718D700184BB4 /* Sources */ = {
@@ -553,6 +604,7 @@
 		};
 		5D7BC7D9254718DA00184BB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD23CC6DB34D70BA7E4C91A8 /* Pods-Habit Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -572,6 +624,7 @@
 		};
 		5D7BC7DA254718DA00184BB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

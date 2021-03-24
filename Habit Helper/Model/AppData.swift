@@ -8,6 +8,5 @@ class AppData {
         user.password = "26fk"
         user.age = 22
         
-        
     }
 }
