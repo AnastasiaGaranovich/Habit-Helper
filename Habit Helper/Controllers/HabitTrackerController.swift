@@ -7,8 +7,7 @@ extension UIColor {
 }
 
 class HabitTrackerController: UITableViewController {
-    let items = ["Item 1", "Item2", "Item3", "Item4"]
-    let images: [UIImageView] = []
+    var habits = AppData.user.habits
     let progresses: [Float] = [0.2, 0.5, 0.6, 1]
     
     override func viewDidLoad() {
@@ -20,14 +19,13 @@ class HabitTrackerController: UITableViewController {
     // MARK: - UITableViewDataSource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return habits.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as! CustomTableCell
-        
-        // cell.habitImage = images[indexPath.row]
-        cell.habitName.text = items[indexPath.row]
+        cell.habitName.text = habits[indexPath.row].habitName
+        cell.habitColor.backgroundColor = habits[indexPath.row].habitColor
         cell.habitProgress.progress = progresses[indexPath.row]
         cell.backgroundColor = .sand
         return cell
@@ -36,8 +34,5 @@ class HabitTrackerController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
-    
-    
 }
 

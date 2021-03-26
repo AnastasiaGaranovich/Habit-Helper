@@ -17,7 +17,6 @@
 		5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71CF262549BB94002DCA76 /* HabitManager.swift */; };
 		5D77821F25C9C1D5005B600B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77821E25C9C1D5005B600B /* Animal.swift */; };
 		5D77822525C9C684005B600B /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77822425C9C684005B600B /* Habit.swift */; };
-		5D77822D25C9CB04005B600B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77822C25C9CB04005B600B /* Action.swift */; };
 		5D77823225C9CC1F005B600B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77823125C9CC1F005B600B /* User.swift */; };
 		5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7AE254718D700184BB4 /* AppDelegate.swift */; };
 		5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BC7B0254718D700184BB4 /* SceneDelegate.swift */; };
@@ -65,7 +64,6 @@
 		5D71CF262549BB94002DCA76 /* HabitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitManager.swift; sourceTree = "<group>"; };
 		5D77821E25C9C1D5005B600B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		5D77822425C9C684005B600B /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
-		5D77822C25C9CB04005B600B /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		5D77823125C9CC1F005B600B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D7BC7AB254718D700184BB4 /* Habit Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7BC7AE254718D700184BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			children = (
 				5D77821E25C9C1D5005B600B /* Animal.swift */,
 				5D77822425C9C684005B600B /* Habit.swift */,
-				5D77822C25C9CB04005B600B /* Action.swift */,
 				5D77823125C9CC1F005B600B /* User.swift */,
 				5DA1639E260B9C59003B0964 /* AppData.swift */,
 			);
@@ -251,7 +248,6 @@
 				CD23CC6DB34D70BA7E4C91A8 /* Pods-Habit Helper.debug.xcconfig */,
 				5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -430,7 +426,6 @@
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,
 				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
-				5D77822D25C9CB04005B600B /* Action.swift in Sources */,
 				5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

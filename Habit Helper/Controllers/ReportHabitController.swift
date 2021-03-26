@@ -3,12 +3,11 @@ import UIKit
 
 class ReportHabitController: UICollectionViewController {
     
-    let items = ["Item 1", "Item 2", "Item 3", "Item 4"]
+    var habits = AppData.user.habits
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(UINib(nibName: "CustomCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionCell")
-        
         layoutCell()
     }
     
@@ -28,7 +27,7 @@ class ReportHabitController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return habits.count
     }
     
     override func collectionView(
@@ -36,8 +35,8 @@ class ReportHabitController: UICollectionViewController {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionCell", for: indexPath) as! CustomCollectionCell
-        cell.habitName.text = items[indexPath.row]
-        cell.backgroundColor = .sand
+        cell.habitName.text = habits[indexPath.row].habitName
+        cell.backgroundColor = habits[indexPath.row].habitColor
         return cell
     }
     

@@ -6,18 +6,19 @@ enum HabitType {
 }
 
 class Habit {
+    var time = Date()
     var dailyRepetitions = 0
     var habitName = ""
     var habitColor = UIColor.white
-    var repetitionRate = 0
     var timeInterval = DateInterval()
     var habitType = HabitType.goodHabit
     
-    init(habitName: String, dailyRepet: Int, habitColor: UIColor, repetRate: Int, timeInterval: DateInterval, habitType: HabitType) {
+    convenience init(time: Date, habitName: String, dailyRepet: Int, habitColor: UIColor, timeInterval: DateInterval, habitType: HabitType) {
+        self.init()
+        self.time = time
         self.habitName = habitName
         self.dailyRepetitions = dailyRepet
         self.habitColor = habitColor
-        self.repetitionRate = repetRate
         self.timeInterval = timeInterval
         self.habitType = habitType
     }

@@ -7,7 +7,8 @@ class Animal {
     
     var name = ""
     
-    init(name: String) {
+    convenience init(name: String) {
+        self.init()
         self.name = name
     }
 }
