@@ -10,6 +10,11 @@ class HabitTrackerController: UITableViewController {
     var habits = AppData.user.habits
     let progresses: [Float] = [0.2, 0.5, 0.6, 1]
     
+    @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CustomTableCell", bundle: nil), forCellReuseIdentifier: "CustomTableCell")

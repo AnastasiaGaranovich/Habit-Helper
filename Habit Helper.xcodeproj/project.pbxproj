@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */; };
+		1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */; };
+		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
+		1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E200D261244250009ED88 /* CreateAccountViewController.swift */; };
+		1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */; };
 		5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D9A53257A33DC00753022 /* Registration.storyboard */; };
 		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
 		5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */; };
@@ -53,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateHabits.storyboard; sourceTree = "<group>"; };
+		1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitViewController.swift; sourceTree = "<group>"; };
+		1B9E2008261243E30009ED88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1B9E200D261244250009ED88 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnimalViewController.swift; sourceTree = "<group>"; };
 		5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.release.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.release.xcconfig"; sourceTree = "<group>"; };
 		5D1D9A53257A33DC00753022 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
@@ -208,6 +218,7 @@
 				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
 				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
 				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
+				1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -230,6 +241,10 @@
 				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
 				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
 				5D7BC7B2254718D700184BB4 /* LoginController.swift */,
+				1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */,
+				1B9E2008261243E30009ED88 /* SignUpViewController.swift */,
+				1B9E200D261244250009ED88 /* CreateAccountViewController.swift */,
+				1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +375,7 @@
 				5D7BC7BB254718D900184BB4 /* Assets.xcassets in Resources */,
 				5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */,
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
+				1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
 			);
@@ -411,21 +427,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */,
 				5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */,
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */,
 				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
+				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
 				5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
+				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,
 				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
+				1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */,
 				5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

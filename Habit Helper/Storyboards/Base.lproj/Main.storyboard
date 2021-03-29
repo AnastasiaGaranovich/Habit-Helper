@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="-730.43478260869574" y="1477.9017857142856"/>
         </scene>
-        <!--Item-->
+        <!--Title-->
         <scene sceneID="xmb-PK-oru">
             <objects>
                 <tableViewController storyboardIdentifier="HabitTrackerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IPk-kQ-D7R" customClass="HabitTrackerController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,10 +115,18 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="QVd-1u-QrQ"/>
+                    <navigationItem key="navigationItem" title="Title" id="FSl-Jx-iKw">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="B3V-ms-5bT">
+                            <connections>
+                                <action selector="addNewHabitButtonPressed:" destination="IPk-kQ-D7R" id="ZLq-cf-RQf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yb-YF-QpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2304" y="1478"/>
+            <point key="canvasLocation" x="-1672" y="1478"/>
         </scene>
         <!--Item-->
         <scene sceneID="oKE-qC-N7U">
@@ -153,7 +161,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxD-Q0-As7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3606" y="1475"/>
+            <point key="canvasLocation" x="-2468" y="1478"/>
         </scene>
         <!--Item-->
         <scene sceneID="kkE-DV-59G">
@@ -199,7 +207,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GK0-2W-yA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="616" y="2285"/>
+            <point key="canvasLocation" x="128" y="2174"/>
         </scene>
         <!--Item-->
         <scene sceneID="zj5-C5-Srw">
@@ -216,7 +224,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMo-Z0-LDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="1478"/>
+            <point key="canvasLocation" x="128" y="1478"/>
         </scene>
         <!--Habit Manager-->
         <scene sceneID="dgt-4K-EW5">
@@ -240,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JB-iI-DYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1493" y="2285"/>
+            <point key="canvasLocation" x="1090" y="2174"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="8nb-5e-u2d">
@@ -356,6 +364,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vhN-Q0-tk0"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="alertLabel" destination="sK3-rO-wBJ" id="1FS-L8-7lg"/>
                         <outlet property="loginTextField" destination="EED-6e-cba" id="976-kI-Yyn"/>
