@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */; };
 		1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */; };
 		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
 		1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E200D261244250009ED88 /* CreateAccountViewController.swift */; };
 		1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */; };
+		4889FDD31120607AB0547356 /* Pods_Habit_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8982B864C20025FC8A974EC /* Pods_Habit_Helper.framework */; };
 		5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D9A53257A33DC00753022 /* Registration.storyboard */; };
 		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
 		5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */; };
@@ -37,7 +39,6 @@
 		5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */; };
 		5DA1639F260B9C59003B0964 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1639E260B9C59003B0964 /* AppData.swift */; };
 		5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4128F254735420017C0EC /* AnimalViewController.swift */; };
-		959176B8D4E6061E0D275E87 /* libPods-Habit Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7757F8B1F202262AC94B8C1 /* libPods-Habit Helper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateHabits.storyboard; sourceTree = "<group>"; };
 		1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitViewController.swift; sourceTree = "<group>"; };
 		1B9E2008261243E30009ED88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +98,7 @@
 		5DA1639E260B9C59003B0964 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		5DD4128F254735420017C0EC /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		CD23CC6DB34D70BA7E4C91A8 /* Pods-Habit Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.debug.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.debug.xcconfig"; sourceTree = "<group>"; };
-		E7757F8B1F202262AC94B8C1 /* libPods-Habit Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Habit Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8982B864C20025FC8A974EC /* Pods_Habit_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959176B8D4E6061E0D275E87 /* libPods-Habit Helper.a in Frameworks */,
+				4889FDD31120607AB0547356 /* Pods_Habit_Helper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +127,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8311B826138BC900BA01A6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1B8311B926138C0500BA01A6 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5D37C19625488287008C24EA /* CustomTableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		5D7BC7AD254718D700184BB4 /* Habit Helper */ = {
 			isa = PBXGroup;
 			children = (
+				1B8311B826138BC900BA01A6 /* Network */,
 				5DDED53825DD97B80027E070 /* Controllers */,
 				5DDED53725DD978A0027E070 /* Delegates */,
 				5D77822325C9C661005B600B /* Model */,
@@ -252,7 +263,7 @@
 		70A2DD40CA3AE7291312FA4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E7757F8B1F202262AC94B8C1 /* libPods-Habit Helper.a */,
+				F8982B864C20025FC8A974EC /* Pods_Habit_Helper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +288,7 @@
 				5D7BC7A7254718D700184BB4 /* Sources */,
 				5D7BC7A8254718D700184BB4 /* Frameworks */,
 				5D7BC7A9254718D700184BB4 /* Resources */,
+				C99FF1BEE9EE3A073CB16112 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -420,6 +432,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C99FF1BEE9EE3A073CB16112 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Habit Helper/Pods-Habit Helper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Habit Helper/Pods-Habit Helper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Habit Helper/Pods-Habit Helper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,6 +461,7 @@
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */,
 				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
+				1B8311BA26138C0500BA01A6 /* Network.swift in Sources */,
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
 				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,

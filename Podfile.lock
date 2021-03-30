@@ -1,24 +1,48 @@
 PODS:
-  - Alamofire (5.4.1)
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
+  - CustomIOSAlertView (0.9.5)
+  - iOSTools (0.15.34):
+    - CustomIOSAlertView
+    - SwiftyTools
+  - ObjectMapper (3.5.3)
+  - ProgressHUD (13.5)
   - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
+  - SwiftyTools (0.16.9)
 
 DEPENDENCIES:
-  - Alamofire
+  - AlamofireObjectMapper
+  - iOSTools
+  - ProgressHUD
   - R.swift
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireObjectMapper
+    - CustomIOSAlertView
+    - iOSTools
+    - ObjectMapper
+    - ProgressHUD
     - R.swift
     - R.swift.Library
+    - SwiftyTools
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  CustomIOSAlertView: cc4fa8e36219be3fd5ebcd40789f5b4aaae0f38e
+  iOSTools: bf3031c6ce4992d20adbcb84a39713a63470d5db
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  ProgressHUD: 028e3828c7b582022c34a74604fc6073f8628d99
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SwiftyTools: da139277bd33a6883f798a73ac8b02e9d63b2411
 
-PODFILE CHECKSUM: ca83d950561767d22c37a07001d2eb97af649942
+PODFILE CHECKSUM: a86cba2477727001c4e0ad6a210c9ddae841fe3b
 
 COCOAPODS: 1.10.1

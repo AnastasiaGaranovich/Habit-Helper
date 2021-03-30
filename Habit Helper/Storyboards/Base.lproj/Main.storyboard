@@ -22,15 +22,15 @@
                     <connections>
                         <segue destination="EfA-Dr-tXB" kind="relationship" relationship="viewControllers" id="ehb-Qf-9lb"/>
                         <segue destination="IPk-kQ-D7R" kind="relationship" relationship="viewControllers" id="Vxe-LM-Ro6"/>
-                        <segue destination="DJ6-qY-u1s" kind="relationship" relationship="viewControllers" id="Bcg-E8-14W"/>
                         <segue destination="Jdh-TW-V4c" kind="relationship" relationship="viewControllers" id="o6c-5A-YdX"/>
+                        <segue destination="DJ6-qY-u1s" kind="relationship" relationship="viewControllers" id="Bcg-E8-14W"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69H-Sq-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-729" y="751"/>
         </scene>
-        <!--Item-->
+        <!--Animal View Controller-->
         <scene sceneID="kn7-8G-zJ4">
             <objects>
                 <viewController storyboardIdentifier="AnimalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EfA-Dr-tXB" customClass="AnimalViewController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                         <viewLayoutGuide key="safeArea" id="Qgz-4P-AGI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lrY-EB-UY6"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="lrY-EB-UY6"/>
                     <navigationItem key="navigationItem" id="QHF-xL-Fne"/>
                     <connections>
                         <outlet property="healthScale" destination="879-kO-SGP" id="EVu-by-54Z"/>
@@ -91,12 +91,12 @@
             </objects>
             <point key="canvasLocation" x="-730.43478260869574" y="1477.9017857142856"/>
         </scene>
-        <!--Title-->
+        <!--Habit Tracker Controller-->
         <scene sceneID="xmb-PK-oru">
             <objects>
                 <tableViewController storyboardIdentifier="HabitTrackerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IPk-kQ-D7R" customClass="HabitTrackerController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cvX-zQ-brP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -115,21 +115,32 @@
                             <outlet property="delegate" destination="IPk-kQ-D7R" id="sgF-Mh-cT6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="QVd-1u-QrQ"/>
-                    <navigationItem key="navigationItem" title="Title" id="FSl-Jx-iKw">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="B3V-ms-5bT">
+                    <tabBarItem key="tabBarItem" title="" image="doc.fill" catalog="system" id="QVd-1u-QrQ"/>
+                    <navigationItem key="navigationItem" id="FSl-Jx-iKw">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" style="plain" id="B3V-ms-5bT">
+                            <color key="tintColor" name="buttons"/>
                             <connections>
                                 <action selector="addNewHabitButtonPressed:" destination="IPk-kQ-D7R" id="ZLq-cf-RQf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yb-YF-QpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1672" y="1478"/>
         </scene>
-        <!--Item-->
+        <!--CreateHabits-->
+        <scene sceneID="82e-xY-cwZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateHabits" id="FF2-Sy-1mA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="plus.circle.fill" catalog="system" id="Ifk-8c-En3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thM-9o-peJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1745" y="757"/>
+        </scene>
+        <!--Report Habit Controller-->
         <scene sceneID="oKE-qC-N7U">
             <objects>
                 <collectionViewController restorationIdentifier="ReportHabitController" storyboardIdentifier="ReportHabitController" id="Jdh-TW-V4c" customClass="ReportHabitController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,13 +169,13 @@
                             <outlet property="delegate" destination="Jdh-TW-V4c" id="9Gr-fG-UKx"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="cPZ-yh-G3B"/>
+                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="cPZ-yh-G3B"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxD-Q0-As7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2468" y="1478"/>
         </scene>
-        <!--Item-->
+        <!--Settings View Controller-->
         <scene sceneID="kkE-DV-59G">
             <objects>
                 <tableViewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ffq-k7-9wJ" customClass="SettingsViewController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
@@ -203,18 +214,17 @@
                             <outlet property="delegate" destination="Ffq-k7-9wJ" id="ehh-LH-CNI"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="G5x-SW-rdf"/>
                     <navigationItem key="navigationItem" id="VX7-xr-nXR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GK0-2W-yA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128" y="2174"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="zj5-C5-Srw">
             <objects>
                 <navigationController id="DJ6-qY-u1s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DGR-T6-W6L"/>
+                    <tabBarItem key="tabBarItem" title="" image="doc.badge.gearshape" catalog="system" id="DGR-T6-W6L"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAi-mh-pgj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -372,7 +382,13 @@
     </scenes>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="doc.badge.gearshape" catalog="system" width="119" height="128"/>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="parrot" width="291" height="346"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="back">
             <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

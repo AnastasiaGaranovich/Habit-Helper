@@ -1,4 +1,7 @@
 import UIKit
+import iOSTools
+import SwiftyTools
+import ProgressHUD
 
 class LoginController: UIViewController {
     
@@ -21,11 +24,27 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signDonePressed(_ sender: UIButton) {
+        ProgressHUD.show()
+        Network.getUser { user, error in
+            ProgressHUD.dismiss()
+            if let error = error {
+                LogError(error)
+                Alert.error(error)
+                return
+            }
+            AppData.user = user
+            Log("izi")
+            Log(AppData.user.toJSONString())
+            self.openApp()
+        }
+    }
+    
+    private func openApp() {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "UITabBarController") as! UITabBarController
-        self.view.window?.rootViewController = viewController
-        self.view.window?.makeKeyAndVisible()
-        }
+        view.window?.rootViewController = viewController
+        view.window?.makeKeyAndVisible()
+    }
     
     @IBAction func forgotPassButtonPressed(_ sender: UIButton) {
         

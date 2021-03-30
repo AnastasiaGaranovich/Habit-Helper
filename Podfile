@@ -1,4 +1,8 @@
 target 'Habit Helper' do
-  pod 'Alamofire'
+  use_frameworks!
+  
   pod 'R.swift'
+  pod 'iOSTools'
+  pod 'ProgressHUD'
+  pod 'AlamofireObjectMapper'
 end
