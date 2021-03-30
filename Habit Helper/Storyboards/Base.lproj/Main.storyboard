@@ -259,64 +259,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnC-UC-czo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnC-UC-czo">
                                 <rect key="frame" x="178" y="199" width="60" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="uz3-i8-Y4k"/>
-                                    <constraint firstAttribute="height" constant="40" id="yQQ-hn-kAu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EED-6e-cba">
-                                <rect key="frame" x="47" y="299" width="262" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EED-6e-cba">
+                                <rect key="frame" x="31" y="299" width="350" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="textFields"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginValueChanged:" destination="Syk-yT-bGo" eventType="editingChanged" id="tff-Yd-Cp1"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-sQ-hw0">
-                                <rect key="frame" x="47" y="384" width="262" height="34"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-sQ-hw0">
+                                <rect key="frame" x="31" y="383" width="350" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="textFields"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="passwordValueChanged:" destination="Syk-yT-bGo" eventType="editingDidEnd" id="qpL-NM-YVP"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJO-vO-V2O">
-                                <rect key="frame" x="45" y="269" width="42" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJO-vO-V2O">
+                                <rect key="frame" x="45" y="269" width="46.5" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-L8-2GM">
-                                <rect key="frame" x="45" y="358" width="74" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-L8-2GM">
+                                <rect key="frame" x="45" y="358" width="81.5" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk0-wJ-euM">
-                                <rect key="frame" x="290" y="129" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk0-wJ-euM">
+                                <rect key="frame" x="279" y="129" width="80" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="buttons"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="Syk-yT-bGo" eventType="touchUpInside" id="A8W-IY-u9h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbQ-qM-SBi">
-                                <rect key="frame" x="229" y="425" width="105" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbQ-qM-SBi">
+                                <rect key="frame" x="216" y="459" width="118" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="11"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Forgot the password?">
                                     <color key="titleColor" name="text"/>
@@ -329,17 +348,24 @@
                                 <rect key="frame" x="20" y="535" width="374" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="buttons"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signDonePressed:" destination="Syk-yT-bGo" eventType="touchUpInside" id="VHZ-6l-JHJ"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-rO-wBJ">
-                                <rect key="frame" x="45" y="465" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-rO-wBJ">
+                                <rect key="frame" x="45" y="464" width="45.5" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <color key="textColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -347,34 +373,13 @@
                         <viewLayoutGuide key="safeArea" id="gNg-ca-WXH"/>
                         <color key="backgroundColor" name="back"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="JY3-sQ-hw0" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="47" id="4Hs-cI-Cvj"/>
-                            <constraint firstItem="hbQ-qM-SBi" firstAttribute="top" secondItem="JY3-sQ-hw0" secondAttribute="bottom" constant="7" id="5ft-tI-kdf"/>
-                            <constraint firstItem="ZnC-UC-czo" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="178" id="9aB-rC-Ksl"/>
-                            <constraint firstItem="gNg-ca-WXH" firstAttribute="trailing" secondItem="EED-6e-cba" secondAttribute="trailing" constant="105" id="A7B-AG-mwe"/>
-                            <constraint firstItem="gNg-ca-WXH" firstAttribute="trailing" secondItem="Rk0-wJ-euM" secondAttribute="trailing" constant="70" id="Gr1-hz-gbJ"/>
-                            <constraint firstItem="gNg-ca-WXH" firstAttribute="trailing" secondItem="JY3-sQ-hw0" secondAttribute="trailing" constant="105" id="HDu-am-1mo"/>
-                            <constraint firstItem="CGh-L8-2GM" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="45" id="K3v-WH-eug"/>
-                            <constraint firstItem="EED-6e-cba" firstAttribute="top" secondItem="ZnC-UC-czo" secondAttribute="bottom" constant="60" id="LTF-fm-Jq8"/>
-                            <constraint firstItem="aJO-vO-V2O" firstAttribute="top" secondItem="gNg-ca-WXH" secondAttribute="top" constant="225" id="RLc-gZ-7fw"/>
-                            <constraint firstItem="sK3-rO-wBJ" firstAttribute="top" secondItem="JY3-sQ-hw0" secondAttribute="bottom" constant="47" id="RSX-a2-Und"/>
-                            <constraint firstItem="gNg-ca-WXH" firstAttribute="trailing" secondItem="hbQ-qM-SBi" secondAttribute="trailing" constant="80" id="W2N-kf-B8D"/>
-                            <constraint firstItem="CGh-L8-2GM" firstAttribute="top" secondItem="EED-6e-cba" secondAttribute="bottom" constant="25" id="WcH-p5-594"/>
-                            <constraint firstItem="ZnC-UC-czo" firstAttribute="top" secondItem="gNg-ca-WXH" secondAttribute="top" constant="155" id="YAe-fa-K8V"/>
-                            <constraint firstItem="JY3-sQ-hw0" firstAttribute="top" secondItem="CGh-L8-2GM" secondAttribute="bottom" constant="5" id="Ydc-Jb-ifM"/>
-                            <constraint firstItem="sK3-rO-wBJ" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="45" id="Z2M-ru-qKm"/>
-                            <constraint firstItem="Rk0-wJ-euM" firstAttribute="top" secondItem="gNg-ca-WXH" secondAttribute="top" constant="85" id="ZNy-8C-aen"/>
-                            <constraint firstItem="EED-6e-cba" firstAttribute="top" secondItem="aJO-vO-V2O" secondAttribute="bottom" constant="5" id="ckJ-QH-RVl"/>
-                            <constraint firstItem="aJO-vO-V2O" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="45" id="iKX-yV-RZZ"/>
-                            <constraint firstItem="EED-6e-cba" firstAttribute="leading" secondItem="gNg-ca-WXH" secondAttribute="leading" constant="47" id="tdI-cB-kWr"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vhN-Q0-tk0"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="alertLabel" destination="sK3-rO-wBJ" id="1FS-L8-7lg"/>
-                        <outlet property="loginTextField" destination="EED-6e-cba" id="976-kI-Yyn"/>
-                        <outlet property="passwordTextField" destination="JY3-sQ-hw0" id="7Ok-fp-8g2"/>
+                        <outlet property="loginTextField" destination="EED-6e-cba" id="hPP-Dr-E4q"/>
+                        <outlet property="passwordTextField" destination="JY3-sQ-hw0" id="m8n-4k-lqe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8X-OU-hMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -389,10 +394,13 @@
             <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttons">
-            <color red="0.63638973730987847" green="0.81326237793022604" blue="0.9192308476901947" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="text">
-            <color red="0.14230364807179646" green="0.18079036647396071" blue="0.20670855698384349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.14117647058823529" green="0.1803921568627451" blue="0.1798010915517807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textFields">
+            <color red="0.93350762129999998" green="0.96451812979999996" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

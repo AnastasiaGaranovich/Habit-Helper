@@ -2,9 +2,11 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    @IBOutlet weak var alertLabel: UILabel!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var alertLabel: UILabel!
+    
+    let color = UIColor(named: "border")
     
     @IBAction func loginValueChanged(_ sender: UITextField) {
         checkСorrectnessLoginPass()
@@ -31,6 +33,11 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginTextField.layer.borderWidth = 2.5
+        loginTextField.layer.borderColor = color?.cgColor
+        
+        passwordTextField.layer.borderWidth = 2.5
+        passwordTextField.layer.borderColor = color?.cgColor
     }
     
     private func checkСorrectnessLoginPass() {
