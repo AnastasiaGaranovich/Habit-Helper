@@ -1,4 +1,5 @@
 import UIKit
+import Rswift
 import iOSTools
 import SwiftyTools
 import ProgressHUD
@@ -9,8 +10,6 @@ class LoginController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let color = UIColor(named: "border")
-    
     @IBAction func loginValueChanged(_ sender: UITextField) {
         checkСorrectnessLoginPass()
     }
@@ -20,7 +19,8 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        
+        let viewController = R.storyboard.registration.signUpViewController()!
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func signDonePressed(_ sender: UIButton) {
@@ -40,8 +40,7 @@ class LoginController: UIViewController {
     }
     
     private func openApp() {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "UITabBarController") as! UITabBarController
+        let viewController = R.storyboard.main.uiTabBarController()!
         view.window?.rootViewController = viewController
         view.window?.makeKeyAndVisible()
     }
@@ -52,11 +51,18 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginTextField.layer.borderWidth = 2.5
-        loginTextField.layer.borderColor = color?.cgColor
-        
-        passwordTextField.layer.borderWidth = 2.5
-        passwordTextField.layer.borderColor = color?.cgColor
+        loginTextField.setTextFieldBorderColor()
+        passwordTextField.setTextFieldBorderColor()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     private func checkСorrectnessLoginPass() {

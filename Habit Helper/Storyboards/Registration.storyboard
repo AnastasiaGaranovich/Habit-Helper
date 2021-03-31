@@ -3,66 +3,77 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sing Up-->
+        <!--Sign Up View Controller-->
         <scene sceneID="5gU-r1-tDz">
             <objects>
-                <viewController id="SIg-8I-e9A" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SIg-8I-e9A" customClass="SignUpViewController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GRU-CZ-Dtp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMy-t4-MDa">
-                                <rect key="frame" x="20" y="229" width="41" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-2g-a3G">
-                                <rect key="frame" x="20" y="258" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSf-in-XfA">
-                                <rect key="frame" x="20" y="314" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-5L-3JJ">
-                                <rect key="frame" x="144" y="581" width="126" height="70"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-2g-a3G">
+                                <rect key="frame" x="32" y="256" width="350" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-Gy-LwK">
-                                <rect key="frame" x="20" y="343" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" name="textFields"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="emailValueChanged:" destination="SIg-8I-e9A" eventType="editingChanged" id="YDf-NT-14z"/>
+                                </connections>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-Gy-LwK">
+                                <rect key="frame" x="32" y="343" width="350" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="textFields"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="passwordValueChanged:" destination="SIg-8I-e9A" eventType="editingChanged" id="9WP-eF-t7U"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-5L-3JJ">
+                                <rect key="frame" x="20" y="518" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="buttons"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="SIg-8I-e9A" eventType="touchUpInside" id="RwO-5u-nKM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SNY-ZR-qf9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="BQr-2g-a3G" firstAttribute="leading" secondItem="SNY-ZR-qf9" secondAttribute="leading" constant="20" id="5iW-P2-psH"/>
-                            <constraint firstItem="SNY-ZR-qf9" firstAttribute="trailing" secondItem="sxz-Gy-LwK" secondAttribute="trailing" constant="20" id="87P-Ur-Pfu"/>
-                            <constraint firstItem="dMy-t4-MDa" firstAttribute="leading" secondItem="SNY-ZR-qf9" secondAttribute="leading" constant="20" id="8hL-17-Cvl"/>
-                            <constraint firstItem="BQr-2g-a3G" firstAttribute="top" secondItem="dMy-t4-MDa" secondAttribute="bottom" constant="8" symbolic="YES" id="Nps-cV-x8r"/>
-                            <constraint firstItem="XSf-in-XfA" firstAttribute="leading" secondItem="SNY-ZR-qf9" secondAttribute="leading" constant="20" id="e88-gB-N2s"/>
-                            <constraint firstItem="dMy-t4-MDa" firstAttribute="top" secondItem="SNY-ZR-qf9" secondAttribute="top" constant="141" id="kn8-g2-e07"/>
-                            <constraint firstItem="sxz-Gy-LwK" firstAttribute="top" secondItem="XSf-in-XfA" secondAttribute="bottom" constant="8" symbolic="YES" id="lTO-hq-dO4"/>
-                            <constraint firstItem="SNY-ZR-qf9" firstAttribute="trailing" secondItem="BQr-2g-a3G" secondAttribute="trailing" constant="20" id="pIC-SH-r4i"/>
-                            <constraint firstItem="XSf-in-XfA" firstAttribute="top" secondItem="BQr-2g-a3G" secondAttribute="bottom" constant="22" id="qhw-tc-v6B"/>
-                            <constraint firstItem="sxz-Gy-LwK" firstAttribute="leading" secondItem="SNY-ZR-qf9" secondAttribute="leading" constant="20" id="yFZ-dh-GhC"/>
-                        </constraints>
+                        <color key="backgroundColor" name="back"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sing Up" id="K5K-c8-4gs"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Zbb-5g-FXZ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="BQr-2g-a3G" id="P2x-K8-Ccz"/>
+                        <outlet property="passwordTextField" destination="sxz-Gy-LwK" id="EGK-g1-jbQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ov-5K-rvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,16 +82,18 @@
         <!--Navigation Controller-->
         <scene sceneID="mE8-xc-H4d">
             <objects>
-                <navigationController id="WW6-EH-kGq" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRE-Vf-c4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="SignUpNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WW6-EH-kGq" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kl8-dU-y6E">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="back"/>
                     </navigationBar>
                     <connections>
                         <segue destination="SIg-8I-e9A" kind="relationship" relationship="rootViewController" id="ru1-5o-Xfq"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hRE-Vf-c4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-852" y="161"/>
         </scene>
@@ -216,7 +229,17 @@
             <point key="canvasLocation" x="765.21739130434787" y="161.38392857142856"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="buttons"/>
     <resources>
+        <namedColor name="back">
+            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="buttons">
+            <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textFields">
+            <color red="0.93333333333333335" green="0.96470588235294119" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

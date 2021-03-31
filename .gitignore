@@ -77,4 +77,4 @@ DerivedData/
 
 Pods/
 *.xcworkspacedata
-
+*.generated.swift

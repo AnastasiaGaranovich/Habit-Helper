@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
 		1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E200D261244250009ED88 /* CreateAccountViewController.swift */; };
 		1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */; };
+		1BD1D76826147BF400789C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76726147BF400789C59 /* R.generated.swift */; };
+		1BD1D76D2614920C00789C59 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76C2614920C00789C59 /* Utils.swift */; };
 		4889FDD31120607AB0547356 /* Pods_Habit_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8982B864C20025FC8A974EC /* Pods_Habit_Helper.framework */; };
 		5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D9A53257A33DC00753022 /* Registration.storyboard */; };
 		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
@@ -65,6 +67,8 @@
 		1B9E2008261243E30009ED88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1B9E200D261244250009ED88 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnimalViewController.swift; sourceTree = "<group>"; };
+		1BD1D76726147BF400789C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1BD1D76C2614920C00789C59 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.release.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.release.xcconfig"; sourceTree = "<group>"; };
 		5D1D9A53257A33DC00753022 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
@@ -190,8 +194,10 @@
 				5DDED53625DD97630027E070 /* Storyboards */,
 				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
 				5D7BC7BF254718D900184BB4 /* Info.plist */,
+				1BD1D76726147BF400789C59 /* R.generated.swift */,
 				5D7BC7B7254718D700184BB4 /* Habit_Helper.xcdatamodeld */,
 				5D37C19625488287008C24EA /* CustomTableCell */,
+				1BD1D76C2614920C00789C59 /* Utils.swift */,
 			);
 			path = "Habit Helper";
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			buildConfigurationList = 5D7BC7D8254718DA00184BB4 /* Build configuration list for PBXNativeTarget "Habit Helper" */;
 			buildPhases = (
 				0DA57F25977A6B3BA72B98DD /* [CP] Check Pods Manifest.lock */,
+				1BD1D76326147B8700789C59 /* R.swift */,
 				5D7BC7A7254718D700184BB4 /* Sources */,
 				5D7BC7A8254718D700184BB4 /* Frameworks */,
 				5D7BC7A9254718D700184BB4 /* Resources */,
@@ -432,6 +439,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1BD1D76326147B8700789C59 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		C99FF1BEE9EE3A073CB16112 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,11 +492,13 @@
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
 				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,
+				1BD1D76826147BF400789C59 /* R.generated.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
 				5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,
+				1BD1D76D2614920C00789C59 /* Utils.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
@@ -654,7 +683,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L363K9J2RM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Habit Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,7 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L363K9J2RM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Habit Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

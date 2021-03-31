@@ -1,9 +1,11 @@
 import UIKit
 
 
-class ReportHabitController: UICollectionViewController {
+class ReportHabitController: UIViewController {
     
     var habits = AppData.user.habits
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +27,15 @@ class ReportHabitController: UICollectionViewController {
         collectionView.reloadData()
     }
     
-    override func collectionView(_ collectionView: UICollectionView,
+}
+
+extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
         return habits.count
     }
     
-    override func collectionView(
+    func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
@@ -39,5 +44,4 @@ class ReportHabitController: UICollectionViewController {
         cell.backgroundColor = habits[indexPath.row].habitColor
         return cell
     }
-    
 }
