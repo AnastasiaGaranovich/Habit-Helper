@@ -21,9 +21,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="EfA-Dr-tXB" kind="relationship" relationship="viewControllers" id="ehb-Qf-9lb"/>
-                        <segue destination="DJ6-qY-u1s" kind="relationship" relationship="viewControllers" id="Bcg-E8-14W"/>
                         <segue destination="sOn-hf-wpb" kind="relationship" relationship="viewControllers" id="0sH-4J-yj8"/>
                         <segue destination="2Xo-Kg-OHn" kind="relationship" relationship="viewControllers" id="ayn-yd-nOy"/>
+                        <segue destination="DJ6-qY-u1s" kind="relationship" relationship="viewControllers" id="Bcg-E8-14W"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69H-Sq-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,18 +124,20 @@
                                     <outlet property="delegate" destination="2Xo-Kg-OHn" id="fQm-gS-Yt9"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMf-39-twg">
-                                <rect key="frame" x="86" y="81" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMf-39-twg">
+                                <rect key="frame" x="103" y="85" width="13" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="tintColor" name="buttons"/>
+                                <state key="normal" image="chevron.backward" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMP-27-PI3">
-                                <rect key="frame" x="303" y="81" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMP-27-PI3">
+                                <rect key="frame" x="293" y="85" width="67" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="tintColor" name="buttons"/>
+                                <state key="normal" title="Button" image="chevron.forward" catalog="system"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lul-Mt-xAs">
-                                <rect key="frame" x="186" y="81" width="42" height="21"/>
+                                <rect key="frame" x="186" y="85" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -435,12 +437,14 @@
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="doc.badge.gearshape" catalog="system" width="119" height="128"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="parrot" width="291" height="346"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="back">
-            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttons">
             <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
