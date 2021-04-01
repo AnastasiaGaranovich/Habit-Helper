@@ -17,7 +17,8 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        
+        let viewController = R.storyboard.registration.createAnimalViewController()!
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     override func viewDidLoad() {

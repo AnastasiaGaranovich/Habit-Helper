@@ -39,7 +39,7 @@ extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataS
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionCell", for: indexPath) as! CustomCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.customCollectionCell, for: indexPath)!
         cell.habitName.text = habits[indexPath.row].habitName
         cell.backgroundColor = habits[indexPath.row].habitColor
         return cell

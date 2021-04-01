@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
+		1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* CalendarCell.xib */; };
+		1B8AE13A2615C9D300E1B160 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* CalendarCell.swift */; };
 		1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */; };
 		1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */; };
 		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
@@ -62,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1B8AE1342615C80C00E1B160 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		1B8AE1392615C9D300E1B160 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateHabits.storyboard; sourceTree = "<group>"; };
 		1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitViewController.swift; sourceTree = "<group>"; };
 		1B9E2008261243E30009ED88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 			children = (
 				5D9D9CA22561674300F5FEC0 /* CustomCollectionCell.xib */,
 				5D9D9CA7256168E900F5FEC0 /* CustomCollectionCell.swift */,
+				1B8AE1342615C80C00E1B160 /* CalendarCell.xib */,
+				1B8AE1392615C9D300E1B160 /* CalendarCell.swift */,
 			);
 			path = CustomCollectionCell;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			files = (
 				5D9D9CA32561674300F5FEC0 /* CustomCollectionCell.xib in Resources */,
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
+				1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */,
 				5D7BC7BB254718D900184BB4 /* Assets.xcassets in Resources */,
 				5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */,
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
@@ -490,6 +497,7 @@
 				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
 				1B8311BA26138C0500BA01A6 /* Network.swift in Sources */,
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
+				1B8AE13A2615C9D300E1B160 /* CalendarCell.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
 				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,
 				1BD1D76826147BF400789C59 /* R.generated.swift in Sources */,

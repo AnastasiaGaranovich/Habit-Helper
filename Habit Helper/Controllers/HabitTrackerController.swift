@@ -2,16 +2,17 @@ import UIKit
 
 class HabitTrackerController: UIViewController {
     var habits = AppData.user.habits
-    let progresses: [Float] = [0.2, 0.5, 0.6, 1]
     
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
-        
+        let viewController = R.storyboard.createHabits.createHabitViewController()!
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = UIColor(named: "back")
         tableView.register(UINib(nibName: "CustomTableCell", bundle: nil), forCellReuseIdentifier: "CustomTableCell")
     }
     
@@ -25,8 +26,8 @@ extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as! CustomTableCell
         cell.habitName.text = habits[indexPath.row].habitName
-        cell.habitColor.backgroundColor = habits[indexPath.row].habitColor
-        cell.habitProgress.progress = progresses[indexPath.row]
+        cell.borderWidth = 2.5
+        cell.borderColor = habits[indexPath.row].habitColor
         return cell
     }
     

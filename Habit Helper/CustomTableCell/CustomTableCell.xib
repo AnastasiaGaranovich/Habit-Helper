@@ -27,10 +27,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-1E-zxe">
-                        <rect key="frame" x="30" y="62" width="309" height="4"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </progressView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-Us-xDx">
                         <rect key="frame" x="86" y="24" width="253" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,7 +46,6 @@
             <connections>
                 <outlet property="habitColor" destination="Mpx-bU-Mud" id="Bs5-Tv-f51"/>
                 <outlet property="habitName" destination="R5c-Us-xDx" id="8fu-VZ-z0I"/>
-                <outlet property="habitProgress" destination="OWq-1E-zxe" id="MoW-D6-0Sr"/>
             </connections>
             <point key="canvasLocation" x="-384.05797101449281" y="55.580357142857139"/>
         </tableViewCell>
