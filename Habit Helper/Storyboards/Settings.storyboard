@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Habit Manager-->
+        <scene sceneID="q4n-0m-K2I">
+            <objects>
+                <viewController storyboardIdentifier="HabitManager" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UXa-3m-Wfs" customClass="HabitManager" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jEC-Bo-6Zd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is habit manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY5-iL-Lpv">
+                                <rect key="frame" x="111" y="336" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ttA-Ls-adf"/>
+                        <color key="backgroundColor" name="back"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XIH-PL-rmc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAw-j4-uIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="2115"/>
+        </scene>
+        <!--Animal Settings View Controller-->
+        <scene sceneID="mlQ-0X-QV6">
+            <objects>
+                <viewController storyboardIdentifier="AnimalSettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4BX-nJ-rSF" customClass="AnimalSettingsViewController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xq0-pH-IVu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LjG-O7-SU7"/>
+                        <color key="backgroundColor" name="back"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iPq-Dh-h2b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THY-AL-FGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="2115"/>
+        </scene>
+        <!--Background View Controller-->
+        <scene sceneID="Mfh-r6-C2a">
+            <objects>
+                <viewController storyboardIdentifier="BackgroundViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X2z-Aj-szP" customClass="BackgroundViewController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t3Y-R9-iUd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lpz-uj-kB4"/>
+                        <color key="backgroundColor" name="back"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b5G-C0-Fgy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sju-BB-5MY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="2115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="back">
+            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

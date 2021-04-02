@@ -1,6 +1,6 @@
 import UIKit
 
-class HabitManager: UIViewController {
+class BackgroundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()

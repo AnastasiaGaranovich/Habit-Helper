@@ -1,6 +1,6 @@
 import UIKit
 
-class HabitManager: UIViewController {
+class AnimalSettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()

@@ -4,29 +4,38 @@ enum SelectedButtonTag: Int {
     case HabitManager
     case AnimalSettings
     case Background
-    case Language
 }
 
-class SettingsViewController: UITableViewController, SettingsCellDelegate {
+class SettingsViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func logOutButtonPressed(_ sender: UIBarButtonItem) {
+        let viewController = R.storyboard.main.loginController()!
+        view.window?.rootViewController = viewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         switch tag {
                 case SelectedButtonTag.HabitManager.rawValue:
-                    let viewController = mainStoryboard.instantiateViewController(withIdentifier: "HabitManager") as! HabitManager
+                    let viewController = R.storyboard.settings.habitManager()!
                     navigationController?.pushViewController( viewController, animated: true)
                 case SelectedButtonTag.AnimalSettings.rawValue:
+                    let viewController = R.storyboard.settings.animalSettingsViewController()!
+                    navigationController?.pushViewController( viewController, animated: true)
                     print("do something when second button is tapped")
                 case SelectedButtonTag.Background.rawValue:
-                    print("do something when third button is tapped")
-                case SelectedButtonTag.Language.rawValue:
+                    let viewController = R.storyboard.settings.backgroundViewController()!
+                    navigationController?.pushViewController( viewController, animated: true)
                     print("do something when third button is tapped")
                 default:
                     print("default")
             }
     }
     
-    let items = ["Habit Manager", "Animal Settings", "Background", "Language"]
+    let items = ["Habit Manager", "Animal Settings", "Background"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,23 +43,24 @@ class SettingsViewController: UITableViewController, SettingsCellDelegate {
         navigationItem.title = "Settings"
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as! SettingsCell
-        cell.cellDelegate = self
-        cell.cellButton.tag = indexPath.row
-        cell.settingLabel.text = items[indexPath.row]
-        return cell
-    }
-    
-    
     @IBAction func LogOut(_ sender: UIButton) {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginController") as! LoginController
         self.view.window?.rootViewController = viewController
         self.view.window?.makeKeyAndVisible()
+    }
+}
+
+extension SettingsViewController: UITableViewDelegate, UITableViewDataSource, SettingsCellDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as! SettingsCell
+        cell.cellDelegate = self
+        cell.cellButton.tag = indexPath.row
+        cell.settingLabel.text = items[indexPath.row]
+        return cell
     }
 }

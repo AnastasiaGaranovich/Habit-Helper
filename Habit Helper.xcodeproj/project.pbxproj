@@ -10,6 +10,9 @@
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* CalendarCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* CalendarCell.swift */; };
+		1B9D55A726172451006E8A7A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D55A626172451006E8A7A /* Settings.storyboard */; };
+		1B9D55AC26172746006E8A7A /* AnimalSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */; };
+		1B9D55B12617277E006E8A7A /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */; };
 		1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */; };
 		1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */; };
 		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
@@ -66,6 +69,9 @@
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		1B9D55A626172451006E8A7A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSettingsViewController.swift; sourceTree = "<group>"; };
+		1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
 		1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateHabits.storyboard; sourceTree = "<group>"; };
 		1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitViewController.swift; sourceTree = "<group>"; };
 		1B9E2008261243E30009ED88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +248,7 @@
 				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
 				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
 				1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */,
+				1B9D55A626172451006E8A7A /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -268,6 +275,8 @@
 				1B9E2008261243E30009ED88 /* SignUpViewController.swift */,
 				1B9E200D261244250009ED88 /* CreateAccountViewController.swift */,
 				1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */,
+				1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */,
+				1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -404,6 +413,7 @@
 				1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
+				1B9D55A726172451006E8A7A /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +502,7 @@
 			files = (
 				1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */,
 				5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */,
+				1B9D55AC26172746006E8A7A /* AnimalSettingsViewController.swift in Sources */,
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */,
 				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
@@ -499,6 +510,7 @@
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				1B8AE13A2615C9D300E1B160 /* CalendarCell.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
+				1B9D55B12617277E006E8A7A /* BackgroundViewController.swift in Sources */,
 				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,
 				1BD1D76826147BF400789C59 /* R.generated.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
