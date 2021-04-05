@@ -20,6 +20,7 @@
 		1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */; };
 		1BD1D76826147BF400789C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76726147BF400789C59 /* R.generated.swift */; };
 		1BD1D76D2614920C00789C59 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76C2614920C00789C59 /* Utils.swift */; };
+		1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3AA0F261B85D800A10CFA /* IconCell.swift */; };
 		4889FDD31120607AB0547356 /* Pods_Habit_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8982B864C20025FC8A974EC /* Pods_Habit_Helper.framework */; };
 		5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D9A53257A33DC00753022 /* Registration.storyboard */; };
 		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
@@ -79,6 +80,7 @@
 		1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnimalViewController.swift; sourceTree = "<group>"; };
 		1BD1D76726147BF400789C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		1BD1D76C2614920C00789C59 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1BE3AA0F261B85D800A10CFA /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.release.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.release.xcconfig"; sourceTree = "<group>"; };
 		5D1D9A53257A33DC00753022 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				5D9D9CA7256168E900F5FEC0 /* CustomCollectionCell.swift */,
 				1B8AE1342615C80C00E1B160 /* CalendarCell.xib */,
 				1B8AE1392615C9D300E1B160 /* CalendarCell.swift */,
+				1BE3AA0F261B85D800A10CFA /* IconCell.swift */,
 			);
 			path = CustomCollectionCell;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,
 				1BD1D76D2614920C00789C59 /* Utils.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
+				1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,
