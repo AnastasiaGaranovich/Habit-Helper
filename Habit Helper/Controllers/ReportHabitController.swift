@@ -6,6 +6,15 @@ class ReportHabitController: UIViewController {
     var habits = AppData.user.habits
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var starsCountLabel: UILabel!
+    
+    @IBAction func previousDateButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func nextDateButtonPressed(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +41,7 @@ class ReportHabitController: UIViewController {
 extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return habits.count
+        return 5
     }
     
     func collectionView(
@@ -40,8 +49,8 @@ extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataS
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.customCollectionCell, for: indexPath)!
-        cell.habitName.text = habits[indexPath.row].habitName
-        cell.backgroundColor = habits[indexPath.row].habitColor
+        cell.setCellBorderColor(color: "border")
+        cell.setup()
         return cell
     }
 }

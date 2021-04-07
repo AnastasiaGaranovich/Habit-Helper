@@ -2,9 +2,9 @@ import UIKit
 
 class AnimalViewController: UIViewController {
     
-    @IBOutlet weak var healthScale: UIProgressView!
-    @IBOutlet weak var hungerScale: UIProgressView!
-    @IBOutlet weak var moodScale: UIProgressView!
+    @IBOutlet weak var hungerView: UIView!
+    @IBOutlet weak var healthView: UIView!
+    @IBOutlet weak var moodView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

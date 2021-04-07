@@ -43,12 +43,6 @@ class SettingsViewController: UIViewController {
         navigationItem.title = "Settings"
     }
     
-    @IBAction func LogOut(_ sender: UIButton) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginController") as! LoginController
-        self.view.window?.rootViewController = viewController
-        self.view.window?.makeKeyAndVisible()
-    }
 }
 
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource, SettingsCellDelegate {

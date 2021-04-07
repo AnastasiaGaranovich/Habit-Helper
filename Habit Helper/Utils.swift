@@ -18,3 +18,10 @@ extension UITextField {
         layer.borderColor = UIColor(named: "border")?.cgColor
     }
 }
+
+extension UICollectionViewCell {
+    func setCellBorderColor(color: String) {
+        layer.borderColor = UIColor(named: color)?.cgColor
+        layer.borderWidth = 2.5
+    }
+}

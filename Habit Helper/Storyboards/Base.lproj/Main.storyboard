@@ -78,6 +78,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="lrY-EB-UY6"/>
                     <navigationItem key="navigationItem" id="QHF-xL-Fne"/>
+                    <connections>
+                        <outlet property="healthView" destination="A1P-Nb-hbm" id="Rbm-ow-Upu"/>
+                        <outlet property="hungerView" destination="MvM-18-QpA" id="Mw9-jI-ch8"/>
+                        <outlet property="moodView" destination="7IY-mM-OKp" id="wRL-nb-Q2t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cw3-i0-t0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,12 +126,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="buttons"/>
                                 <state key="normal" image="chevron.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="previousDateButtonPressed:" destination="2Xo-Kg-OHn" eventType="touchUpInside" id="bz2-FE-1rD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMP-27-PI3">
-                                <rect key="frame" x="293" y="85" width="67" height="22"/>
+                                <rect key="frame" x="290" y="85" width="13" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="buttons"/>
-                                <state key="normal" title="Button" image="chevron.forward" catalog="system"/>
+                                <state key="normal" image="chevron.forward" catalog="system"/>
+                                <connections>
+                                    <action selector="nextDateButtonPressed:" destination="2Xo-Kg-OHn" eventType="touchUpInside" id="2Xk-IV-RX8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lul-Mt-xAs">
                                 <rect key="frame" x="186" y="85" width="42" height="21"/>
@@ -153,6 +164,7 @@
                     <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="rja-6c-Z9H"/>
                     <connections>
                         <outlet property="collectionView" destination="aEq-KA-Y3w" id="YBK-wt-Qmi"/>
+                        <outlet property="starsCountLabel" destination="Sfo-ZU-JZx" id="0KF-fo-t2I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zDt-uf-xjR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

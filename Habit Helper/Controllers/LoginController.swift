@@ -11,11 +11,11 @@ class LoginController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginValueChanged(_ sender: UITextField) {
-        checkСorrectnessLoginPass()
+        
     }
     
     @IBAction func passwordValueChanged(_ sender: UITextField) {
-        checkСorrectnessLoginPass()
+        
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
@@ -64,15 +64,5 @@ class LoginController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-    
-    private func checkСorrectnessLoginPass() {
-        if loginTextField.text != AppData.user.email || passwordTextField.text != AppData.user.password {
-            alertLabel.text = "Wrong login or password"
-        }
-        else {
-            alertLabel.isHidden = true
-        }
-    }
-
 }
 

@@ -7,7 +7,7 @@ class User: Mappable {
     var name = ""
     var age = 0
     var email = ""
-    var password = ""
+    var birthday = Date()
     
     init() {
         
