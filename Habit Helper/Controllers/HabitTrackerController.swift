@@ -21,14 +21,15 @@ class HabitTrackerController: UIViewController {
 
 extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return habits.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as! CustomTableCell
-        cell.habitName.text = habits[indexPath.row].habitName
+        cell.progressConstraint.constant = 50
+        cell.progressView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
         cell.borderWidth = 2.5
-        cell.borderColor = habits[indexPath.row].habitColor
+        cell.borderColor = UIColor(named: "border")!
         return cell
     }
     
