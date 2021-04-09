@@ -15,6 +15,7 @@ class HabitTrackerController: UIViewController {
         super.viewDidLoad()
         tableView.backgroundColor = UIColor(named: "back")
         tableView.register(UINib(nibName: "CustomTableCell", bundle: nil), forCellReuseIdentifier: "CustomTableCell")
+        setNavigation()
     }
     
 }
@@ -29,7 +30,7 @@ extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
         cell.progressConstraint.constant = 50
         cell.progressView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
         cell.borderWidth = 2.5
-        cell.borderColor = UIColor(named: "border")!
+        cell.borderColor = UIColor(named: "back")!
         return cell
     }
     

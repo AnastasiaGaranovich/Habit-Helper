@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,60 +17,82 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGW-hZ-uCx">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGW-hZ-uCx">
                         <rect key="frame" x="10" y="10" width="394" height="70"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aig-Yb-nWT">
+                        <rect key="frame" x="10" y="10" width="394" height="70"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aig-Yb-nWT">
-                                <rect key="frame" x="0.0" y="0.0" width="394" height="70"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mpx-bU-Mud">
+                                <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mpx-bU-Mud">
-                                        <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-sO-fkC">
+                                        <rect key="frame" x="-7" y="6" width="63" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-sO-fkC">
-                                                <rect key="frame" x="-7" y="6" width="63" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-Us-xDx">
                         <rect key="frame" x="86" y="24" width="253" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                        <color key="textColor" name="text"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" systemColor="separatorColor"/>
+                <color key="backgroundColor" name="back"/>
+                <color key="tintColor" name="back"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Aig-Yb-nWT" secondAttribute="trailing" constant="10" id="2Pc-gC-qYd"/>
-                    <constraint firstItem="Aig-Yb-nWT" firstAttribute="top" secondItem="nOP-md-bvr" secondAttribute="top" constant="10" id="7Bj-Cy-14H"/>
-                    <constraint firstAttribute="bottom" secondItem="Aig-Yb-nWT" secondAttribute="bottom" constant="10" id="R3w-Xe-edt"/>
-                    <constraint firstItem="Aig-Yb-nWT" firstAttribute="leading" secondItem="nOP-md-bvr" secondAttribute="leading" constant="10" id="Yc6-4Q-Fc7"/>
+                    <constraint firstAttribute="trailing" secondItem="Aig-Yb-nWT" secondAttribute="trailing" constant="10" id="9ft-hJ-NAx"/>
+                    <constraint firstItem="Aig-Yb-nWT" firstAttribute="leading" secondItem="nOP-md-bvr" secondAttribute="leading" constant="10" id="9vd-jo-Cyp"/>
+                    <constraint firstAttribute="trailing" secondItem="BGW-hZ-uCx" secondAttribute="trailing" constant="10" id="Bh8-Ge-HTB"/>
+                    <constraint firstAttribute="bottom" secondItem="BGW-hZ-uCx" secondAttribute="bottom" constant="10" id="JI9-XI-Lhl"/>
+                    <constraint firstItem="BGW-hZ-uCx" firstAttribute="top" secondItem="nOP-md-bvr" secondAttribute="top" constant="10" id="KvN-KT-kqo"/>
+                    <constraint firstItem="Aig-Yb-nWT" firstAttribute="top" secondItem="nOP-md-bvr" secondAttribute="top" constant="10" id="Ls9-sA-Vvh"/>
+                    <constraint firstItem="BGW-hZ-uCx" firstAttribute="leading" secondItem="nOP-md-bvr" secondAttribute="leading" constant="10" id="Tic-iH-c14"/>
+                    <constraint firstAttribute="bottom" secondItem="Aig-Yb-nWT" secondAttribute="bottom" constant="10" id="oR3-zW-UK7"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="cellBackgroundView" destination="BGW-hZ-uCx" id="dVc-I9-MWV"/>
                 <outlet property="habitColor" destination="Mpx-bU-Mud" id="Bs5-Tv-f51"/>
                 <outlet property="habitName" destination="R5c-Us-xDx" id="8fu-VZ-z0I"/>
-                <outlet property="progressConstraint" destination="2Pc-gC-qYd" id="rdy-MS-h6D"/>
+                <outlet property="progressConstraint" destination="9ft-hJ-NAx" id="7vR-dp-qcz"/>
                 <outlet property="progressView" destination="Aig-Yb-nWT" id="PEp-Zm-E9E"/>
             </connections>
             <point key="canvasLocation" x="-384.05797101449281" y="55.580357142857139"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="back">
+            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="text">
+            <color red="0.14100000262260437" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
