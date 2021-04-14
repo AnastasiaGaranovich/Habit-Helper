@@ -13,13 +13,26 @@ class CustomCollectionCell : UICollectionViewCell {
 
 extension CustomCollectionCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return getDayNumbersInMonth()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.calendarCell, for: indexPath)!
         cell.background.backgroundColor = .lightGray
-        cell.dayLabel.text = "1"
+        cell.dayLabel.text = String(indexPath.row + 1)
         return cell
+    }
+    
+    private func getDayNumbersInMonth() -> Int {
+        let dateComponents = DateComponents()
+        let year = dateComponents.year
+        let month = dateComponents.month
+        let calendar = Calendar.current
+        let date = DateComponents(year: year, month: month)
+        let currentDate = calendar.date(from: date)!
+
+        let range = calendar.range(of: .day, in: .month, for: currentDate)!
+        let numDays = range.count
+        return numDays
     }
 }
