@@ -18,6 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="back"/>
+                        <color key="tintColor" name="text"/>
+                        <color key="selectedImageTintColor" name="text"/>
                     </tabBar>
                     <connections>
                         <segue destination="EfA-Dr-tXB" kind="relationship" relationship="viewControllers" id="ehb-Qf-9lb"/>
@@ -76,7 +78,9 @@
                         <viewLayoutGuide key="safeArea" id="Qgz-4P-AGI"/>
                         <color key="backgroundColor" name="back"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="009-parrot" selectedImage="009-parrot" id="lrY-EB-UY6"/>
+                    <tabBarItem key="tabBarItem" title="" image="009-parrot.Vg1jk" selectedImage="009-parrot.Vg1jk" id="lrY-EB-UY6">
+                        <color key="badgeColor" name="text"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="QHF-xL-Fne"/>
                     <connections>
                         <outlet property="healthView" destination="A1P-Nb-hbm" id="Rbm-ow-Upu"/>
@@ -161,7 +165,9 @@
                         <viewLayoutGuide key="safeArea" id="Qc4-Dq-1DT"/>
                         <color key="backgroundColor" name="back"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="005-calendar" selectedImage="005-calendar" id="rja-6c-Z9H"/>
+                    <tabBarItem key="tabBarItem" title="" image="005-calendar.11A5w" selectedImage="005-calendar.11A5w" id="rja-6c-Z9H">
+                        <color key="badgeColor" name="text"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="collectionView" destination="aEq-KA-Y3w" id="YBK-wt-Qmi"/>
                         <outlet property="starsCountLabel" destination="Sfo-ZU-JZx" id="0KF-fo-t2I"/>
@@ -175,7 +181,9 @@
         <scene sceneID="hcO-en-dNO">
             <objects>
                 <navigationController id="sOn-hf-wpb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="009-checklist" selectedImage="009-checklist" id="IAc-Cu-mFI"/>
+                    <tabBarItem key="tabBarItem" title="" image="009-checklist.p48id" selectedImage="009-checklist.p48id" id="IAc-Cu-mFI">
+                        <color key="badgeColor" name="text"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Zo-gp-gTf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -369,7 +377,7 @@
         <scene sceneID="zj5-C5-Srw">
             <objects>
                 <navigationController id="DJ6-qY-u1s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="doc.badge.gearshape" catalog="system" id="DGR-T6-W6L"/>
+                    <tabBarItem key="tabBarItem" title="" image="gear" selectedImage="gear" id="DGR-T6-W6L"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAi-mh-pgj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -593,12 +601,12 @@
     </scenes>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
-        <image name="005-calendar" width="512" height="512"/>
-        <image name="009-checklist" width="512" height="512"/>
-        <image name="009-parrot" width="512" height="512"/>
+        <image name="005-calendar.11A5w" width="30" height="30"/>
+        <image name="009-checklist.p48id" width="30" height="30"/>
+        <image name="009-parrot.Vg1jk" width="30" height="30"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
-        <image name="doc.badge.gearshape" catalog="system" width="119" height="128"/>
+        <image name="gear" width="32" height="32"/>
         <image name="parrot" width="291" height="346"/>
         <namedColor name="back">
             <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
