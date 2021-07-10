@@ -40,7 +40,7 @@ class LoginController: UIViewController {
     }
     
     private func openApp() {
-        let viewController = R.storyboard.main.uiTabBarController()!
+		let viewController = R.storyboard.main.instantiateInitialViewController()
         view.window?.rootViewController = viewController
         view.window?.makeKeyAndVisible()
     }

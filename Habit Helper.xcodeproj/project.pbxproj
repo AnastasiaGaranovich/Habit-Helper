@@ -10,7 +10,6 @@
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* CalendarCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* CalendarCell.swift */; };
-		1B9D55A726172451006E8A7A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9D55A626172451006E8A7A /* Settings.storyboard */; };
 		1B9D55AC26172746006E8A7A /* AnimalSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */; };
 		1B9D55B12617277E006E8A7A /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */; };
 		1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */; };
@@ -18,6 +17,13 @@
 		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
 		1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E200D261244250009ED88 /* CreateAccountViewController.swift */; };
 		1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */; };
+		1BB8D1772699A2750039A747 /* HabitTracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D1762699A2750039A747 /* HabitTracker.storyboard */; };
+		1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D1792699A2C30039A747 /* Settings.storyboard */; };
+		1BB8D17D2699A2F20039A747 /* ReportHabit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D17C2699A2F20039A747 /* ReportHabit.storyboard */; };
+		1BB8D1802699A3100039A747 /* Animal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D17F2699A3100039A747 /* Animal.storyboard */; };
+		1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D1822699A33D0039A747 /* LogIn.storyboard */; };
+		1BB8D18B2699A8190039A747 /* CreateAnimal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D18A2699A8190039A747 /* CreateAnimal.storyboard */; };
+		1BB8D1942699AA070039A747 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8D1932699AA070039A747 /* TabBarController.swift */; };
 		1BD1D76826147BF400789C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76726147BF400789C59 /* R.generated.swift */; };
 		1BD1D76D2614920C00789C59 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76C2614920C00789C59 /* Utils.swift */; };
 		1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3AA0F261B85D800A10CFA /* IconCell.swift */; };
@@ -70,7 +76,6 @@
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-		1B9D55A626172451006E8A7A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSettingsViewController.swift; sourceTree = "<group>"; };
 		1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
 		1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateHabits.storyboard; sourceTree = "<group>"; };
@@ -78,7 +83,14 @@
 		1B9E2008261243E30009ED88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1B9E200D261244250009ED88 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnimalViewController.swift; sourceTree = "<group>"; };
-		1BD1D76726147BF400789C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1BB8D1762699A2750039A747 /* HabitTracker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitTracker.storyboard; sourceTree = "<group>"; };
+		1BB8D1792699A2C30039A747 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		1BB8D17C2699A2F20039A747 /* ReportHabit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportHabit.storyboard; sourceTree = "<group>"; };
+		1BB8D17F2699A3100039A747 /* Animal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animal.storyboard; sourceTree = "<group>"; };
+		1BB8D1822699A33D0039A747 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		1BB8D18A2699A8190039A747 /* CreateAnimal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAnimal.storyboard; sourceTree = "<group>"; };
+		1BB8D1932699AA070039A747 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1BD1D76726147BF400789C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "Habit Helper/R.generated.swift"; sourceTree = SOURCE_ROOT; };
 		1BD1D76C2614920C00789C59 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1BE3AA0F261B85D800A10CFA /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.release.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,15 +163,166 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		5D37C19625488287008C24EA /* CustomTableCell */ = {
+		1BB8D1752699A2580039A747 /* Habit Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D1762699A2750039A747 /* HabitTracker.storyboard */,
+			);
+			path = "Habit Tracker";
+			sourceTree = "<group>";
+		};
+		1BB8D1782699A2B50039A747 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D1792699A2C30039A747 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1BB8D17B2699A2D60039A747 /* Report Habit */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D17C2699A2F20039A747 /* ReportHabit.storyboard */,
+			);
+			path = "Report Habit";
+			sourceTree = "<group>";
+		};
+		1BB8D17E2699A2FE0039A747 /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D17F2699A3100039A747 /* Animal.storyboard */,
+			);
+			path = Animal;
+			sourceTree = "<group>";
+		};
+		1BB8D1812699A31F0039A747 /* Autorisation */ = {
+			isa = PBXGroup;
+			children = (
+				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
+				1BB8D1822699A33D0039A747 /* LogIn.storyboard */,
+			);
+			path = Autorisation;
+			sourceTree = "<group>";
+		};
+		1BB8D1842699A6F20039A747 /* Create Habit */ = {
+			isa = PBXGroup;
+			children = (
+				1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */,
+			);
+			path = "Create Habit";
+			sourceTree = "<group>";
+		};
+		1BB8D1852699A7200039A747 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		1BB8D1862699A76B0039A747 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5D37C19625488287008C24EA /* Cell */,
+				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
+				5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */,
+				1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */,
+				1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1BB8D1872699A7A70039A747 /* Report Habit */ = {
+			isa = PBXGroup;
+			children = (
+				5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */,
+			);
+			path = "Report Habit";
+			sourceTree = "<group>";
+		};
+		1BB8D1882699A7C20039A747 /* Autorisation */ = {
+			isa = PBXGroup;
+			children = (
+				1B9E200D261244250009ED88 /* CreateAccountViewController.swift */,
+				1B9E2008261243E30009ED88 /* SignUpViewController.swift */,
+				5D7BC7B2254718D700184BB4 /* LoginController.swift */,
+			);
+			path = Autorisation;
+			sourceTree = "<group>";
+		};
+		1BB8D1892699A7F70039A747 /* Create Animal */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D18A2699A8190039A747 /* CreateAnimal.storyboard */,
+			);
+			path = "Create Animal";
+			sourceTree = "<group>";
+		};
+		1BB8D18C2699A8820039A747 /* Habit Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D18D2699A8AE0039A747 /* Cell */,
+				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
+			);
+			path = "Habit Tracker";
+			sourceTree = "<group>";
+		};
+		1BB8D18D2699A8AE0039A747 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
+				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1BB8D18E2699A8E90039A747 /* Create Animal */ = {
+			isa = PBXGroup;
+			children = (
+				1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */,
+			);
+			path = "Create Animal";
+			sourceTree = "<group>";
+		};
+		1BB8D18F2699A8F80039A747 /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
+			);
+			path = Animal;
+			sourceTree = "<group>";
+		};
+		1BB8D1902699A9040039A747 /* Create Habit */ = {
+			isa = PBXGroup;
+			children = (
+				1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */,
+			);
+			path = "Create Habit";
+			sourceTree = "<group>";
+		};
+		1BB8D1912699A9240039A747 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		1BB8D1922699A9470039A747 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1BD1D76C2614920C00789C59 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5D37C19625488287008C24EA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */,
 				5D71CF162549A8FE002DCA76 /* SettingsCell.swift */,
-				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
-				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
 			);
-			path = CustomTableCell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		5D77822325C9C661005B600B /* Model */ = {
@@ -198,18 +361,17 @@
 		5D7BC7AD254718D700184BB4 /* Habit Helper */ = {
 			isa = PBXGroup;
 			children = (
+				1BB8D1922699A9470039A747 /* Utils */,
+				1BB8D1912699A9240039A747 /* Resourses */,
 				1B8311B826138BC900BA01A6 /* Network */,
 				5DDED53825DD97B80027E070 /* Controllers */,
 				5DDED53725DD978A0027E070 /* Delegates */,
 				5D77822325C9C661005B600B /* Model */,
 				5D9D9CA1256166DF00F5FEC0 /* CustomCollectionCell */,
 				5DDED53625DD97630027E070 /* Storyboards */,
-				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
 				5D7BC7BF254718D900184BB4 /* Info.plist */,
 				1BD1D76726147BF400789C59 /* R.generated.swift */,
 				5D7BC7B7254718D700184BB4 /* Habit_Helper.xcdatamodeld */,
-				5D37C19625488287008C24EA /* CustomTableCell */,
-				1BD1D76C2614920C00789C59 /* Utils.swift */,
 			);
 			path = "Habit Helper";
 			sourceTree = "<group>";
@@ -247,11 +409,15 @@
 		5DDED53625DD97630027E070 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				1BB8D1892699A7F70039A747 /* Create Animal */,
+				1BB8D1852699A7200039A747 /* Tab Bar */,
+				1BB8D1842699A6F20039A747 /* Create Habit */,
+				1BB8D1812699A31F0039A747 /* Autorisation */,
+				1BB8D17E2699A2FE0039A747 /* Animal */,
+				1BB8D17B2699A2D60039A747 /* Report Habit */,
+				1BB8D1782699A2B50039A747 /* Settings */,
+				1BB8D1752699A2580039A747 /* Habit Tracker */,
 				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
-				5D1D9A53257A33DC00753022 /* Registration.storyboard */,
-				5D7BC7B4254718D700184BB4 /* Main.storyboard */,
-				1B9E1FF7261234320009ED88 /* CreateHabits.storyboard */,
-				1B9D55A626172451006E8A7A /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -268,18 +434,14 @@
 		5DDED53825DD97B80027E070 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
-				5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */,
-				5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */,
-				5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */,
-				5DD4128F254735420017C0EC /* AnimalViewController.swift */,
-				5D7BC7B2254718D700184BB4 /* LoginController.swift */,
-				1B9E1FFC26123B2F0009ED88 /* CreateHabitViewController.swift */,
-				1B9E2008261243E30009ED88 /* SignUpViewController.swift */,
-				1B9E200D261244250009ED88 /* CreateAccountViewController.swift */,
-				1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */,
-				1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */,
-				1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */,
+				1BB8D1902699A9040039A747 /* Create Habit */,
+				1BB8D18F2699A8F80039A747 /* Animal */,
+				1BB8D18E2699A8E90039A747 /* Create Animal */,
+				1BB8D18C2699A8820039A747 /* Habit Tracker */,
+				1BB8D1882699A7C20039A747 /* Autorisation */,
+				1BB8D1872699A7A70039A747 /* Report Habit */,
+				1BB8D1862699A76B0039A747 /* Settings */,
+				1BB8D1932699AA070039A747 /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -407,16 +569,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB8D1772699A2750039A747 /* HabitTracker.storyboard in Resources */,
 				5D9D9CA32561674300F5FEC0 /* CustomCollectionCell.xib in Resources */,
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
+				1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */,
+				1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */,
+				1BB8D18B2699A8190039A747 /* CreateAnimal.storyboard in Resources */,
 				1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */,
 				5D7BC7BB254718D900184BB4 /* Assets.xcassets in Resources */,
 				5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */,
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
+				1BB8D17D2699A2F20039A747 /* ReportHabit.storyboard in Resources */,
 				1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */,
+				1BB8D1802699A3100039A747 /* Animal.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
-				1B9D55A726172451006E8A7A /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +695,7 @@
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,
 				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
+				1BB8D1942699AA070039A747 /* TabBarController.swift in Sources */,
 				1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */,
 				5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */,
 			);
