@@ -19,10 +19,10 @@
                         <color key="selectedImageTintColor" name="text"/>
                     </tabBar>
                     <connections>
-                        <segue destination="n95-T1-cXo" kind="relationship" relationship="viewControllers" id="wyc-Yh-b1A"/>
-                        <segue destination="kAh-uc-hcn" kind="relationship" relationship="viewControllers" id="F7f-qm-etb"/>
-                        <segue destination="NZd-kC-LuJ" kind="relationship" relationship="viewControllers" id="5H6-XE-QGO"/>
                         <segue destination="kOO-bG-GKH" kind="relationship" relationship="viewControllers" id="h2S-18-VA8"/>
+                        <segue destination="kAh-uc-hcn" kind="relationship" relationship="viewControllers" id="F7f-qm-etb"/>
+                        <segue destination="n95-T1-cXo" kind="relationship" relationship="viewControllers" id="wyc-Yh-b1A"/>
+                        <segue destination="NZd-kC-LuJ" kind="relationship" relationship="viewControllers" id="5H6-XE-QGO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69H-Sq-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

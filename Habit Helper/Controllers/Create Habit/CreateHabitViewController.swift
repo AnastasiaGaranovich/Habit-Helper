@@ -21,7 +21,7 @@ class CreateHabitViewController: UIViewController {
     }
     
     @IBAction func completeButtonPressed(_ sender: UIButton) {
-        let viewController = R.storyboard.main.uiTabBarController()!
+        let viewController = R.storyboard.main.tabBarController()!
         view.window?.rootViewController = viewController
         view.window?.makeKeyAndVisible()
     }

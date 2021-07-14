@@ -10,8 +10,8 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func logOutButtonPressed(_ sender: UIBarButtonItem) {
-        let viewController = R.storyboard.main.loginController()!
+    @IBAction func logOutButtonPressed(_ sender: UIButton) {
+		let viewController = R.storyboard.logIn.instantiateInitialViewController()
         view.window?.rootViewController = viewController
         view.window?.makeKeyAndVisible()
     }

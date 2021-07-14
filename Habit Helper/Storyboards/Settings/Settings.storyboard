@@ -87,10 +87,10 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" name="buttons"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutButtonPressed:" destination="4Rq-r4-XHK" eventType="touchUpInside" id="47s-Hu-YHk"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="logOutButtonPressed:" destination="4Rq-r4-XHK" id="Rfw-FQ-0lh"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

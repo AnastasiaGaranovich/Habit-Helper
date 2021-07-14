@@ -19,6 +19,7 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
+		print("Kok")
         let viewController = R.storyboard.registration.signUpViewController()!
         navigationController?.pushViewController(viewController, animated: true)
     }
