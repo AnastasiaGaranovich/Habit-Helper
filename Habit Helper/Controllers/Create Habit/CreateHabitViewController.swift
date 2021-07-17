@@ -1,6 +1,6 @@
 import UIKit
 
-fileprivate let colorArray = [#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1), #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)]
+fileprivate let colorArray = [#colorLiteral(red: 0.5465276837, green: 0.5135271549, blue: 0.4609381557, alpha: 1), #colorLiteral(red: 0.6923422217, green: 0.6765556335, blue: 0.5114421248, alpha: 1), #colorLiteral(red: 0.7955096364, green: 0.8574722409, blue: 0.5306774974, alpha: 1), #colorLiteral(red: 0.4499804378, green: 0.4117792845, blue: 0.5344714522, alpha: 1), #colorLiteral(red: 0.7246080637, green: 0.5560817719, blue: 0.8167122006, alpha: 1)]
 fileprivate let iconArray: [UIImage] = [#imageLiteral(resourceName: "26a20a99d83cf280fe907a14674c1ad6"), #imageLiteral(resourceName: "003-writing"), #imageLiteral(resourceName: "044-guitar")]
 
 

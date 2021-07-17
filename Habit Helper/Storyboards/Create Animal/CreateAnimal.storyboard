@@ -16,10 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-b9-CJE">
-                                <rect key="frame" x="28" y="126" width="350" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-b9-CJE">
+                                <rect key="frame" x="29.5" y="126" width="355" height="50"/>
                                 <color key="backgroundColor" name="textFields"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SiY-eA-5hV"/>
+                                    <constraint firstAttribute="width" constant="355" id="xrA-tw-bFb"/>
+                                </constraints>
                                 <color key="textColor" name="text"/>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -32,17 +35,19 @@
                                     <action selector="animalNameValueChanged:" destination="iWg-b9-YGf" eventType="editingChanged" id="sJP-tD-lwT"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your habit helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foz-7V-FYT">
-                                <rect key="frame" x="97" y="67" width="212" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your habit helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foz-7V-FYT">
+                                <rect key="frame" x="101.5" y="65" width="211.5" height="21"/>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT0-5w-afZ">
-                                <rect key="frame" x="20" y="585" width="374" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT0-5w-afZ">
+                                <rect key="frame" x="20" y="576" width="374" height="60"/>
                                 <color key="backgroundColor" name="buttons"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LXS-FW-RqB"/>
+                                    <constraint firstAttribute="width" constant="374" id="Wtn-98-QpN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,6 +64,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AKK-eh-Z9z"/>
                         <color key="backgroundColor" name="back"/>
+                        <constraints>
+                            <constraint firstItem="Foz-7V-FYT" firstAttribute="centerX" secondItem="UGy-ue-lhb" secondAttribute="centerX" id="7VH-yf-f9h"/>
+                            <constraint firstItem="NT0-5w-afZ" firstAttribute="centerX" secondItem="UGy-ue-lhb" secondAttribute="centerX" id="86l-uB-DnU"/>
+                            <constraint firstItem="Foz-7V-FYT" firstAttribute="top" secondItem="AKK-eh-Z9z" secondAttribute="top" constant="65" id="MCh-cn-ea1"/>
+                            <constraint firstItem="RDa-b9-CJE" firstAttribute="top" secondItem="Foz-7V-FYT" secondAttribute="bottom" constant="40" id="QTk-rb-Pub"/>
+                            <constraint firstItem="RDa-b9-CJE" firstAttribute="centerX" secondItem="UGy-ue-lhb" secondAttribute="centerX" id="V3U-f1-ll9"/>
+                            <constraint firstItem="NT0-5w-afZ" firstAttribute="top" secondItem="RDa-b9-CJE" secondAttribute="bottom" constant="400" id="VB8-qs-LX6"/>
+                        </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
