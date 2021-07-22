@@ -17,34 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parrot" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-X4-KhP">
-                                <rect key="frame" x="49" y="299" width="321" height="402"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parrot" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-X4-KhP">
+                                <rect key="frame" x="46.5" y="216" width="321" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="e2N-ys-7NK"/>
+                                    <constraint firstAttribute="height" constant="500" id="fzt-XC-HeM"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-Vj-C8s">
-                                <rect key="frame" x="49" y="101" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-Vj-C8s">
+                                <rect key="frame" x="45" y="101" width="70" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="X2J-6L-1mi"/>
+                                    <constraint firstAttribute="height" constant="70" id="xeJ-sF-gdC"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-W8-JHD">
-                                <rect key="frame" x="153" y="101" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nq1-km-Brc">
+                                <rect key="frame" x="299" y="101" width="70" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Xha-ng-Vzq"/>
+                                    <constraint firstAttribute="width" constant="70" id="vXq-6o-z3a"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nq1-km-Brc">
-                                <rect key="frame" x="262" y="101" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnG-W8-JHD">
+                                <rect key="frame" x="172" y="101" width="70" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="V39-ga-2n0"/>
+                                    <constraint firstAttribute="width" constant="70" id="WQb-ca-u4v"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="35"/>
@@ -54,6 +66,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lII-Kj-ZXq"/>
                         <color key="backgroundColor" name="back"/>
+                        <constraints>
+                            <constraint firstItem="nnG-W8-JHD" firstAttribute="centerY" secondItem="cC3-Vj-C8s" secondAttribute="centerY" id="26d-eh-ULa"/>
+                            <constraint firstItem="mtb-X4-KhP" firstAttribute="top" secondItem="cC3-Vj-C8s" secondAttribute="bottom" constant="45" id="7AP-SG-bvw"/>
+                            <constraint firstItem="nnG-W8-JHD" firstAttribute="centerY" secondItem="Nq1-km-Brc" secondAttribute="centerY" id="BfU-ck-AIy"/>
+                            <constraint firstItem="nnG-W8-JHD" firstAttribute="centerX" secondItem="arg-L4-3kH" secondAttribute="centerX" id="LdU-Gr-WN8"/>
+                            <constraint firstItem="cC3-Vj-C8s" firstAttribute="leading" secondItem="lII-Kj-ZXq" secondAttribute="leading" constant="45" id="ZOg-CM-U0t"/>
+                            <constraint firstItem="Nq1-km-Brc" firstAttribute="top" secondItem="lII-Kj-ZXq" secondAttribute="top" constant="57" id="aen-Td-Wfd"/>
+                            <constraint firstItem="lII-Kj-ZXq" firstAttribute="trailing" secondItem="Nq1-km-Brc" secondAttribute="trailing" constant="45" id="nbj-3T-dqb"/>
+                            <constraint firstItem="nnG-W8-JHD" firstAttribute="top" secondItem="lII-Kj-ZXq" secondAttribute="top" constant="57" id="qWl-Oi-V23"/>
+                            <constraint firstItem="cC3-Vj-C8s" firstAttribute="top" secondItem="lII-Kj-ZXq" secondAttribute="top" constant="57" id="v7n-kq-5Yg"/>
+                            <constraint firstItem="mtb-X4-KhP" firstAttribute="centerX" secondItem="arg-L4-3kH" secondAttribute="centerX" id="yhC-BA-dY8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="parrot_tab" selectedImage="parrot_tab" id="DUw-Ac-9DR">
                         <color key="badgeColor" name="text"/>
