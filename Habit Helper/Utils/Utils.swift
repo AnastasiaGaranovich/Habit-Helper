@@ -2,13 +2,16 @@ import UIKit
 
 extension UIViewController {
     func setNavigation() {
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barTintColor = UIColor(named: "back")
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.backgroundColor = .clear
-        navigationController?.view.backgroundColor = .clear
-        navigationController?.navigationBar.tintColor = UIColor(named: "buttons")
-        self.navigationController?.navigationBar.topItem?.title = ""
+		guard let nav = navigationController else {
+			fatalError("No navigation controller")
+		}
+		nav.navigationBar.isTranslucent = false
+		nav.navigationBar.barTintColor = UIColor(named: "back")
+		nav.navigationBar.shadowImage = UIImage()
+		nav.navigationBar.backgroundColor = .clear
+		nav.view.backgroundColor = .clear
+		nav.navigationBar.tintColor = UIColor(named: "buttons")
+		nav.navigationBar.topItem?.title = ""
     }
 }
 

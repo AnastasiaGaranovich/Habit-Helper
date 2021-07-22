@@ -1,4 +1,5 @@
 import UIKit
+import iOSTools
 
 class HabitTrackerController: UIViewController {
     var habits = AppData.user.habits
@@ -14,7 +15,11 @@ class HabitTrackerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = UIColor(named: "back")
-        tableView.register(UINib(nibName: "CustomTableCell", bundle: nil), forCellReuseIdentifier: "CustomTableCell")
+		
+		//TODO: - change cell registration to this everywhere
+		CustomTableCell.registerFor(tableView)
+		
+       // tableView.register(UINib(nibName: "CustomTableCell", bundle: nil), forCellReuseIdentifier: "CustomTableCell")
         setNavigation()
     }
     

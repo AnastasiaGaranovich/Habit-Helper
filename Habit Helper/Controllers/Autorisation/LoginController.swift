@@ -19,9 +19,8 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
+		push(R.storyboard.registration.signUpViewController()!)
 		print("Kok")
-        let viewController = R.storyboard.registration.signUpViewController()!
-        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func signDonePressed(_ sender: UIButton) {
@@ -41,6 +40,7 @@ class LoginController: UIViewController {
     }
     
     private func openApp() {
+		//TODO: - move to extension
 		let viewController = R.storyboard.main.instantiateInitialViewController()
         view.window?.rootViewController = viewController
         view.window?.makeKeyAndVisible()

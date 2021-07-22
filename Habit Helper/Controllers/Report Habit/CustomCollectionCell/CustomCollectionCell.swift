@@ -6,7 +6,9 @@ class CustomCollectionCell : UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     
     func setup() {
-        collectionView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
+		//TODO: - change cells registration to this everywhere
+		CalendarCell.registerFor(collectionView)
+       // collectionView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
     }
     
 }

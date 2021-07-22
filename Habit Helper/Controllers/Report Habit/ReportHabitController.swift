@@ -3,7 +3,9 @@ import UIKit
 
 class ReportHabitController: UIViewController {
     
-    var habits = AppData.user.habits
+	var habits: [Habit] {
+		AppData.user.habits
+	}
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var starsCountLabel: UILabel!
