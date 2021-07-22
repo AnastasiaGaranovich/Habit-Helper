@@ -13,7 +13,7 @@
         <scene sceneID="LAq-us-F25">
             <objects>
                 <navigationController id="8qh-yF-yUZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="009-checklist.p48id" selectedImage="009-checklist.p48id" id="3aj-TN-oNQ">
+                    <tabBarItem key="tabBarItem" title="" image="checklist" selectedImage="checklist" id="3aj-TN-oNQ">
                         <color key="badgeColor" name="text"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -208,7 +208,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="009-checklist.p48id" width="30" height="30"/>
+        <image name="checklist" width="32" height="32"/>
         <namedColor name="back">
             <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

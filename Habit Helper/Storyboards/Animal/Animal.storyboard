@@ -55,10 +55,11 @@
                         <viewLayoutGuide key="safeArea" id="lII-Kj-ZXq"/>
                         <color key="backgroundColor" name="back"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="009-parrot.Vg1jk" selectedImage="009-parrot.Vg1jk" id="DUw-Ac-9DR">
+                    <tabBarItem key="tabBarItem" title="" image="parrot_tab" selectedImage="parrot_tab" id="DUw-Ac-9DR">
                         <color key="badgeColor" name="text"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="ISI-YO-Ftw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="healthView" destination="nnG-W8-JHD" id="8im-Tg-SDD"/>
                         <outlet property="hungerView" destination="cC3-Vj-C8s" id="qgQ-dJ-3CZ"/>
@@ -71,8 +72,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="009-parrot.Vg1jk" width="30" height="30"/>
         <image name="parrot" width="291" height="346"/>
+        <image name="parrot_tab" width="32" height="32"/>
         <namedColor name="back">
             <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

@@ -82,7 +82,7 @@
                         <viewLayoutGuide key="safeArea" id="Omg-Yy-0DO"/>
                         <color key="backgroundColor" name="back"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="005-calendar.11A5w" selectedImage="005-calendar.11A5w" id="lJW-iJ-mWq">
+                    <tabBarItem key="tabBarItem" title="" image="calendar" selectedImage="calendar" id="lJW-iJ-mWq">
                         <color key="badgeColor" name="text"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -97,7 +97,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="005-calendar.11A5w" width="30" height="30"/>
+        <image name="calendar" width="32" height="32"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <namedColor name="back">
