@@ -235,6 +235,7 @@
 		1BB8D1872699A7A70039A747 /* Report Habit */ = {
 			isa = PBXGroup;
 			children = (
+				5D9D9CA1256166DF00F5FEC0 /* CustomCollectionCell */,
 				5D9D9CAC25616A5500F5FEC0 /* ReportHabitController.swift */,
 			);
 			path = "Report Habit";
@@ -367,7 +368,6 @@
 				5DDED53825DD97B80027E070 /* Controllers */,
 				5DDED53725DD978A0027E070 /* Delegates */,
 				5D77822325C9C661005B600B /* Model */,
-				5D9D9CA1256166DF00F5FEC0 /* CustomCollectionCell */,
 				5DDED53625DD97630027E070 /* Storyboards */,
 				5D7BC7BF254718D900184BB4 /* Info.plist */,
 				1B084583269F5CE800BE79F2 /* R.generated.swift */,
