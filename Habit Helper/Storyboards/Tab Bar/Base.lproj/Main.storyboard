@@ -11,7 +11,7 @@
         <scene sceneID="5tw-yB-Zec">
             <objects>
                 <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tzo-Ai-B6W" customClass="TabBarController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gMM-Xl-tes">
+                    <tabBar key="tabBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="gMM-Xl-tes">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="back"/>
