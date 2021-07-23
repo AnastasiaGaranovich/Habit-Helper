@@ -15,11 +15,7 @@ class HabitTrackerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = UIColor(named: "back")
-		
-		//TODO: - change cell registration to this everywhere
 		CustomTableCell.registerFor(tableView)
-		
-       // tableView.register(UINib(nibName: "CustomTableCell", bundle: nil), forCellReuseIdentifier: "CustomTableCell")
         setNavigation()
     }
     
@@ -31,6 +27,7 @@ extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		//TODO: Rswift for every cells
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as! CustomTableCell
         cell.progressConstraint.constant = 50
         cell.progressView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)

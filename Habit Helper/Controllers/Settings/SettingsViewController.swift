@@ -1,7 +1,6 @@
 import UIKit
 
 enum SelectedButtonTag: Int {
-    case HabitManager
     case AnimalSettings
     case Background
 }
@@ -10,7 +9,11 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func logOutButtonPressed(_ sender: UIButton) {
+	@IBAction func userInfoButtonPressed(_ sender: UIButton) {
+		let viewController = R.storyboard.userInfo.userInfoViewController()!
+		navigationController?.pushViewController( viewController, animated: true)
+	}
+	@IBAction func logOutButtonPressed(_ sender: UIButton) {
 		let viewController = R.storyboard.logIn.instantiateInitialViewController()
         view.window?.rootViewController = viewController
         view.window?.makeKeyAndVisible()
@@ -19,9 +22,6 @@ class SettingsViewController: UIViewController {
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
         switch tag {
-                case SelectedButtonTag.HabitManager.rawValue:
-                    let viewController = R.storyboard.settings.habitManager()!
-                    navigationController?.pushViewController( viewController, animated: true)
                 case SelectedButtonTag.AnimalSettings.rawValue:
                     let viewController = R.storyboard.settings.animalSettingsViewController()!
                     navigationController?.pushViewController( viewController, animated: true)
@@ -35,13 +35,19 @@ class SettingsViewController: UIViewController {
             }
     }
     
-    let items = ["Habit Manager", "Animal Settings", "Background"]
+    let items = ["Animal Settings", "Background"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "SettingsCell", bundle: nil), forCellReuseIdentifier: "SettingsCell")
+		tabBarController?.tabBar.isHidden = false
+		SettingsCell.registerFor(tableView)
         navigationItem.title = "Settings"
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		tabBarController?.tabBar.isHidden = false
+	}
     
 }
 
