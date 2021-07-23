@@ -40,7 +40,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		tabBarController?.tabBar.isHidden = false
-        tableView.register(UINib(nibName: "SettingsCell", bundle: nil), forCellReuseIdentifier: "SettingsCell")
+		SettingsCell.registerFor(tableView)
         navigationItem.title = "Settings"
     }
 	

@@ -13,9 +13,7 @@ class MonthCell : UICollectionViewCell {
 	}
 	
     func setup() {
-		//TODO: - change cells registration to this everywhere
 		DayCell.registerFor(collectionView)
-       // collectionView.register(UINib(nibName: "DayCell", bundle: nil), forCellWithReuseIdentifier: "DayCell")
     }
     
 }

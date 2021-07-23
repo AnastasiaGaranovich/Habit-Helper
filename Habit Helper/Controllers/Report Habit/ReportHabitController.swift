@@ -29,7 +29,7 @@ class ReportHabitController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		setDate()
-        collectionView.register(UINib(nibName: "MonthCell", bundle: nil), forCellWithReuseIdentifier: "MonthCell")
+		MonthCell.registerFor(collectionView)
         layoutCell()
     }
     
