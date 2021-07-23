@@ -2,25 +2,34 @@ import UIKit
 
 
 class ReportHabitController: UIViewController {
+	
+	private var date = Date() {
+		didSet {
+			setDate()
+			collectionView.reloadData()
+		}
+	}
     
-	var habits: [Habit] {
+	private var habits: [Habit] {
 		AppData.user.habits
 	}
     
-    @IBOutlet weak var collectionView: UICollectionView!
+	@IBOutlet weak var dateLabel: UILabel!
+	@IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var starsCountLabel: UILabel!
     
     @IBAction func previousDateButtonPressed(_ sender: UIButton) {
-        
+		date = date.monthAgo
     }
     
     @IBAction func nextDateButtonPressed(_ sender: UIButton) {
-        
+		date = date.nextMonth
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.register(UINib(nibName: "CustomCollectionCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionCell")
+		setDate()
+        collectionView.register(UINib(nibName: "MonthCell", bundle: nil), forCellWithReuseIdentifier: "MonthCell")
         layoutCell()
     }
     
@@ -38,6 +47,11 @@ class ReportHabitController: UIViewController {
         collectionView.reloadData()
     }
     
+	private func setDate() {
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "MMM yyyy"
+		dateLabel.text = dateFormatter.string(from: date)
+	}
 }
 
 extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -50,8 +64,9 @@ extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataS
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.customCollectionCell, for: indexPath)!
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.monthCell, for: indexPath)!
         cell.setCellBorderColor(color: "border")
+		cell.setDate(date)
         cell.setup()
         return cell
     }

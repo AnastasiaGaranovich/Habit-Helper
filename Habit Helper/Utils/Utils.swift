@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIViewController {
-    func setNavigation() {
+	func setNavigation() {
 		guard let nav = navigationController else {
 			fatalError("No navigation controller")
 		}
@@ -12,21 +12,21 @@ extension UIViewController {
 		nav.view.backgroundColor = .clear
 		nav.navigationBar.tintColor = UIColor(named: "buttons")
 		nav.navigationBar.topItem?.title = ""
-    }
+	}
 }
 
 extension UITextField {
-    func setTextFieldBorderColor() {
-        layer.borderWidth = 2.5
-        layer.borderColor = UIColor(named: "border")?.cgColor
-    }
+	func setTextFieldBorderColor() {
+		layer.borderWidth = 2.5
+		layer.borderColor = UIColor(named: "border")?.cgColor
+	}
 }
 
 extension UICollectionViewCell {
-    func setCellBorderColor(color: String) {
-        layer.borderColor = UIColor(named: color)?.cgColor
-        layer.borderWidth = 2.5
-    }
+	func setCellBorderColor(color: String) {
+		layer.borderColor = UIColor(named: color)?.cgColor
+		layer.borderWidth = 2.5
+	}
 }
 
 extension UIImage {
@@ -38,4 +38,22 @@ extension UIImage {
 		UIGraphicsEndImageContext()
 		return image!
 	}
+}
+
+extension Date {
+	
+	var monthAgo: Date {
+		Calendar.current.date(
+			byAdding: .month,
+			value: -1,
+			to: self)!
+	}
+	
+	var nextMonth: Date {
+		Calendar.current.date(
+			byAdding: .month,
+			value: +1,
+			to: self)!
+	}
+	
 }

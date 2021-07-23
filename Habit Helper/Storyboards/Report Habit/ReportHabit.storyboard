@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GId-8l-MKt">
-                                <rect key="frame" x="0.0" y="149" width="414" height="664"/>
+                                <rect key="frame" x="5" y="149" width="404" height="664"/>
                                 <color key="backgroundColor" name="back"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vos-U8-ar2">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Vos-U8-ar2">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -89,17 +89,17 @@
                         <color key="backgroundColor" name="back"/>
                         <constraints>
                             <constraint firstItem="uDc-PC-Ztu" firstAttribute="leading" secondItem="Omg-Yy-0DO" secondAttribute="leading" constant="5" id="17A-uS-HDi"/>
-                            <constraint firstItem="GId-8l-MKt" firstAttribute="trailing" secondItem="Omg-Yy-0DO" secondAttribute="trailing" id="7RX-c0-RtA"/>
                             <constraint firstItem="YRG-kT-7ce" firstAttribute="leading" secondItem="nmx-bP-Nbj" secondAttribute="trailing" constant="8" symbolic="YES" id="8d7-Ai-65F"/>
                             <constraint firstItem="gX8-39-Mkt" firstAttribute="centerX" secondItem="Zey-nb-TS4" secondAttribute="centerX" id="JTF-I8-0i3"/>
                             <constraint firstItem="gX8-39-Mkt" firstAttribute="leading" secondItem="YRG-kT-7ce" secondAttribute="trailing" constant="68" id="Jq1-TC-lhE"/>
+                            <constraint firstItem="Omg-Yy-0DO" firstAttribute="trailing" secondItem="GId-8l-MKt" secondAttribute="trailing" constant="5" id="Kae-fo-eEz"/>
                             <constraint firstItem="GId-8l-MKt" firstAttribute="top" secondItem="YRG-kT-7ce" secondAttribute="bottom" constant="40" id="M51-oN-ABs"/>
                             <constraint firstItem="GId-8l-MKt" firstAttribute="bottom" secondItem="Omg-Yy-0DO" secondAttribute="bottom" id="TYo-lB-Fab"/>
                             <constraint firstItem="nmx-bP-Nbj" firstAttribute="centerY" secondItem="YRG-kT-7ce" secondAttribute="centerY" id="aN4-K1-QV8"/>
                             <constraint firstItem="YRG-kT-7ce" firstAttribute="centerY" secondItem="gX8-39-Mkt" secondAttribute="centerY" id="d5x-Dx-MTH"/>
                             <constraint firstItem="uDc-PC-Ztu" firstAttribute="centerY" secondItem="nmx-bP-Nbj" secondAttribute="centerY" id="fsj-ks-MP0"/>
                             <constraint firstItem="y0L-ai-dd2" firstAttribute="leading" secondItem="gX8-39-Mkt" secondAttribute="trailing" constant="72" id="k5Y-4n-tJt"/>
-                            <constraint firstItem="GId-8l-MKt" firstAttribute="leading" secondItem="Omg-Yy-0DO" secondAttribute="leading" id="n7V-49-sSX"/>
+                            <constraint firstItem="GId-8l-MKt" firstAttribute="leading" secondItem="Omg-Yy-0DO" secondAttribute="leading" constant="5" id="n7V-49-sSX"/>
                             <constraint firstItem="y0L-ai-dd2" firstAttribute="centerY" secondItem="gX8-39-Mkt" secondAttribute="centerY" id="yVG-oE-r4i"/>
                             <constraint firstItem="gX8-39-Mkt" firstAttribute="top" secondItem="Omg-Yy-0DO" secondAttribute="top" constant="40" id="zuB-XF-L9c"/>
                         </constraints>
@@ -110,6 +110,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="GId-8l-MKt" id="ei9-ex-YE3"/>
+                        <outlet property="dateLabel" destination="gX8-39-Mkt" id="AXg-z0-fT7"/>
                         <outlet property="starsCountLabel" destination="uDc-PC-Ztu" id="icf-yS-5HP"/>
                     </connections>
                 </viewController>
