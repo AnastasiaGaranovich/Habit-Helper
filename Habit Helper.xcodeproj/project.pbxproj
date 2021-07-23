@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B084583269F5CE800BE79F2 /* R.generated.swift */; };
+		1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */; };
+		1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */; };
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* CalendarCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* CalendarCell.swift */; };
@@ -35,7 +37,6 @@
 		5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */; };
 		5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71CF162549A8FE002DCA76 /* SettingsCell.swift */; };
 		5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */; };
-		5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71CF262549BB94002DCA76 /* HabitManager.swift */; };
 		5D77821F25C9C1D5005B600B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77821E25C9C1D5005B600B /* Animal.swift */; };
 		5D77822525C9C684005B600B /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77822425C9C684005B600B /* Habit.swift */; };
 		5D77823225C9CC1F005B600B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77823125C9CC1F005B600B /* User.swift */; };
@@ -74,6 +75,8 @@
 
 /* Begin PBXFileReference section */
 		1B084583269F5CE800BE79F2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
+		1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
@@ -101,7 +104,6 @@
 		5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5D71CF162549A8FE002DCA76 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		5D71CF1B2549AD54002DCA76 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
-		5D71CF262549BB94002DCA76 /* HabitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitManager.swift; sourceTree = "<group>"; };
 		5D77821E25C9C1D5005B600B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		5D77822425C9C684005B600B /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		5D77823125C9CC1F005B600B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -155,6 +157,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5AF33A26AAABB50055F130 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		1B5AF33F26AAB0350055F130 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
 		1B8311B826138BC900BA01A6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				5D37C19625488287008C24EA /* Cell */,
-				5D71CF262549BB94002DCA76 /* HabitManager.swift */,
 				5D71CF112549A0AF002DCA76 /* SettingsViewController.swift */,
 				1B9D55AB26172746006E8A7A /* AnimalSettingsViewController.swift */,
 				1B9D55B02617277E006E8A7A /* BackgroundViewController.swift */,
@@ -409,6 +426,7 @@
 		5DDED53625DD97630027E070 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				1B5AF33A26AAABB50055F130 /* UserInfo */,
 				1BB8D1892699A7F70039A747 /* Create Animal */,
 				1BB8D1852699A7200039A747 /* Tab Bar */,
 				1BB8D1842699A6F20039A747 /* Create Habit */,
@@ -442,6 +460,7 @@
 				1BB8D1872699A7A70039A747 /* Report Habit */,
 				1BB8D1862699A76B0039A747 /* Settings */,
 				1BB8D1932699AA070039A747 /* TabBarController.swift */,
+				1B5AF33F26AAB0350055F130 /* UserInfo */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -574,6 +593,7 @@
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
 				1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */,
 				1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */,
+				1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */,
 				1BB8D18B2699A8190039A747 /* CreateAnimal.storyboard in Resources */,
 				1B8AE1352615C80C00E1B160 /* CalendarCell.xib in Resources */,
 				5D7BC7BB254718D900184BB4 /* Assets.xcassets in Resources */,
@@ -682,9 +702,9 @@
 				5D9D9CA8256168E900F5FEC0 /* CustomCollectionCell.swift in Sources */,
 				1B9D55B12617277E006E8A7A /* BackgroundViewController.swift in Sources */,
 				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,
+				1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
-				5D71CF272549BB94002DCA76 /* HabitManager.swift in Sources */,
 				1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,
