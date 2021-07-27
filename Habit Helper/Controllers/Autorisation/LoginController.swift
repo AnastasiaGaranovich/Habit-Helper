@@ -34,16 +34,15 @@ class LoginController: UIViewController {
             }
             AppData.user = user
             Log("izi")
-            Log(AppData.user.toJSONString())
-            //        Network.getHabits { habits, error in
-            //            if let error = error {
-            //                LogError(error)
-            //                Alert.error(error)
-            //                return
-            //            }
-            //            Log(AppData.user.habits.toJSONString())
-            //        }
-            self.openApp()
+            Network.getHabits { habits, error in
+                if let error = error {
+                    LogError(error)
+                    Alert.error(error)
+                    return
+                }
+                AppData.user.habits = habits
+                self.openApp()
+            }
         }
 
     }

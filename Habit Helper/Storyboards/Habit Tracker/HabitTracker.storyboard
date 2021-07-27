@@ -41,6 +41,11 @@
                                 <rect key="frame" x="0.0" y="178" width="414" height="684"/>
                                 <color key="backgroundColor" name="back"/>
                                 <color key="tintColor" name="back"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="CCl-8M-zjI">
+                                    <rect key="frame" x="0.0" y="92.500000346790671" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" name="back"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kKG-nT-AAS">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>

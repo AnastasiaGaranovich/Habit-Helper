@@ -9,25 +9,20 @@ enum HabitType {
 class Habit: Mappable {
     var time = Date()
     var dailyRepetitions = 0
+    var dailyRepetitionsDone = 0
     var habitName = ""
     var habitColor = UIColor.white
     var timeInterval = DateInterval()
     var habitType = HabitType.goodHabit
     
+    var progress: CGFloat {
+        return 1 - CGFloat(dailyRepetitionsDone) / CGFloat(dailyRepetitions)
+    }
+    
     init() {
         
     }
-    
-    convenience init(time: Date, habitName: String, dailyRepet: Int, habitColor: UIColor, timeInterval: DateInterval, habitType: HabitType) {
-        self.init()
-        self.time = time
-        self.habitName = habitName
-        self.dailyRepetitions = dailyRepet
-        self.habitColor = habitColor
-        self.timeInterval = timeInterval
-        self.habitType = habitType
-    }
-    
+
     required init?(map: Map) {
         
     }
@@ -35,14 +30,10 @@ class Habit: Mappable {
     func mapping(map: Map) {
         time <- map["time"]
         dailyRepetitions <- map["daily_repetitions"]
+        dailyRepetitionsDone <- map["daily_repetitions_done"]
         habitName <- map["name"]
         habitColor <- map["color"]
         timeInterval <- map["interval"]
         habitType <- map["type"]
-    }
-    
-    
-    func setDateInterval(dateStart: Date, dateEnd: Date) {
-        timeInterval = DateInterval(start: dateStart, end: dateEnd)
     }
 }
