@@ -45,10 +45,7 @@ class CreateHabitViewController: UIViewController {
     }
     
     @IBAction func completeButtonPressed(_ sender: UIButton) {
-        //TODO: - move to extension
-        let viewController = R.storyboard.main.tabBarController()!
-        view.window?.rootViewController = viewController
-        view.window?.makeKeyAndVisible()
+        jumpTo(R.storyboard.main.tabBarController()!)
     }
     
     override func viewDidLoad() {
@@ -99,7 +96,7 @@ private extension CreateHabitViewController {
     }
     
     func colorCellFor(_ indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = colorCollectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
+        let cell = colorCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.colorCell, for: indexPath)!
         cell.backgroundColor = colors[indexPath.row]
         return cell
     }
@@ -119,7 +116,7 @@ private extension CreateHabitViewController {
     }
     
     func iconCellFor(_ indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = iconCollectionView.dequeueReusableCell(withReuseIdentifier: "IconCell", for: indexPath) as! IconCell
+        let cell = iconCollectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.iconCell, for: indexPath)!
         cell.icon.image = icons[indexPath.row]
         return cell
     }

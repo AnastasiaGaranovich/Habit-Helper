@@ -103,6 +103,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="xwO-3S-dUQ" id="8BL-Wf-MeS"/>
+                        <outlet property="userNameLabel" destination="060-DT-TgJ" id="qw6-yU-SWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21T-co-uVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

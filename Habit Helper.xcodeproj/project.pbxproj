@@ -10,6 +10,7 @@
 		1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B084583269F5CE800BE79F2 /* R.generated.swift */; };
 		1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */; };
 		1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */; };
+		1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34126B00F2F0055F130 /* ColorCell.swift */; };
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* DayCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* DayCell.swift */; };
@@ -77,6 +78,7 @@
 		1B084583269F5CE800BE79F2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		1B5AF34126B00F2F0055F130 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				1BE3AA0F261B85D800A10CFA /* IconCell.swift */,
+				1B5AF34126B00F2F0055F130 /* ColorCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				1BD1D76D2614920C00789C59 /* Utils.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */,
+				1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,

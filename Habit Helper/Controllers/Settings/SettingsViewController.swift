@@ -6,29 +6,24 @@ enum SelectedButtonTag: Int {
 }
 
 class SettingsViewController: UIViewController {
-    
+        
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBAction func userInfoButtonPressed(_ sender: UIButton) {
-        let viewController = R.storyboard.userInfo.userInfoViewController()!
-        navigationController?.pushViewController( viewController, animated: true)
+        push(R.storyboard.userInfo.userInfoViewController()!)
     }
     @IBAction func logOutButtonPressed(_ sender: UIButton) {
-        let viewController = R.storyboard.logIn.instantiateInitialViewController()
-        view.window?.rootViewController = viewController
-        view.window?.makeKeyAndVisible()
+        jumpTo(R.storyboard.logIn.instantiateInitialViewController()!)
     }
     
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
         switch tag {
         case SelectedButtonTag.AnimalSettings.rawValue:
-            let viewController = R.storyboard.settings.animalSettingsViewController()!
-            navigationController?.pushViewController( viewController, animated: true)
+            push(R.storyboard.settings.animalSettingsViewController()!)
             print("do something when second button is tapped")
         case SelectedButtonTag.Background.rawValue:
-            let viewController = R.storyboard.settings.backgroundViewController()!
-            navigationController?.pushViewController( viewController, animated: true)
+            push(R.storyboard.settings.backgroundViewController()!)
             print("do something when third button is tapped")
         default:
             print("default")
@@ -41,7 +36,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         tabBarController?.tabBar.isHidden = false
         SettingsCell.registerFor(tableView)
-        navigationItem.title = "Settings"
+        userNameLabel.text = AppData.user.name
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +52,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource, Se
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as! SettingsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.settingsCell, for: indexPath)!
         cell.cellDelegate = self
         cell.cellButton.tag = indexPath.row
         cell.settingLabel.text = items[indexPath.row]

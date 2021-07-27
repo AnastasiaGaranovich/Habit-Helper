@@ -34,15 +34,21 @@ class LoginController: UIViewController {
             }
             AppData.user = user
             Log("izi")
-            Log(AppData.user.toJSONString())
-            self.openApp()
+            Network.getHabits { habits, error in
+                if let error = error {
+                    LogError(error)
+                    Alert.error(error)
+                    return
+                }
+                AppData.user.habits = habits
+                self.openApp()
+            }
         }
+
     }
     
     private func openApp() {
-		let viewController = R.storyboard.main.instantiateInitialViewController()
-        view.window?.rootViewController = viewController
-        view.window?.makeKeyAndVisible()
+        jumpTo(R.storyboard.main.instantiateInitialViewController()!)
     }
     
     @IBAction func forgotPassButtonPressed(_ sender: UIButton) {

@@ -2,14 +2,11 @@ import UIKit
 import iOSTools
 
 class HabitTrackerController: UIViewController {
-    var habits = AppData.user.habits
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
-        let viewController = R.storyboard.createHabits.createHabitViewController()!
-        navigationController?.pushViewController(viewController, animated: true)
+        push(R.storyboard.createHabits.createHabitViewController()!)
     }
     
     override func viewDidLoad() {
@@ -18,19 +15,18 @@ class HabitTrackerController: UIViewController {
         CustomTableCell.registerFor(tableView)
         setNavigation()
     }
-    
 }
 
 extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return AppData.user.habits.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //TODO: Rswift for every cells
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableCell", for: indexPath) as! CustomTableCell
-        cell.progressConstraint.constant = 50
-        cell.progressView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.customTableCell, for: indexPath)!
+        cell.progressConstraint.constant = AppData.user.habits[indexPath.row].progress * cell.width
+        cell.habitName.text = AppData.user.habits[indexPath.row].habitName
+        cell.progressView.backgroundColor = UIColor(named: "buttons")
         cell.borderWidth = 2.5
         cell.borderColor = UIColor(named: "back")!
         return cell
