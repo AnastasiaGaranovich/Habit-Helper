@@ -17,5 +17,7 @@ class UserInfoViewController: UIViewController {
         setNavigation()
         userNameTextField.setTextFieldBorderColor()
         emailTextField.setTextFieldBorderColor()
+        emailTextField.placeholder = AppData.user.email
+        userNameTextField.placeholder = AppData.user.name
     }
 }

@@ -6,9 +6,9 @@ enum SelectedButtonTag: Int {
 }
 
 class SettingsViewController: UIViewController {
-    
+        
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBAction func userInfoButtonPressed(_ sender: UIButton) {
         push(R.storyboard.userInfo.userInfoViewController()!)
     }
@@ -36,7 +36,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         tabBarController?.tabBar.isHidden = false
         SettingsCell.registerFor(tableView)
-        navigationItem.title = "Settings"
+        userNameLabel.text = AppData.user.name
     }
     
     override func viewWillAppear(_ animated: Bool) {
