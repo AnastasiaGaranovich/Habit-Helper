@@ -2,34 +2,34 @@ import UIKit
 
 
 class ReportHabitController: UIViewController {
-	
-	private var date = Date() {
-		didSet {
-			setDate()
-			collectionView.reloadData()
-		}
-	}
     
-	private var habits: [Habit] {
-		AppData.user.habits
-	}
+    private var date = Date() {
+        didSet {
+            setDate()
+            collectionView.reloadData()
+        }
+    }
     
-	@IBOutlet weak var dateLabel: UILabel!
-	@IBOutlet weak var collectionView: UICollectionView!
+    private var habits: [Habit] {
+        AppData.user.habits
+    }
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var starsCountLabel: UILabel!
     
     @IBAction func previousDateButtonPressed(_ sender: UIButton) {
-		date = date.monthAgo
+        date = date.monthAgo
     }
     
     @IBAction func nextDateButtonPressed(_ sender: UIButton) {
-		date = date.nextMonth
+        date = date.nextMonth
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		setDate()
-		MonthCell.registerFor(collectionView)
+        setDate()
+        MonthCell.registerFor(collectionView)
         layoutCell()
     }
     
@@ -47,16 +47,16 @@ class ReportHabitController: UIViewController {
         collectionView.reloadData()
     }
     
-	private func setDate() {
-		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = "MMM yyyy"
-		dateLabel.text = dateFormatter.string(from: date)
-	}
+    private func setDate() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM yyyy"
+        dateLabel.text = dateFormatter.string(from: date)
+    }
 }
 
 extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
-                                 numberOfItemsInSection section: Int) -> Int {
+                        numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
@@ -66,7 +66,7 @@ extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataS
     ) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.monthCell, for: indexPath)!
         cell.setCellBorderColor(color: "border")
-		cell.setDate(date)
+        cell.setDate(date)
         cell.setup()
         return cell
     }

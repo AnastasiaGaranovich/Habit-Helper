@@ -1,6 +1,6 @@
 import UIKit
 
-protocol SettingsCellDelegate : class {
+protocol SettingsCellDelegate : AnyObject {
     func didPressButton(_ tag: Int)
 }
 
