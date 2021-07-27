@@ -9,8 +9,7 @@ class CreateAnimalViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        let viewController = R.storyboard.createHabits.createHabitViewController()!
-        navigationController?.pushViewController(viewController, animated: true)
+        push(R.storyboard.createHabits.createHabitViewController()!)
     }
     
     override func viewDidLoad() {

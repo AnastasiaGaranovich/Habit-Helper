@@ -15,8 +15,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        let viewController = R.storyboard.registration.createAccountViewController()!
-        navigationController?.pushViewController(viewController, animated: true)
+        push(R.storyboard.registration.createAccountViewController()!)
     }
     
     override func viewDidLoad() {

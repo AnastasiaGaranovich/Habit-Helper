@@ -40,9 +40,7 @@ class LoginController: UIViewController {
     }
     
     private func openApp() {
-		let viewController = R.storyboard.main.instantiateInitialViewController()
-        view.window?.rootViewController = viewController
-        view.window?.makeKeyAndVisible()
+        jumpTo(R.storyboard.main.instantiateInitialViewController()!)
     }
     
     @IBAction func forgotPassButtonPressed(_ sender: UIButton) {

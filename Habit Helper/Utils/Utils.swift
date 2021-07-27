@@ -13,6 +13,11 @@ extension UIViewController {
         nav.navigationBar.tintColor = UIColor(named: "buttons")
         nav.navigationBar.topItem?.title = ""
     }
+    
+    func jumpTo(_ viewController: UIViewController) {
+        view.window?.rootViewController = viewController
+        view.window?.makeKeyAndVisible()
+    }
 }
 
 extension UITextField {
