@@ -79,6 +79,8 @@
 		1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		1B5AF34126B00F2F0055F130 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		1B5AF34326B196B20055F130 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -333,6 +335,8 @@
 		1BB8D1912699A9240039A747 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */,
+				1B5AF34326B196B20055F130 /* Nunito-ExtraLight.ttf */,
 				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
 			);
 			path = Resourses;
