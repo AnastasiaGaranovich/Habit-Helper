@@ -37,3 +37,9 @@ class Habit: Mappable {
         habitType <- map["type"]
     }
 }
+
+extension Array where Element: Habit {
+    var averageProgress: CGFloat {
+        return map { $0.progress }.reduce(0, +) / CGFloat(count)
+    }
+}

@@ -36,6 +36,13 @@ class CreateHabitViewController: UIViewController {
     @IBOutlet weak var colorCollectionView: UICollectionView!
     @IBOutlet weak var iconCollectionView: UICollectionView!
     
+    var popOnComplete = false
+    
+    func setPopOnComplete() -> Self {
+        popOnComplete = true
+        return self
+    }
+    
     @IBAction func habitStartDate(_ sender: UIDatePicker) {
         
     }
@@ -45,11 +52,17 @@ class CreateHabitViewController: UIViewController {
     }
     
     @IBAction func completeButtonPressed(_ sender: UIButton) {
-        jumpTo(R.storyboard.main.tabBarController()!)
+        if popOnComplete {
+            pop()
+        }
+        else {
+            jumpTo(R.storyboard.main.tabBarController()!)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBarController?.tabBar.isHidden = true
         setNavigation()
         habitNameTextField.setTextFieldBorderColor()
         goalsTextField.setTextFieldBorderColor()

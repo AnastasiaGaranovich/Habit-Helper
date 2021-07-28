@@ -3,18 +3,51 @@ import iOSTools
 
 class HabitTrackerController: UIViewController {
     
+    private var date = Date() {
+        didSet {
+            setDate()
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var daysProgressView: [UIView]!
+    @IBOutlet var daysLabels: [UILabel]!
+    
     
     @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
-        push(R.storyboard.createHabits.createHabitViewController()!)
+        push(R.storyboard.createHabits.createHabitViewController()!.setPopOnComplete())
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor(named: "back")
+        setDate()
         CustomTableCell.registerFor(tableView)
         setNavigation()
+        tabBarController?.tabBar.isHidden = false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
+    private func setDate() {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd EE"
+        
+        for i in 0...daysLabels.count - 1 {
+            let label = daysLabels[i]
+            let view = daysProgressView[i]
+            label.text = dateFormatter.string(from: date.dayShift(i - 3))
+            view.backgroundColor = UIColor(named: "border")?.withAlphaComponent(AppData.user.habits.averageProgress)
+        }
+    }
+    
+    private var numberOfDaysInMonth: Int {
+        return Calendar.current.range(of: .day, in: .month, for: self.date)!.count
+    }
+    
 }
 
 extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
