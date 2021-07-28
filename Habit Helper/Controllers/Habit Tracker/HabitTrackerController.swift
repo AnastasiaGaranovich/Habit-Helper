@@ -38,13 +38,16 @@ class HabitTrackerController: UIViewController {
         
         for i in 0...daysLabels.count - 1 {
             let label = daysLabels[i]
+            let view = daysProgressView[i]
             label.text = dateFormatter.string(from: date.dayShift(i - 3))
+            view.backgroundColor = UIColor(named: "border")?.withAlphaComponent(AppData.user.habits.averageProgress)
         }
     }
     
     private var numberOfDaysInMonth: Int {
         return Calendar.current.range(of: .day, in: .month, for: self.date)!.count
     }
+    
 }
 
 extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
