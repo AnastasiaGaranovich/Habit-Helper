@@ -7,6 +7,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-ExtraLight.ttf">
+            <string>Nunito-ExtraLight</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign Up View Controller-->
         <scene sceneID="5gU-r1-tDz">
@@ -16,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-2g-a3G">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-2g-a3G">
                                 <rect key="frame" x="29.5" y="328" width="355" height="50"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
@@ -24,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="50" id="LoQ-Zn-nKy"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -35,7 +43,7 @@
                                     <action selector="emailValueChanged:" destination="SIg-8I-e9A" eventType="editingChanged" id="YDf-NT-14z"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-Gy-LwK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-Gy-LwK">
                                 <rect key="frame" x="29.5" y="418" width="355" height="50"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
@@ -43,7 +51,7 @@
                                     <constraint firstAttribute="height" constant="50" id="yaE-pb-bqi"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -61,7 +69,7 @@
                                     <constraint firstAttribute="height" constant="60" id="0TW-Qi-Tb0"/>
                                     <constraint firstAttribute="width" constant="374" id="xEK-8q-uFe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -124,14 +132,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-M7-FZ7">
-                                <rect key="frame" x="29.5" y="202" width="355" height="50"/>
+                                <rect key="frame" x="29.5" y="205.5" width="355" height="50"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JCY-72-uQb"/>
                                     <constraint firstAttribute="width" constant="355" id="v4i-jp-s2e"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -143,13 +151,13 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kM-PR-Zbn">
-                                <rect key="frame" x="20" y="575" width="374" height="60"/>
+                                <rect key="frame" x="20" y="578.5" width="374" height="60"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="GEs-gP-nh7"/>
                                     <constraint firstAttribute="height" constant="60" id="KZn-ov-cHg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -163,7 +171,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="5DA-By-PJy">
-                                <rect key="frame" x="57" y="382" width="300" height="31"/>
+                                <rect key="frame" x="57" y="385.5" width="300" height="31"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3zZ-5V-CcN"/>
@@ -176,14 +184,14 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-S5-Skf">
-                                <rect key="frame" x="29.5" y="292" width="355" height="50"/>
+                                <rect key="frame" x="29.5" y="295.5" width="355" height="50"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="ISz-v4-AAZ"/>
                                     <constraint firstAttribute="height" constant="50" id="MYa-Il-tis"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -195,19 +203,19 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-pY-xTj">
-                                <rect key="frame" x="131" y="108" width="152.5" height="24"/>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <rect key="frame" x="138" y="108" width="138" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyY-Ye-1cd">
-                                <rect key="frame" x="32" y="452" width="73" height="16"/>
-                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="17"/>
+                                <rect key="frame" x="32" y="455.5" width="69.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="3uP-af-PHx">
-                                <rect key="frame" x="154.5" y="435" width="105" height="50"/>
+                                <rect key="frame" x="154.5" y="438.5" width="105" height="50"/>
                                 <color key="backgroundColor" name="back"/>
                                 <color key="tintColor" name="text"/>
                                 <constraints>
