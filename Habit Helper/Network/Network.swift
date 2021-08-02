@@ -26,7 +26,7 @@ class Network {
             case let .success(habits):
                 completion(habits, nil)
             case let .failure(error):
-                completion([Habit](), error.localizedDescription)
+                completion([], error.localizedDescription)
             }
         }
     }

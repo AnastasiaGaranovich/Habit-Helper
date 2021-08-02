@@ -17,6 +17,9 @@ class HabitTrackerController: UIViewController {
     @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
         push(R.storyboard.createHabits.createHabitViewController()!.setPopOnComplete())
     }
+    @IBAction func dayButtonPressed(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
