@@ -5,13 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Nunito-Regular.ttf">
-            <string>Nunito-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="LAq-us-F25">
@@ -66,293 +62,45 @@
                                     <outlet property="delegate" destination="M5R-0g-Eio" id="wdZ-Fg-2Y8"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsK-iW-tUF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="70"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCh-wU-Ppt">
-                                        <rect key="frame" x="75" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYT-wO-VcQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="IvZ-4k-1Zh"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-ll-ege">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="d0X-hg-ljj"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstItem="HYT-wO-VcQ" firstAttribute="leading" secondItem="dCh-wU-Ppt" secondAttribute="leading" id="31V-hk-7Oy"/>
-                                            <constraint firstAttribute="trailing" secondItem="HYT-wO-VcQ" secondAttribute="trailing" id="BKi-vJ-fLb"/>
-                                            <constraint firstItem="3lL-ll-ege" firstAttribute="centerY" secondItem="dCh-wU-Ppt" secondAttribute="centerY" id="CGT-Oc-ldX"/>
-                                            <constraint firstItem="HYT-wO-VcQ" firstAttribute="top" secondItem="dCh-wU-Ppt" secondAttribute="top" id="Omi-Vm-aIn"/>
-                                            <constraint firstAttribute="bottom" secondItem="HYT-wO-VcQ" secondAttribute="bottom" id="nRZ-ib-1Ba"/>
-                                            <constraint firstAttribute="width" constant="45" id="nxU-hS-Ek0"/>
-                                            <constraint firstAttribute="height" constant="45" id="syW-zF-dYi"/>
-                                            <constraint firstItem="3lL-ll-ege" firstAttribute="centerX" secondItem="dCh-wU-Ppt" secondAttribute="centerX" id="w4c-dR-U7c"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLw-5d-WTf">
-                                        <rect key="frame" x="185" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="112-cJ-evX">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="0g2-pz-BXu"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-Af-YWz">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="aBt-27-oVB"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstItem="112-cJ-evX" firstAttribute="top" secondItem="ZLw-5d-WTf" secondAttribute="top" id="1VR-GF-hHG"/>
-                                            <constraint firstItem="hdT-Af-YWz" firstAttribute="centerY" secondItem="ZLw-5d-WTf" secondAttribute="centerY" id="5Zu-wW-EE4"/>
-                                            <constraint firstAttribute="trailing" secondItem="112-cJ-evX" secondAttribute="trailing" id="5zP-uQ-iuO"/>
-                                            <constraint firstItem="hdT-Af-YWz" firstAttribute="centerX" secondItem="ZLw-5d-WTf" secondAttribute="centerX" id="8OK-u0-dUA"/>
-                                            <constraint firstAttribute="bottom" secondItem="112-cJ-evX" secondAttribute="bottom" id="a8W-eC-1gV"/>
-                                            <constraint firstItem="112-cJ-evX" firstAttribute="leading" secondItem="ZLw-5d-WTf" secondAttribute="leading" id="aWO-E4-eqy"/>
-                                            <constraint firstAttribute="width" constant="45" id="db0-jQ-YpD"/>
-                                            <constraint firstAttribute="height" constant="45" id="zru-0Z-Vi0"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZO-3w-HWn">
-                                        <rect key="frame" x="295" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idY-Qz-c0j">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="IkO-Tp-5y3"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-Pi-jIQ">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="MCg-ns-OQl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstItem="bhi-Pi-jIQ" firstAttribute="centerY" secondItem="QZO-3w-HWn" secondAttribute="centerY" id="2oa-WK-E2U"/>
-                                            <constraint firstAttribute="bottom" secondItem="idY-Qz-c0j" secondAttribute="bottom" id="6wF-8j-jcE"/>
-                                            <constraint firstAttribute="height" constant="45" id="7T5-Mt-faB"/>
-                                            <constraint firstAttribute="width" constant="45" id="Chg-Fa-NgN"/>
-                                            <constraint firstAttribute="trailing" secondItem="idY-Qz-c0j" secondAttribute="trailing" id="OO6-tA-gM4"/>
-                                            <constraint firstItem="bhi-Pi-jIQ" firstAttribute="centerX" secondItem="QZO-3w-HWn" secondAttribute="centerX" id="QWe-El-a9A"/>
-                                            <constraint firstItem="idY-Qz-c0j" firstAttribute="top" secondItem="QZO-3w-HWn" secondAttribute="top" id="hKY-HJ-OUF"/>
-                                            <constraint firstItem="idY-Qz-c0j" firstAttribute="leading" secondItem="QZO-3w-HWn" secondAttribute="leading" id="xGh-WF-pZN"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZ4-Oc-lOo">
-                                        <rect key="frame" x="20" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyz-kj-ttD">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="IOO-kZ-1NV"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-2m-Iiu">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="rJl-hQ-5Km"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="Jp6-Wi-5fK"/>
-                                            <constraint firstItem="ytD-2m-Iiu" firstAttribute="centerY" secondItem="sZ4-Oc-lOo" secondAttribute="centerY" id="Szy-wQ-dzX"/>
-                                            <constraint firstItem="oyz-kj-ttD" firstAttribute="top" secondItem="sZ4-Oc-lOo" secondAttribute="top" id="Xzq-cW-R8x"/>
-                                            <constraint firstItem="ytD-2m-Iiu" firstAttribute="centerX" secondItem="sZ4-Oc-lOo" secondAttribute="centerX" id="ZUD-7x-UPT"/>
-                                            <constraint firstAttribute="trailing" secondItem="oyz-kj-ttD" secondAttribute="trailing" id="dwj-Fq-J50"/>
-                                            <constraint firstItem="oyz-kj-ttD" firstAttribute="leading" secondItem="sZ4-Oc-lOo" secondAttribute="leading" id="ggk-ai-UBG"/>
-                                            <constraint firstAttribute="width" constant="45" id="pKq-fJ-Ayv"/>
-                                            <constraint firstAttribute="bottom" secondItem="oyz-kj-ttD" secondAttribute="bottom" id="xll-WX-E11"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mH4-Af-0xa">
-                                        <rect key="frame" x="240" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayh-za-Smc">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="5Dd-ju-Ygc"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtN-oM-ZgF">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="nP8-z8-zne"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="6h4-Bl-knL"/>
-                                            <constraint firstAttribute="width" constant="45" id="9HB-wZ-0wd"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ayh-za-Smc" secondAttribute="bottom" id="CuM-4P-tde"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ayh-za-Smc" secondAttribute="trailing" id="LvW-Mw-6qK"/>
-                                            <constraint firstItem="Ayh-za-Smc" firstAttribute="top" secondItem="mH4-Af-0xa" secondAttribute="top" id="MUI-HU-un5"/>
-                                            <constraint firstItem="mtN-oM-ZgF" firstAttribute="centerY" secondItem="mH4-Af-0xa" secondAttribute="centerY" id="Omh-rm-MPv"/>
-                                            <constraint firstItem="mtN-oM-ZgF" firstAttribute="centerX" secondItem="mH4-Af-0xa" secondAttribute="centerX" id="daX-MY-A8A"/>
-                                            <constraint firstItem="Ayh-za-Smc" firstAttribute="leading" secondItem="mH4-Af-0xa" secondAttribute="leading" id="uSJ-8s-ljW"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgG-W0-yhg">
-                                        <rect key="frame" x="130" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzM-c3-h6y">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="Ydi-8t-wWw"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bt-5L-la5">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="nu2-G9-CJC"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="5Tj-kw-pOJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="zzM-c3-h6y" secondAttribute="bottom" id="F3f-yl-QQr"/>
-                                            <constraint firstItem="zzM-c3-h6y" firstAttribute="top" secondItem="CgG-W0-yhg" secondAttribute="top" id="OS9-Wi-Koq"/>
-                                            <constraint firstItem="zzM-c3-h6y" firstAttribute="leading" secondItem="CgG-W0-yhg" secondAttribute="leading" id="T7j-Hz-q4d"/>
-                                            <constraint firstAttribute="trailing" secondItem="zzM-c3-h6y" secondAttribute="trailing" id="d0N-Cf-Ls5"/>
-                                            <constraint firstAttribute="height" constant="45" id="mb9-kA-SMC"/>
-                                            <constraint firstItem="2bt-5L-la5" firstAttribute="centerX" secondItem="CgG-W0-yhg" secondAttribute="centerX" id="tNm-tX-ArZ"/>
-                                            <constraint firstItem="2bt-5L-la5" firstAttribute="centerY" secondItem="CgG-W0-yhg" secondAttribute="centerY" id="yz2-B8-b1f"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nB-Vk-xEH">
-                                        <rect key="frame" x="350" y="12.5" width="45" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xJ-L1-GJ5">
-                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                                <connections>
-                                                    <action selector="dayButtonPressed:" destination="M5R-0g-Eio" eventType="touchUpInside" id="qUg-mA-QGZ"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfs-Xr-1L0">
-                                                <rect key="frame" x="9" y="15.5" width="27" height="14"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="27" id="waw-ot-ocW"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="border"/>
-                                        <constraints>
-                                            <constraint firstItem="kfs-Xr-1L0" firstAttribute="centerX" secondItem="8nB-Vk-xEH" secondAttribute="centerX" id="7Vi-li-1Pp"/>
-                                            <constraint firstItem="3xJ-L1-GJ5" firstAttribute="leading" secondItem="8nB-Vk-xEH" secondAttribute="leading" id="CHA-Zl-0tg"/>
-                                            <constraint firstAttribute="trailing" secondItem="3xJ-L1-GJ5" secondAttribute="trailing" id="DEl-RL-El8"/>
-                                            <constraint firstItem="3xJ-L1-GJ5" firstAttribute="top" secondItem="8nB-Vk-xEH" secondAttribute="top" id="FPX-86-juE"/>
-                                            <constraint firstAttribute="height" constant="45" id="LYg-kF-gJw"/>
-                                            <constraint firstItem="kfs-Xr-1L0" firstAttribute="centerY" secondItem="8nB-Vk-xEH" secondAttribute="centerY" id="SJ8-mN-n0a"/>
-                                            <constraint firstAttribute="bottom" secondItem="3xJ-L1-GJ5" secondAttribute="bottom" id="gao-0K-0ej"/>
-                                            <constraint firstAttribute="width" constant="45" id="gvB-35-ahe"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="22"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rhK-su-NPo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="80"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="6Gc-vZ-KhX"/>
-                                    <constraint firstItem="QZO-3w-HWn" firstAttribute="leading" secondItem="mH4-Af-0xa" secondAttribute="trailing" constant="10" id="HkL-Wd-xUV"/>
-                                    <constraint firstItem="mH4-Af-0xa" firstAttribute="leading" secondItem="ZLw-5d-WTf" secondAttribute="trailing" constant="10" id="XlU-Ls-JXb"/>
-                                    <constraint firstItem="QZO-3w-HWn" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="aEm-KL-Zbu"/>
-                                    <constraint firstItem="CgG-W0-yhg" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="dDg-D8-fIh"/>
-                                    <constraint firstItem="sZ4-Oc-lOo" firstAttribute="leading" secondItem="DsK-iW-tUF" secondAttribute="leading" constant="20" id="dXO-tm-oIX"/>
-                                    <constraint firstItem="mH4-Af-0xa" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="eH4-Lu-93U"/>
-                                    <constraint firstItem="dCh-wU-Ppt" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="k2j-M3-py8"/>
-                                    <constraint firstItem="ZLw-5d-WTf" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="l6s-qE-X9A"/>
-                                    <constraint firstItem="8nB-Vk-xEH" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="mWC-wz-F73"/>
-                                    <constraint firstItem="CgG-W0-yhg" firstAttribute="leading" secondItem="dCh-wU-Ppt" secondAttribute="trailing" constant="10" id="mae-Vc-JhH"/>
-                                    <constraint firstItem="sZ4-Oc-lOo" firstAttribute="centerY" secondItem="DsK-iW-tUF" secondAttribute="centerY" id="nSY-xw-6RO"/>
-                                    <constraint firstItem="8nB-Vk-xEH" firstAttribute="leading" secondItem="QZO-3w-HWn" secondAttribute="trailing" constant="10" id="qDe-bo-E8q"/>
-                                    <constraint firstItem="ZLw-5d-WTf" firstAttribute="leading" secondItem="CgG-W0-yhg" secondAttribute="trailing" constant="10" id="rVq-bD-SNT"/>
-                                    <constraint firstItem="dCh-wU-Ppt" firstAttribute="leading" secondItem="sZ4-Oc-lOo" secondAttribute="trailing" constant="10" id="xWM-X0-hXs"/>
+                                    <constraint firstAttribute="height" constant="80" id="UnQ-EH-tdt"/>
                                 </constraints>
-                            </view>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gzu-7F-A0Q">
+                                    <size key="itemSize" width="50" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hLs-Hw-XwR">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WU1-qj-YN5">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="M5R-0g-Eio" id="MVn-tf-VMY"/>
+                                    <outlet property="delegate" destination="M5R-0g-Eio" id="D0a-0h-Mzf"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PJW-kx-YMf"/>
                         <color key="backgroundColor" name="back"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="swi-Q9-3jj" firstAttribute="top" secondItem="DsK-iW-tUF" secondAttribute="bottom" constant="20" id="3lr-2C-A3E"/>
+                            <constraint firstItem="rhK-su-NPo" firstAttribute="leading" secondItem="PJW-kx-YMf" secondAttribute="leading" id="331-bB-Shx"/>
                             <constraint firstItem="swi-Q9-3jj" firstAttribute="leading" secondItem="PJW-kx-YMf" secondAttribute="leading" id="4N4-4O-vUa"/>
-                            <constraint firstItem="DsK-iW-tUF" firstAttribute="top" secondItem="PJW-kx-YMf" secondAttribute="top" id="HHg-X1-bYv"/>
+                            <constraint firstItem="rhK-su-NPo" firstAttribute="trailing" secondItem="PJW-kx-YMf" secondAttribute="trailing" id="Q4E-Rh-beg"/>
+                            <constraint firstItem="rhK-su-NPo" firstAttribute="top" secondItem="PJW-kx-YMf" secondAttribute="top" id="UV1-63-K9T"/>
                             <constraint firstItem="swi-Q9-3jj" firstAttribute="trailing" secondItem="PJW-kx-YMf" secondAttribute="trailing" id="k39-hT-7I2"/>
-                            <constraint firstItem="DsK-iW-tUF" firstAttribute="leading" secondItem="PJW-kx-YMf" secondAttribute="leading" id="kyH-KT-UlX"/>
+                            <constraint firstItem="swi-Q9-3jj" firstAttribute="top" secondItem="rhK-su-NPo" secondAttribute="bottom" constant="10" id="rh7-nc-llq"/>
                             <constraint firstItem="PJW-kx-YMf" firstAttribute="bottom" secondItem="swi-Q9-3jj" secondAttribute="bottom" id="uVk-Bu-IW1"/>
-                            <constraint firstItem="DsK-iW-tUF" firstAttribute="trailing" secondItem="PJW-kx-YMf" secondAttribute="trailing" id="xYO-Ux-21g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q45-zF-WoB">
@@ -365,21 +113,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="collectionView" destination="rhK-su-NPo" id="PCt-Uk-EcB"/>
                         <outlet property="tableView" destination="swi-Q9-3jj" id="kfp-3O-rz5"/>
-                        <outletCollection property="daysProgressView" destination="sZ4-Oc-lOo" collectionClass="NSMutableArray" id="3QV-hf-LX4"/>
-                        <outletCollection property="daysProgressView" destination="dCh-wU-Ppt" collectionClass="NSMutableArray" id="ti1-3X-wH5"/>
-                        <outletCollection property="daysProgressView" destination="CgG-W0-yhg" collectionClass="NSMutableArray" id="CQ6-v6-TUX"/>
-                        <outletCollection property="daysProgressView" destination="ZLw-5d-WTf" collectionClass="NSMutableArray" id="vzs-p5-k5r"/>
-                        <outletCollection property="daysProgressView" destination="mH4-Af-0xa" collectionClass="NSMutableArray" id="qMZ-o5-TwF"/>
-                        <outletCollection property="daysProgressView" destination="QZO-3w-HWn" collectionClass="NSMutableArray" id="xeL-0Z-rVc"/>
-                        <outletCollection property="daysProgressView" destination="8nB-Vk-xEH" collectionClass="NSMutableArray" id="V4a-tu-HdQ"/>
-                        <outletCollection property="daysLabels" destination="ytD-2m-Iiu" collectionClass="NSMutableArray" id="EIe-3E-7gu"/>
-                        <outletCollection property="daysLabels" destination="3lL-ll-ege" collectionClass="NSMutableArray" id="Atp-kD-lxs"/>
-                        <outletCollection property="daysLabels" destination="2bt-5L-la5" collectionClass="NSMutableArray" id="stZ-iM-EHq"/>
-                        <outletCollection property="daysLabels" destination="hdT-Af-YWz" collectionClass="NSMutableArray" id="SD5-Un-h3k"/>
-                        <outletCollection property="daysLabels" destination="mtN-oM-ZgF" collectionClass="NSMutableArray" id="5R6-10-SSp"/>
-                        <outletCollection property="daysLabels" destination="bhi-Pi-jIQ" collectionClass="NSMutableArray" id="33m-29-bK9"/>
-                        <outletCollection property="daysLabels" destination="kfs-Xr-1L0" collectionClass="NSMutableArray" id="j7H-ww-bm5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YrN-6r-ue4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -391,9 +126,6 @@
         <image name="checklist" width="32" height="32"/>
         <namedColor name="back">
             <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="border">
-            <color red="0.88235294117647056" green="0.94117647058823528" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttons">
             <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

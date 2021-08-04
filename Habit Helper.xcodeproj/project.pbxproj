@@ -11,6 +11,8 @@
 		1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */; };
 		1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */; };
 		1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34126B00F2F0055F130 /* ColorCell.swift */; };
+		1B5AF34626BAA6460055F130 /* HabitTrackerDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */; };
+		1B5AF34826BAA9F40055F130 /* HabitTrackerDaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */; };
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* DayCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* DayCell.swift */; };
@@ -81,6 +83,8 @@
 		1B5AF34126B00F2F0055F130 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		1B5AF34326B196B20055F130 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
 		1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTrackerDaysCell.xib; sourceTree = "<group>"; };
+		1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerDaysCell.swift; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 			children = (
 				5D2DDFE72548565000EEC0BC /* CustomTableCell.xib */,
 				5D2DDFE22548532200EEC0BC /* CustomTableCell.swift */,
+				1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */,
+				1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -607,6 +613,7 @@
 				5D9D9CA32561674300F5FEC0 /* MonthCell.xib in Resources */,
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
 				1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */,
+				1B5AF34626BAA6460055F130 /* HabitTrackerDaysCell.xib in Resources */,
 				1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */,
 				1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */,
 				1BB8D18B2699A8190039A747 /* CreateAnimal.storyboard in Resources */,
@@ -711,6 +718,7 @@
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */,
 				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
+				1B5AF34826BAA9F40055F130 /* HabitTrackerDaysCell.swift in Sources */,
 				1B8311BA26138C0500BA01A6 /* Network.swift in Sources */,
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */,
