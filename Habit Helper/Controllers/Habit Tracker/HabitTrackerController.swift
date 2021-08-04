@@ -9,22 +9,20 @@ class HabitTrackerController: UIViewController {
         }
     }
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet var daysProgressView: [UIView]!
-    @IBOutlet var daysLabels: [UILabel]!
+    private var displayedDates = [Date]()
     
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
         push(R.storyboard.createHabits.createHabitViewController()!.setPopOnComplete())
-    }
-    @IBAction func dayButtonPressed(_ sender: UIButton) {
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setDate()
         CustomTableCell.registerFor(tableView)
+        HabitTrackerDaysCell.registerFor(collectionView)
         setNavigation()
         tabBarController?.tabBar.isHidden = false
     }
@@ -35,22 +33,39 @@ class HabitTrackerController: UIViewController {
     }
     
     private func setDate() {
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd EE"
-        
-        for i in 0...daysLabels.count - 1 {
-            let label = daysLabels[i]
-            let view = daysProgressView[i]
-            label.text = dateFormatter.string(from: date.dayShift(i - 3))
-            view.backgroundColor = UIColor(named: "border")?.withAlphaComponent(AppData.user.habits.averageProgress)
+        displayedDates.removeAll()
+        for i in 0...7 {
+            displayedDates.append(date.dayShift(i - 3))
         }
+        collectionView.reloadData()
     }
     
     private var numberOfDaysInMonth: Int {
         return Calendar.current.range(of: .day, in: .month, for: self.date)!.count
     }
     
+}
+
+extension HabitTrackerController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return displayedDates.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.habitTrackerDaysCell, for: indexPath)!
+        cell.setDate(date: displayedDates[indexPath.row])
+        if indexPath.row == 3 {
+            cell.selectedDayView.isHidden = false
+        }
+        else {
+            cell.selectedDayView.isHidden = true
+        }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
 }
 
 extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {

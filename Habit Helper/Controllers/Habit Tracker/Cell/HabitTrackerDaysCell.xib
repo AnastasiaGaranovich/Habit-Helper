@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HabitTrackerDaysCell" reuseIdentifier="HabitTrackerDaysCell" id="QSI-Cs-HsB" customClass="HabitTrackerDaysCell" customModule="Habit_Helper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Q3F-tP-AYj">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3d-IY-6MV">
+                        <rect key="frame" x="17.5" y="17.5" width="45" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SH-MI-3aY">
+                                <rect key="frame" x="11" y="9" width="23" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="gmf-eu-awd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="border"/>
+                        <constraints>
+                            <constraint firstItem="1SH-MI-3aY" firstAttribute="centerX" secondItem="E3d-IY-6MV" secondAttribute="centerX" id="9Cz-E0-R5x"/>
+                            <constraint firstAttribute="width" constant="45" id="9v5-c8-lgS"/>
+                            <constraint firstAttribute="height" constant="45" id="fCI-aE-Xpl"/>
+                            <constraint firstItem="1SH-MI-3aY" firstAttribute="centerY" secondItem="E3d-IY-6MV" secondAttribute="centerY" id="pcF-jy-0yj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLO-gL-ttb">
+                        <rect key="frame" x="37.5" y="67.5" width="5" height="5"/>
+                        <color key="backgroundColor" name="border"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="Js7-6c-ryV"/>
+                            <constraint firstAttribute="width" constant="5" id="ZmE-Or-uHL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E3d-IY-6MV" firstAttribute="centerX" secondItem="Q3F-tP-AYj" secondAttribute="centerX" id="6nU-1R-rsn"/>
+                    <constraint firstItem="eLO-gL-ttb" firstAttribute="top" secondItem="E3d-IY-6MV" secondAttribute="bottom" constant="5" id="8DA-Un-czp"/>
+                    <constraint firstItem="eLO-gL-ttb" firstAttribute="centerX" secondItem="Q3F-tP-AYj" secondAttribute="centerX" id="abI-T5-BOV"/>
+                    <constraint firstItem="E3d-IY-6MV" firstAttribute="centerY" secondItem="Q3F-tP-AYj" secondAttribute="centerY" id="ugF-nn-DUC"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" name="back"/>
+            <size key="customSize" width="274" height="243"/>
+            <connections>
+                <outlet property="dayLabel" destination="1SH-MI-3aY" id="LsW-lR-M1h"/>
+                <outlet property="dayProgressView" destination="E3d-IY-6MV" id="eDC-rB-Hsg"/>
+                <outlet property="selectedDayView" destination="eLO-gL-ttb" id="veU-nz-FLP"/>
+            </connections>
+            <point key="canvasLocation" x="36.231884057971016" y="-70.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="back">
+            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="border">
+            <color red="0.88235294117647056" green="0.94117647058823528" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
