@@ -64,7 +64,7 @@ extension HabitTrackerController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        date = displayedDates[indexPath.row]
     }
 }
 
