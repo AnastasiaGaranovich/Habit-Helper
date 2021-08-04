@@ -25,7 +25,7 @@ extension MonthCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.dayCell, for: indexPath)!
-        cell.background.backgroundColor = UIColor(named: "back")
+        cell.background.backgroundColor = UIColor(named: "border")?.withAlphaComponent(AppData.user.habits.averageProgress)
         cell.dayLabel.text = String(indexPath.row + 1)
         return cell
     }
