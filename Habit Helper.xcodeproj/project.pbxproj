@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B084583269F5CE800BE79F2 /* R.generated.swift */; };
+		1B4771B326E1247B002EF0E1 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4771B226E1247B002EF0E1 /* AnimalCell.swift */; };
 		1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */; };
 		1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */; };
 		1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34126B00F2F0055F130 /* ColorCell.swift */; };
@@ -78,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		1B084583269F5CE800BE79F2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1B4771B226E1247B002EF0E1 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		1B5AF34126B00F2F0055F130 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4771B126E12450002EF0E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B4771B226E1247B002EF0E1 /* AnimalCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1B5AF33A26AAABB50055F130 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +326,7 @@
 		1BB8D18E2699A8E90039A747 /* Create Animal */ = {
 			isa = PBXGroup;
 			children = (
+				1B4771B126E12450002EF0E1 /* Cell */,
 				1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */,
 			);
 			path = "Create Animal";
@@ -735,6 +746,7 @@
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */,
 				1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */,
+				1B4771B326E1247B002EF0E1 /* AnimalCell.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,

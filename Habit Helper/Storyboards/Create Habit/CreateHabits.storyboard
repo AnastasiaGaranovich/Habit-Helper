@@ -58,13 +58,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLM-qM-HiC">
-                                <rect key="frame" x="20" y="211" width="44" height="21"/>
+                                <rect key="frame" x="20" y="215" width="44" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-43-bfK">
-                                <rect key="frame" x="20" y="247" width="369" height="100"/>
+                                <rect key="frame" x="20" y="255" width="369" height="100"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="HYf-67-Zlz"/>
@@ -98,7 +98,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="roK-Dj-PLC">
-                                <rect key="frame" x="20" y="403" width="374" height="100"/>
+                                <rect key="frame" x="20" y="415" width="374" height="100"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mMK-cu-9Qd"/>
@@ -134,22 +134,22 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-YU-3Bg">
-                                <rect key="frame" x="20" y="533" width="87.5" height="21"/>
+                                <rect key="frame" x="20" y="545" width="90" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eJ-Bf-Hye">
-                                <rect key="frame" x="252" y="558" width="162" height="102"/>
+                                <rect key="frame" x="252" y="574" width="162" height="102"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-Db-uLV">
-                                        <rect key="frame" x="67.5" y="10" width="27" height="19"/>
+                                        <rect key="frame" x="67.5" y="10" width="27" height="22"/>
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                         <color key="textColor" name="text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="xN0-oW-hAi">
-                                        <rect key="frame" x="31" y="54" width="100" height="33"/>
+                                        <rect key="frame" x="31" y="57" width="100" height="33"/>
                                         <color key="backgroundColor" name="back"/>
                                         <color key="tintColor" name="text"/>
                                         <constraints>
@@ -170,13 +170,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw8-XH-nou">
-                                <rect key="frame" x="20" y="105" width="47" height="21"/>
+                                <rect key="frame" x="20" y="105" width="47" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1n-Gk-rFy">
-                                <rect key="frame" x="20" y="141" width="80" height="50"/>
+                                <rect key="frame" x="20" y="145" width="80" height="50"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="lWU-pc-Twg"/>
@@ -191,13 +191,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of habit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zN-n3-HhL">
-                                <rect key="frame" x="256.5" y="105" width="103.5" height="21"/>
+                                <rect key="frame" x="255" y="105" width="105" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6i9-yE-baA">
-                                <rect key="frame" x="214" y="150.5" width="180" height="32"/>
+                                <rect key="frame" x="214" y="154.5" width="180" height="32"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="II9-Fb-rBp"/>
@@ -208,13 +208,13 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-5s-c0P">
-                                <rect key="frame" x="20" y="367" width="35" height="21"/>
+                                <rect key="frame" x="20" y="375" width="33.5" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrN-Mb-PYx">
-                                <rect key="frame" x="20" y="675" width="374" height="60"/>
+                                <rect key="frame" x="20" y="691" width="374" height="60"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="FW5-Xc-PDo"/>
@@ -234,16 +234,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mM8-ml-3D1">
-                                <rect key="frame" x="0.0" y="559" width="170" height="100"/>
+                                <rect key="frame" x="0.0" y="575" width="170" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnA-H5-iBT">
-                                        <rect key="frame" x="69" y="10" width="32" height="19"/>
+                                        <rect key="frame" x="68.5" y="10" width="33.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                         <color key="textColor" name="text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="bAu-gE-4Nh">
-                                        <rect key="frame" x="35" y="54" width="100" height="33"/>
+                                        <rect key="frame" x="35" y="57" width="100" height="33"/>
                                         <color key="backgroundColor" name="back"/>
                                         <color key="tintColor" name="text"/>
                                         <constraints>
