@@ -12,11 +12,11 @@ class LoginController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginValueChanged(_ sender: UITextField) {
-        
+        validationСheck()
     }
     
     @IBAction func passwordValueChanged(_ sender: UITextField) {
-        
+        validationСheck()
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
@@ -89,6 +89,18 @@ class LoginController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    private func validationСheck() {
+        if loginTextField.isEmpty || passwordTextField.isEmpty {
+            alertLabel.text = "Fill all fields"
+        }
+        if !loginTextField.isValid {
+            alertLabel.text = "Invalid email"
+        }
+        if !passwordTextField.isValid {
+            alertLabel.text = "Invalid password"
+        }
     }
 }
 
