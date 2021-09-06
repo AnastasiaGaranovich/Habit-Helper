@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parrot" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-X4-KhP">
-                                <rect key="frame" x="46.5" y="216" width="321" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="321" id="e2N-ys-7NK"/>
-                                    <constraint firstAttribute="height" constant="500" id="fzt-XC-HeM"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-Vj-C8s">
                                 <rect key="frame" x="45" y="101" width="70" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -63,20 +56,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="039-cW-NtF">
+                                <rect key="frame" x="47" y="221" width="320" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Mif-gB-Ei5"/>
+                                    <constraint firstAttribute="width" constant="320" id="d6A-QA-ZDa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lII-Kj-ZXq"/>
                         <color key="backgroundColor" name="back"/>
                         <constraints>
                             <constraint firstItem="nnG-W8-JHD" firstAttribute="centerY" secondItem="cC3-Vj-C8s" secondAttribute="centerY" id="26d-eh-ULa"/>
-                            <constraint firstItem="mtb-X4-KhP" firstAttribute="top" secondItem="cC3-Vj-C8s" secondAttribute="bottom" constant="45" id="7AP-SG-bvw"/>
                             <constraint firstItem="nnG-W8-JHD" firstAttribute="centerY" secondItem="Nq1-km-Brc" secondAttribute="centerY" id="BfU-ck-AIy"/>
                             <constraint firstItem="nnG-W8-JHD" firstAttribute="centerX" secondItem="arg-L4-3kH" secondAttribute="centerX" id="LdU-Gr-WN8"/>
                             <constraint firstItem="cC3-Vj-C8s" firstAttribute="leading" secondItem="lII-Kj-ZXq" secondAttribute="leading" constant="45" id="ZOg-CM-U0t"/>
                             <constraint firstItem="Nq1-km-Brc" firstAttribute="top" secondItem="lII-Kj-ZXq" secondAttribute="top" constant="57" id="aen-Td-Wfd"/>
+                            <constraint firstItem="039-cW-NtF" firstAttribute="centerX" secondItem="arg-L4-3kH" secondAttribute="centerX" id="gk8-oW-5BA"/>
                             <constraint firstItem="lII-Kj-ZXq" firstAttribute="trailing" secondItem="Nq1-km-Brc" secondAttribute="trailing" constant="45" id="nbj-3T-dqb"/>
+                            <constraint firstItem="039-cW-NtF" firstAttribute="top" secondItem="cC3-Vj-C8s" secondAttribute="bottom" constant="50" id="oSZ-RZ-8DX"/>
                             <constraint firstItem="nnG-W8-JHD" firstAttribute="top" secondItem="lII-Kj-ZXq" secondAttribute="top" constant="57" id="qWl-Oi-V23"/>
                             <constraint firstItem="cC3-Vj-C8s" firstAttribute="top" secondItem="lII-Kj-ZXq" secondAttribute="top" constant="57" id="v7n-kq-5Yg"/>
-                            <constraint firstItem="mtb-X4-KhP" firstAttribute="centerX" secondItem="arg-L4-3kH" secondAttribute="centerX" id="yhC-BA-dY8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="parrot_tab" selectedImage="parrot_tab" id="DUw-Ac-9DR">
@@ -96,7 +97,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="parrot" width="291" height="346"/>
         <image name="parrot_tab" width="32" height="32"/>
         <namedColor name="back">
             <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -104,6 +104,9 @@
         <namedColor name="text">
             <color red="0.14100000262260437" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
