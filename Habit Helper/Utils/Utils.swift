@@ -1,5 +1,11 @@
 import UIKit
 
+func jumpTo(_ viewController: UIViewController) {
+    let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+    window?.rootViewController = viewController
+    window?.makeKeyAndVisible()
+}
+
 extension UIViewController {
     func setNavigation() {
         guard let nav = navigationController else {
@@ -13,11 +19,6 @@ extension UIViewController {
         nav.navigationBar.tintColor = UIColor(named: "buttons")
         nav.navigationBar.topItem?.title = ""
     }
-    
-    func jumpTo(_ viewController: UIViewController) {
-        view.window?.rootViewController = viewController
-        view.window?.makeKeyAndVisible()
-    }
 }
 
 extension UITextField {
@@ -27,15 +28,20 @@ extension UITextField {
     }
     
     var isEmpty: Bool {
-            return text?.isEmpty ?? true
+        return text?.isEmpty ?? true
+    }
+    var isValidEmail: Bool {
+        guard let string = text else {
+            return false
         }
-        var isValid: Bool {
-            guard let string = text else {
-                print("Error. No string")
-                return false
-            }
-            return string.isValid
+        return string.isValidEmail
+    }
+    var isValidPassword: Bool {
+        guard let string = text else {
+            return false
         }
+        return string.passwordStrength == .valid
+    }
 }
 
 extension UICollectionViewCell {
@@ -101,7 +107,7 @@ enum PasswordStrength {
 }
 
 extension String {
-    var isValid: Bool {
+    var isValidEmail: Bool {
         let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let test = NSPredicate(format:"SELF MATCHES %@", regEx)
         return test.evaluate(with: self)

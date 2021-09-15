@@ -3,7 +3,6 @@ import Rswift
 import iOSTools
 import SwiftyTools
 import ProgressHUD
-import LocalAuthentication
 
 class LoginController: UIViewController {
     
@@ -25,45 +24,23 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signDonePressed(_ sender: UIButton) {
-        let context = LAContext()
-        var error: NSError? = nil
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                     error: &error) {
-            let reason = "Please authorize with touchID"
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                   localizedReason: reason,
-                                   reply: { [weak self] success, error in
-                                    DispatchQueue.main.async {
-                                        guard success, error == nil else {
-                                            //failed
-                                            return
-                                        }
-                                        ProgressHUD.show()
-                                        Network.getUser { user, error in
-                                            ProgressHUD.dismiss()
-                                            if let error = error {
-                                                LogError(error)
-                                                Alert.error(error)
-                                                return
-                                            }
-                                            AppData.user = user
-                                            Log("izi")
-                                            Network.getHabits { habits, error in
-                                                if let error = error {
-                                                    LogError(error)
-                                                    Alert.error(error)
-                                                    return
-                                                }
-                                                AppData.user.habits = habits
-                                                self!.openApp()
-                                            }
-                                        }
-                                    }
-                                   })
+        if validationСheck() == false {
+            return
         }
-        else {
-            //cant use
-            Alert.error("Unavailable")
+        
+        ProgressHUD.show()
+        Network.login(email: self.loginTextField.text!,
+                      password: self.passwordTextField.text!) { user, error in
+            ProgressHUD.dismiss()
+            if let error = error {
+                LogError(error)
+                Alert.error(error)
+                return
+            }
+            AppData.user = user
+            Log("izi")
+            AppData.isLogined = true
+            self.openApp()
         }
     }
     
@@ -91,16 +68,23 @@ class LoginController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    private func validationСheck() {
+    
+    @discardableResult
+    private func validationСheck() -> Bool {
         if loginTextField.isEmpty || passwordTextField.isEmpty {
             alertLabel.text = "Fill all fields"
+            return false
         }
-        if !loginTextField.isValid {
-            alertLabel.text = "Invalid email"
+        if !loginTextField.isValidEmail {
+            alertLabel.text = "Invalid email format"
+            return false
         }
-        if !passwordTextField.isValid {
-            alertLabel.text = "Invalid password"
+        if !passwordTextField.isValidPassword {
+            alertLabel.text = "Invalid password format"
+            return false
         }
+        alertLabel.text = ""
+        return true
     }
 }
 

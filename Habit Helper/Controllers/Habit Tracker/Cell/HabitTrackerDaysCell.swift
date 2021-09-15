@@ -19,5 +19,3 @@ class HabitTrackerDaysCell: UICollectionViewCell {
         dayProgressView.backgroundColor = UIColor(named: "border")?.withAlphaComponent(AppData.user.habits.averageProgress)
     }
 }
-
-
