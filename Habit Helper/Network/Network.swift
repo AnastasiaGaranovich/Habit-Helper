@@ -1,4 +1,5 @@
 import Alamofire
+import SwiftyTools
 import AlamofireObjectMapper
 
 typealias Completion     = (_ error: String?) -> ()
@@ -27,6 +28,18 @@ class Network {
                 completion(habits, nil)
             case let .failure(error):
                 completion([], error.localizedDescription)
+            }
+        }
+    }
+    
+    static func login(email: String, password: String, _ completion: @escaping UserCompletion) {
+        AF.request(url + "login", method: .post, parameters: ["email" : email, "password" : password], encoding: JSONEncoding.default).responseObject {
+            (response: DataResponse<User, AFError>) in
+            switch response.result {
+            case let .success(user):
+                completion(user, nil)
+            case .failure(_):
+                completion(User(), String(data: response.data!, encoding: .utf8))
             }
         }
     }
