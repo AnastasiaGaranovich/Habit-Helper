@@ -33,6 +33,8 @@
 		1BB8D1942699AA070039A747 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8D1932699AA070039A747 /* TabBarController.swift */; };
 		1BD1D76D2614920C00789C59 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76C2614920C00789C59 /* Utils.swift */; };
 		1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3AA0F261B85D800A10CFA /* IconCell.swift */; };
+		1BF5FC8A26F27209004B33F6 /* FaceIDLocked.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */; };
+		1BF5FC8C26F27258004B33F6 /* FaceIDLockedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */; };
 		4889FDD31120607AB0547356 /* Pods_Habit_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8982B864C20025FC8A974EC /* Pods_Habit_Helper.framework */; };
 		5D1D9A54257A33DC00753022 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1D9A53257A33DC00753022 /* Registration.storyboard */; };
 		5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */; };
@@ -106,6 +108,8 @@
 		1BB8D1932699AA070039A747 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1BD1D76C2614920C00789C59 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1BE3AA0F261B85D800A10CFA /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceIDLocked.storyboard; sourceTree = "<group>"; };
+		1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDLockedViewController.swift; sourceTree = "<group>"; };
 		5CA75F29E6E4C6B24CDA24B5 /* Pods-Habit Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Helper.release.xcconfig"; path = "Target Support Files/Pods-Habit Helper/Pods-Habit Helper.release.xcconfig"; sourceTree = "<group>"; };
 		5D1D9A53257A33DC00753022 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		5D2DDFDD25484D8A00EEC0BC /* HabitTrackerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerController.swift; sourceTree = "<group>"; };
@@ -468,6 +472,7 @@
 				1BB8D1782699A2B50039A747 /* Settings */,
 				1BB8D1752699A2580039A747 /* Habit Tracker */,
 				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
+				1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				1BB8D1862699A76B0039A747 /* Settings */,
 				1BB8D1932699AA070039A747 /* TabBarController.swift */,
 				1B5AF33F26AAB0350055F130 /* UserInfo */,
+				1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -634,6 +640,7 @@
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
 				1BB8D17D2699A2F20039A747 /* ReportHabit.storyboard in Resources */,
 				1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */,
+				1BF5FC8A26F27209004B33F6 /* FaceIDLocked.storyboard in Resources */,
 				1BB8D1802699A3100039A747 /* Animal.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
@@ -739,6 +746,7 @@
 				1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
+				1BF5FC8C26F27258004B33F6 /* FaceIDLockedViewController.swift in Sources */,
 				1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,

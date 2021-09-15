@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController {
         push(R.storyboard.userInfo.userInfoViewController()!)
     }
     @IBAction func logOutButtonPressed(_ sender: UIButton) {
+        AppData.isLogined = false
         jumpTo(R.storyboard.logIn.instantiateInitialViewController()!)
     }
     
