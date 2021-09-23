@@ -21,23 +21,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="384.5" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46f-fs-YRC">
-                        <rect key="frame" x="27" y="12" width="209" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46f-fs-YRC">
+                        <rect key="frame" x="30" y="11.5" width="324.5" height="21"/>
                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-56-XFc">
-                        <rect key="frame" x="20" y="7" width="378" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-56-XFc">
+                        <rect key="frame" x="5" y="5" width="374.5" height="34"/>
                         <connections>
                             <action selector="buttonPressed:" destination="ZeH-zc-cGV" eventType="touchUpInside" id="bmb-hS-ZBC"/>
                         </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" name="back"/>
+                <constraints>
+                    <constraint firstItem="qWz-56-XFc" firstAttribute="leading" secondItem="8Ex-OC-Uxr" secondAttribute="leading" constant="5" id="BCw-5Z-Bqj"/>
+                    <constraint firstAttribute="trailing" secondItem="qWz-56-XFc" secondAttribute="trailing" constant="5" id="O3T-yk-jjv"/>
+                    <constraint firstItem="46f-fs-YRC" firstAttribute="centerY" secondItem="8Ex-OC-Uxr" secondAttribute="centerY" id="OFT-vW-CVA"/>
+                    <constraint firstItem="46f-fs-YRC" firstAttribute="leading" secondItem="8Ex-OC-Uxr" secondAttribute="leading" constant="30" id="VSK-6z-bA6"/>
+                    <constraint firstItem="qWz-56-XFc" firstAttribute="top" secondItem="8Ex-OC-Uxr" secondAttribute="top" constant="5" id="eTl-3c-kle"/>
+                    <constraint firstAttribute="bottom" secondItem="qWz-56-XFc" secondAttribute="bottom" constant="5" id="wkL-KI-a2U"/>
+                    <constraint firstAttribute="trailing" secondItem="46f-fs-YRC" secondAttribute="trailing" constant="30" id="x7g-jX-qaZ"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" name="back"/>
             <connections>
                 <outlet property="cellButton" destination="qWz-56-XFc" id="92B-nQ-idf"/>
                 <outlet property="settingLabel" destination="46f-fs-YRC" id="Zpe-KE-bRW"/>

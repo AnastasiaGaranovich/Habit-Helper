@@ -17,7 +17,7 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        push(R.storyboard.createAnimal.createAnimalViewController()!)
+        push(R.storyboard.createHabits.createHabitViewController()!)
     }
     
     override func viewDidLoad() {

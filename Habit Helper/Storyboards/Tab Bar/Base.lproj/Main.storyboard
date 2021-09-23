@@ -19,7 +19,6 @@
                         <color key="selectedImageTintColor" name="text"/>
                     </tabBar>
                     <connections>
-                        <segue destination="kOO-bG-GKH" kind="relationship" relationship="viewControllers" id="h2S-18-VA8"/>
                         <segue destination="kAh-uc-hcn" kind="relationship" relationship="viewControllers" id="F7f-qm-etb"/>
                         <segue destination="n95-T1-cXo" kind="relationship" relationship="viewControllers" id="wyc-Yh-b1A"/>
                         <segue destination="NZd-kC-LuJ" kind="relationship" relationship="viewControllers" id="5H6-XE-QGO"/>
@@ -28,16 +27,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69H-Sq-Kd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-729" y="751"/>
-        </scene>
-        <!--Animal-->
-        <scene sceneID="w7B-Uy-YNs">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Animal" id="kOO-bG-GKH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="OFp-Yq-ScA"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f7R-1V-oJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-269" y="1176"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wZf-HS-BKG">
@@ -57,7 +46,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyh-xF-WdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1111" y="1176"/>
+            <point key="canvasLocation" x="-730" y="1176"/>
         </scene>
         <!--ReportHabit-->
         <scene sceneID="4o8-o7-5LS">
