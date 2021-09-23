@@ -1,8 +1,13 @@
 import UIKit
 
 enum SelectedButtonTag: Int {
-    case AnimalSettings
-    case Background
+//    case AnimalSettings
+//    case Background
+    case Language
+    case Notifications
+    case MoreSettings
+    case UsageTips
+    case Rate
 }
 
 class SettingsViewController: UIViewController {
@@ -20,21 +25,37 @@ class SettingsViewController: UIViewController {
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
         switch tag {
-        case SelectedButtonTag.AnimalSettings.rawValue:
-            push(R.storyboard.settings.animalSettingsViewController()!)
-            print("do something when second button is tapped")
-        case SelectedButtonTag.Background.rawValue:
-            push(R.storyboard.settings.backgroundViewController()!)
-            print("do something when third button is tapped")
+//        case SelectedButtonTag.AnimalSettings.rawValue:
+//            push(R.storyboard.settings.animalSettingsViewController()!)
+//            print("do something when second button is tapped")
+//        case SelectedButtonTag.Background.rawValue:
+//            push(R.storyboard.settings.backgroundViewController()!)
+//            print("do something when third button is tapped")
+        case SelectedButtonTag.Language.rawValue:
+            //changing language
+            break
+        case SelectedButtonTag.Notifications.rawValue:
+            //add local notifications
+            break
+        case SelectedButtonTag.MoreSettings.rawValue:
+            //add settings for week
+            break
+        case SelectedButtonTag.UsageTips.rawValue:
+            // show tutorial
+            break
+        case SelectedButtonTag.Rate.rawValue:
+            // alert with push to app store
+            break
         default:
             print("default")
         }
     }
     
-    let items = ["Animal Settings", "Background"]
+    let items = ["Language", "Notifications", "More settings", "Usage Tips", "Rate"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigation()
         tabBarController?.tabBar.isHidden = false
         SettingsCell.registerFor(tableView)
         userNameLabel.text = AppData.user.name
@@ -58,5 +79,9 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource, Se
         cell.cellButton.tag = indexPath.row
         cell.settingLabel.text = items[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
