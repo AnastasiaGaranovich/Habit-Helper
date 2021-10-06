@@ -25,11 +25,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-2g-a3G">
-                                <rect key="frame" x="29.5" y="328" width="355" height="50"/>
-                                <color key="backgroundColor" name="textFields"/>
+                                <rect key="frame" x="57" y="328" width="300" height="60"/>
+                                <color key="backgroundColor" name="back"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="1hD-rh-CrY"/>
-                                    <constraint firstAttribute="height" constant="50" id="LoQ-Zn-nKy"/>
+                                    <constraint firstAttribute="width" constant="300" id="1hD-rh-CrY"/>
+                                    <constraint firstAttribute="height" constant="60" id="LoQ-Zn-nKy"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
@@ -44,11 +44,11 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-Gy-LwK">
-                                <rect key="frame" x="29.5" y="418" width="355" height="50"/>
-                                <color key="backgroundColor" name="textFields"/>
+                                <rect key="frame" x="57" y="428" width="300" height="60"/>
+                                <color key="backgroundColor" name="back"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="syd-md-G0R"/>
-                                    <constraint firstAttribute="height" constant="50" id="yaE-pb-bqi"/>
+                                    <constraint firstAttribute="width" constant="300" id="syd-md-G0R"/>
+                                    <constraint firstAttribute="height" constant="60" id="yaE-pb-bqi"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
@@ -63,13 +63,13 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-5L-3JJ">
-                                <rect key="frame" x="20" y="573" width="374" height="60"/>
+                                <rect key="frame" x="57" y="603" width="300" height="50"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="0TW-Qi-Tb0"/>
-                                    <constraint firstAttribute="width" constant="374" id="xEK-8q-uFe"/>
+                                    <constraint firstAttribute="height" constant="50" id="0TW-Qi-Tb0"/>
+                                    <constraint firstAttribute="width" constant="300" id="xEK-8q-uFe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="23"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -90,7 +90,7 @@
                             <constraint firstItem="mPP-5L-3JJ" firstAttribute="centerX" secondItem="GRU-CZ-Dtp" secondAttribute="centerX" id="Ivv-yd-7bS"/>
                             <constraint firstItem="BQr-2g-a3G" firstAttribute="centerX" secondItem="GRU-CZ-Dtp" secondAttribute="centerX" id="bHX-06-MEk"/>
                             <constraint firstItem="sxz-Gy-LwK" firstAttribute="top" secondItem="BQr-2g-a3G" secondAttribute="bottom" constant="40" id="bKd-DZ-1vF"/>
-                            <constraint firstItem="mPP-5L-3JJ" firstAttribute="top" secondItem="sxz-Gy-LwK" secondAttribute="bottom" constant="105" id="hsa-uD-PGa"/>
+                            <constraint firstItem="mPP-5L-3JJ" firstAttribute="top" secondItem="sxz-Gy-LwK" secondAttribute="bottom" constant="115" id="hsa-uD-PGa"/>
                             <constraint firstItem="BQr-2g-a3G" firstAttribute="top" secondItem="SNY-ZR-qf9" secondAttribute="top" constant="240" id="nJb-VD-fAd"/>
                         </constraints>
                     </view>

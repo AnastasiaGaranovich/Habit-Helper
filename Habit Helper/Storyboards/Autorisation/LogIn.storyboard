@@ -80,7 +80,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-Rv-0sm">
-                                <rect key="frame" x="137" y="578" width="140" height="32"/>
+                                <rect key="frame" x="137" y="578" width="140" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="nYE-NB-CTJ"/>
                                 </constraints>
@@ -115,7 +115,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxg-Id-cQv">
-                                <rect key="frame" x="119.5" y="773" width="175" height="19.5"/>
+                                <rect key="frame" x="118" y="773" width="178.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGray3Color"/>
                                 <nil key="highlightedColor"/>
@@ -127,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU3-rf-uWI">
-                                <rect key="frame" x="167" y="797.5" width="80" height="35"/>
+                                <rect key="frame" x="167" y="794.5" width="80" height="35"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="F0I-rt-gpr"/>
