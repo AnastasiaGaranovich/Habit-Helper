@@ -2,20 +2,15 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var userAgeTextField: UITextField!
     @IBOutlet weak var sexSegmControl: UISegmentedControl!
+    @IBOutlet weak var birthdayButton: UIButton!
     
     @IBAction func nameValueChanged(_ sender: UITextField) {
         
     }
-    
-    @IBAction func ageValueChanged(_ sender: UITextField) {
+    @IBAction func birthdayButtonPressed(_ sender: UIButton) {
         
     }
-    @IBAction func birthdayDatePicker(_ sender: UIDatePicker) {
-        
-    }
-    
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         push(R.storyboard.createHabits.createHabitViewController()!)
     }
@@ -24,7 +19,7 @@ class CreateAccountViewController: UIViewController {
         super.viewDidLoad()
         setNavigation()
         userNameTextField.setTextFieldBorderColor()
-        userAgeTextField.setTextFieldBorderColor()
+        birthdayButton.setButtonBorderColor()
     }
     
 }

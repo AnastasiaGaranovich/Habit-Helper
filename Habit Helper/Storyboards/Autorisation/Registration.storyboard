@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -132,11 +133,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-M7-FZ7">
-                                <rect key="frame" x="29.5" y="205.5" width="355" height="50"/>
-                                <color key="backgroundColor" name="textFields"/>
+                                <rect key="frame" x="57" y="215.5" width="300" height="60"/>
+                                <color key="backgroundColor" name="back"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="JCY-72-uQb"/>
-                                    <constraint firstAttribute="width" constant="355" id="v4i-jp-s2e"/>
+                                    <constraint firstAttribute="height" constant="60" id="JCY-72-uQb"/>
+                                    <constraint firstAttribute="width" constant="300" id="v4i-jp-s2e"/>
                                 </constraints>
                                 <color key="textColor" name="text"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
@@ -151,13 +152,13 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kM-PR-Zbn">
-                                <rect key="frame" x="20" y="578.5" width="374" height="60"/>
+                                <rect key="frame" x="57" y="545.5" width="300" height="50"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="GEs-gP-nh7"/>
-                                    <constraint firstAttribute="height" constant="60" id="KZn-ov-cHg"/>
+                                    <constraint firstAttribute="width" constant="300" id="GEs-gP-nh7"/>
+                                    <constraint firstAttribute="height" constant="50" id="KZn-ov-cHg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="23"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -171,7 +172,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="5DA-By-PJy">
-                                <rect key="frame" x="57" y="385.5" width="300" height="31"/>
+                                <rect key="frame" x="57" y="415.5" width="300" height="31"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3zZ-5V-CcN"/>
@@ -183,74 +184,52 @@
                                     <segment title="Man"/>
                                 </segments>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-S5-Skf">
-                                <rect key="frame" x="29.5" y="295.5" width="355" height="50"/>
-                                <color key="backgroundColor" name="textFields"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="ISz-v4-AAZ"/>
-                                    <constraint firstAttribute="height" constant="50" id="MYa-Il-tis"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-pY-xTj">
+                                <rect key="frame" x="138" y="118" width="138" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                 <color key="textColor" name="text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-N7-Jn8">
+                                <rect key="frame" x="57" y="315.5" width="300" height="60"/>
+                                <color key="backgroundColor" name="back"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Fem-JH-9e7"/>
+                                    <constraint firstAttribute="width" constant="300" id="h1a-zi-7nm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraLight" family="Nunito" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <state key="normal" title="Birthday">
+                                    <color key="titleColor" systemColor="systemGray3Color"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="ageValueChanged:" destination="4xf-af-5Jl" eventType="editingChanged" id="3Z0-vF-7TV"/>
+                                    <action selector="birthdayButtonPressed:" destination="4xf-af-5Jl" eventType="touchUpInside" id="j6R-LY-uVk"/>
                                 </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-pY-xTj">
-                                <rect key="frame" x="138" y="108" width="138" height="27.5"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
-                                <color key="textColor" name="text"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyY-Ye-1cd">
-                                <rect key="frame" x="32" y="455.5" width="69.5" height="16"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
-                                <color key="textColor" name="text"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="3uP-af-PHx">
-                                <rect key="frame" x="154.5" y="438.5" width="105" height="50"/>
-                                <color key="backgroundColor" name="back"/>
-                                <color key="tintColor" name="text"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="QJb-3I-Idk"/>
-                                    <constraint firstAttribute="height" constant="50" id="TzO-M0-zzw"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="birthdayDatePicker:" destination="4xf-af-5Jl" eventType="valueChanged" id="0BJ-ZY-3lo"/>
-                                </connections>
-                            </datePicker>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TyC-mI-HkG"/>
                         <color key="backgroundColor" name="back"/>
                         <constraints>
-                            <constraint firstItem="aoO-S5-Skf" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="A5z-JK-eWZ"/>
-                            <constraint firstItem="5DA-By-PJy" firstAttribute="top" secondItem="aoO-S5-Skf" secondAttribute="bottom" constant="40" id="CXR-dl-nQL"/>
-                            <constraint firstItem="6WV-pY-xTj" firstAttribute="top" secondItem="TyC-mI-HkG" secondAttribute="top" constant="20" id="EYB-WK-NMS"/>
+                            <constraint firstItem="FU9-N7-Jn8" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="0AZ-hQ-BFN"/>
+                            <constraint firstItem="5DA-By-PJy" firstAttribute="top" secondItem="FU9-N7-Jn8" secondAttribute="bottom" constant="40" id="0yQ-vn-GP3"/>
+                            <constraint firstItem="6WV-pY-xTj" firstAttribute="top" secondItem="TyC-mI-HkG" secondAttribute="top" constant="30" id="EYB-WK-NMS"/>
                             <constraint firstItem="5kM-PR-Zbn" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="I76-Nb-wKc"/>
+                            <constraint firstItem="5kM-PR-Zbn" firstAttribute="top" secondItem="5DA-By-PJy" secondAttribute="bottom" constant="100" id="Ngd-RS-EXA"/>
                             <constraint firstItem="6WV-pY-xTj" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="Qcr-jM-0wU"/>
-                            <constraint firstItem="3uP-af-PHx" firstAttribute="top" secondItem="5DA-By-PJy" secondAttribute="bottom" constant="23" id="W7n-HM-Jcj"/>
                             <constraint firstItem="JjE-M7-FZ7" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="WXJ-Jd-RpS"/>
-                            <constraint firstItem="tyY-Ye-1cd" firstAttribute="top" secondItem="5DA-By-PJy" secondAttribute="bottom" constant="40" id="YXU-GW-EHM"/>
+                            <constraint firstItem="FU9-N7-Jn8" firstAttribute="top" secondItem="JjE-M7-FZ7" secondAttribute="bottom" constant="40" id="Zsy-5e-QQQ"/>
                             <constraint firstItem="5DA-By-PJy" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="feK-Yg-xQN"/>
                             <constraint firstItem="JjE-M7-FZ7" firstAttribute="top" secondItem="6WV-pY-xTj" secondAttribute="bottom" constant="70" id="gm3-rE-kW4"/>
-                            <constraint firstItem="3uP-af-PHx" firstAttribute="centerY" secondItem="tyY-Ye-1cd" secondAttribute="centerY" id="lMn-fA-M2q"/>
-                            <constraint firstItem="3uP-af-PHx" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="nf2-c2-F57"/>
-                            <constraint firstItem="tyY-Ye-1cd" firstAttribute="leading" secondItem="TyC-mI-HkG" secondAttribute="leading" constant="32" id="pJx-Ej-F6q"/>
-                            <constraint firstItem="5kM-PR-Zbn" firstAttribute="top" secondItem="3uP-af-PHx" secondAttribute="bottom" constant="90" id="qgM-VB-c7C"/>
-                            <constraint firstItem="aoO-S5-Skf" firstAttribute="top" secondItem="JjE-M7-FZ7" secondAttribute="bottom" constant="40" id="wdL-Jb-JwB"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="birthdayButton" destination="FU9-N7-Jn8" id="OpG-GS-36L"/>
                         <outlet property="sexSegmControl" destination="5DA-By-PJy" id="POA-vD-w3J"/>
-                        <outlet property="userAgeTextField" destination="aoO-S5-Skf" id="u8r-7T-ghR"/>
                         <outlet property="userNameTextField" destination="JjE-M7-FZ7" id="c01-5U-6DZ"/>
                     </connections>
                 </viewController>
@@ -273,5 +252,8 @@
         <namedColor name="textFields">
             <color red="0.93333333333333335" green="0.96470588235294119" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
