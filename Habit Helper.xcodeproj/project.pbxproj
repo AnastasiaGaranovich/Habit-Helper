@@ -14,6 +14,7 @@
 		1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34126B00F2F0055F130 /* ColorCell.swift */; };
 		1B5AF34626BAA6460055F130 /* HabitTrackerDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */; };
 		1B5AF34826BAA9F40055F130 /* HabitTrackerDaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */; };
+		1B66D8A6270DB7BF009A34B9 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B66D8A5270DB7BF009A34B9 /* DatePicker.xib */; };
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* DayCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* DayCell.swift */; };
@@ -89,6 +90,7 @@
 		1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTrackerDaysCell.xib; sourceTree = "<group>"; };
 		1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerDaysCell.swift; sourceTree = "<group>"; };
+		1B66D8A5270DB7BF009A34B9 /* DatePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePicker.xib; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -202,6 +204,14 @@
 				1B5AF34126B00F2F0055F130 /* ColorCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B66D8A4270DB7A2009A34B9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B66D8A5270DB7BF009A34B9 /* DatePicker.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		1B8311B826138BC900BA01A6 /* Network */ = {
@@ -366,6 +376,7 @@
 		1BB8D1922699A9470039A747 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B66D8A4270DB7A2009A34B9 /* UI */,
 				1BD1D76C2614920C00789C59 /* Utils.swift */,
 			);
 			path = Utils;
@@ -629,6 +640,7 @@
 				1BB8D1772699A2750039A747 /* HabitTracker.storyboard in Resources */,
 				5D9D9CA32561674300F5FEC0 /* MonthCell.xib in Resources */,
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
+				1B66D8A6270DB7BF009A34B9 /* DatePicker.xib in Resources */,
 				1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */,
 				1B5AF34626BAA6460055F130 /* HabitTrackerDaysCell.xib in Resources */,
 				1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */,
