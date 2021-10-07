@@ -59,13 +59,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLM-qM-HiC">
-                                <rect key="frame" x="138" y="207" width="138.5" height="21"/>
+                                <rect key="frame" x="139" y="211" width="136" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-43-bfK">
-                                <rect key="frame" x="20" y="243" width="369" height="100"/>
+                                <rect key="frame" x="20" y="251" width="369" height="100"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="HYf-67-Zlz"/>
@@ -99,7 +99,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="roK-Dj-PLC">
-                                <rect key="frame" x="20" y="409" width="374" height="100"/>
+                                <rect key="frame" x="20" y="421" width="374" height="100"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mMK-cu-9Qd"/>
@@ -135,19 +135,19 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-YU-3Bg">
-                                <rect key="frame" x="163.5" y="539" width="87.5" height="21"/>
+                                <rect key="frame" x="162" y="551" width="90" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of habit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zN-n3-HhL">
-                                <rect key="frame" x="155.5" y="115" width="103.5" height="21"/>
+                                <rect key="frame" x="154.5" y="115" width="105" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6i9-yE-baA">
-                                <rect key="frame" x="117" y="146" width="180" height="32"/>
+                                <rect key="frame" x="117" y="150" width="180" height="32"/>
                                 <color key="backgroundColor" name="textFields"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="II9-Fb-rBp"/>
@@ -158,13 +158,13 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-5s-c0P">
-                                <rect key="frame" x="141" y="373" width="132" height="21"/>
+                                <rect key="frame" x="142.5" y="381" width="129" height="25"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrN-Mb-PYx">
-                                <rect key="frame" x="57" y="670" width="300" height="50"/>
+                                <rect key="frame" x="57" y="686" width="300" height="50"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="FW5-Xc-PDo"/>
@@ -184,7 +184,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd9-Ct-W1u">
-                                <rect key="frame" x="30" y="590" width="100" height="40"/>
+                                <rect key="frame" x="30" y="606" width="100" height="40"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="B27-Wp-ZuI"/>
@@ -203,8 +203,8 @@
                                     <action selector="startDateButtonPressed:" destination="2rQ-UW-X6v" eventType="touchUpInside" id="8lv-N5-4bn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-S3-KCF">
-                                <rect key="frame" x="157" y="590" width="100" height="40"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-S3-KCF">
+                                <rect key="frame" x="157" y="606" width="100" height="40"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="MXi-yn-ysE"/>
@@ -223,8 +223,8 @@
                                     <action selector="endDateButtonPressed:" destination="2rQ-UW-X6v" eventType="touchUpInside" id="lzW-yk-kTb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdH-cb-Nxb">
-                                <rect key="frame" x="284" y="590" width="100" height="40"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdH-cb-Nxb">
+                                <rect key="frame" x="284" y="606" width="100" height="40"/>
                                 <color key="backgroundColor" name="back"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JBX-nf-xJj"/>
@@ -294,16 +294,16 @@
     </scenes>
     <resources>
         <namedColor name="back">
-            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttons">
-            <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="text">
             <color red="0.14100000262260437" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textFields">
-            <color red="0.93333333333333335" green="0.96470588235294119" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.93300002813339233" green="0.9649999737739563" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
