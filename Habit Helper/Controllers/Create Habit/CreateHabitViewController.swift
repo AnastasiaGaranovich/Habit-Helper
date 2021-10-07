@@ -29,13 +29,6 @@ fileprivate let icons: [UIImage] = [#imageLiteral(resourceName: "002-chocolate")
 
 
 class CreateHabitViewController: UIViewController {
-    
-    @IBOutlet weak var habitNameTextField: UITextField!
-    @IBOutlet weak var goalsTextField: UITextField!
-    @IBOutlet weak var habitTypeSegmControl: UISegmentedControl!
-    @IBOutlet weak var colorCollectionView: UICollectionView!
-    @IBOutlet weak var iconCollectionView: UICollectionView!
-    
     var popOnComplete = false
     
     func setPopOnComplete() -> Self {
@@ -43,11 +36,23 @@ class CreateHabitViewController: UIViewController {
         return self
     }
     
-    @IBAction func habitStartDate(_ sender: UIDatePicker) {
+    @IBOutlet weak var habitNameTextField: UITextField!
+    @IBOutlet weak var habitTypeSegmControl: UISegmentedControl!
+    @IBOutlet weak var startDateButton: UIButton!
+    @IBOutlet weak var endDateButton: UIButton!
+    @IBOutlet weak var goalsButton: UIButton!
+    @IBOutlet weak var colorCollectionView: UICollectionView!
+    @IBOutlet weak var iconCollectionView: UICollectionView!
+    
+    @IBAction func startDateButtonPressed(_ sender: UIButton) {
         
     }
     
-    @IBAction func habitEndDate(_ sender: UIDatePicker) {
+    @IBAction func endDateButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func goalsButtonPressed(_ sender: UIButton) {
         
     }
     
@@ -65,7 +70,9 @@ class CreateHabitViewController: UIViewController {
         tabBarController?.tabBar.isHidden = true
         setNavigation()
         habitNameTextField.setTextFieldBorderColor()
-        goalsTextField.setTextFieldBorderColor()
+        startDateButton.setButtonBorderColor()
+        endDateButton.setButtonBorderColor()
+        goalsButton.setButtonBorderColor()
     }
     
 }
