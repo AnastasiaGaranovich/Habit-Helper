@@ -5,7 +5,7 @@ enum SelectedButtonTag: Int {
 //    case Background
     case Language
     case Notifications
-    case MoreSettings
+    case SecuritySettings
     case UsageTips
     case Rate
 }
@@ -37,21 +37,21 @@ class SettingsViewController: UIViewController {
         case SelectedButtonTag.Notifications.rawValue:
             //add local notifications
             break
-        case SelectedButtonTag.MoreSettings.rawValue:
-            //add settings for week
+        case SelectedButtonTag.SecuritySettings.rawValue:
+            //add settings for face id and edit password
             break
         case SelectedButtonTag.UsageTips.rawValue:
             // show tutorial
             break
         case SelectedButtonTag.Rate.rawValue:
-            // alert with push to app store
+            // push to app store reviews
             break
         default:
             print("default")
         }
     }
     
-    let items = ["Language", "Notifications", "More settings", "Usage Tips", "Rate"]
+    let items = ["Language", "Notifications", "Security settings", "Usage Tips", "Rate"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

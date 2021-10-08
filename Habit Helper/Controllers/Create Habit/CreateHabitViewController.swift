@@ -29,6 +29,8 @@ fileprivate let icons: [UIImage] = [#imageLiteral(resourceName: "002-chocolate")
 
 
 class CreateHabitViewController: UIViewController {
+    let goalsArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
     var popOnComplete = false
     
     func setPopOnComplete() -> Self {
@@ -45,15 +47,70 @@ class CreateHabitViewController: UIViewController {
     @IBOutlet weak var iconCollectionView: UICollectionView!
     
     @IBAction func startDateButtonPressed(_ sender: UIButton) {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
         
+        let alert = UIAlertController(title: "Select Date", message: "", preferredStyle: .actionSheet)
+        
+        // height constraint
+        let constraintHeight = NSLayoutConstraint(
+            item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute:
+                NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: view.frame.height / 3)
+        alert.view.addConstraint(constraintHeight)
+        
+        alert.view.addSubview(datePicker)
+        datePicker.frame = CGRect(0, 0, view.frame.size.width, view.frame.height / 3.5)
+        
+        let ok = UIAlertAction(title: "Done", style: .destructive) { (action) in
+            self.alertDonePressed(datePicker: datePicker, tag: self.startDateButton.tag)
+        }
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func endDateButtonPressed(_ sender: UIButton) {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
         
+        let alert = UIAlertController(title: "Select Date", message: "", preferredStyle: .actionSheet)
+        
+        // height constraint
+        let constraintHeight = NSLayoutConstraint(
+            item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute:
+                NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: view.frame.height / 3)
+        alert.view.addConstraint(constraintHeight)
+        
+        alert.view.addSubview(datePicker)
+        datePicker.frame = CGRect(0, 0, view.frame.size.width, view.frame.height / 3.5)
+        
+        let ok = UIAlertAction(title: "Done", style: .destructive) { (action) in
+            self.alertDonePressed(datePicker: datePicker, tag: self.endDateButton.tag)
+        }
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func goalsButtonPressed(_ sender: UIButton) {
-        
+//        let picker = UIPickerView()
+//        picker.delegate = self as UIPickerViewDelegate
+//        picker.dataSource = self as UIPickerViewDataSource
+//        let alert = UIAlertController(title: "Select Date", message: "", preferredStyle: .actionSheet)
+//
+//        // height constraint
+//        let constraintHeight = NSLayoutConstraint(
+//            item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute:
+//                NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: view.frame.height / 3)
+//        alert.view.addConstraint(constraintHeight)
+//        alert.view.addSubview(picker)
+//        picker.frame = CGRect(0, 0, view.frame.size.width, view.frame.height / 3.5)
+//
+//        let ok = UIAlertAction(title: "Done", style: .destructive) { (action) in
+//            //
+//        }
+//        alert.addAction(ok)
+//        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func completeButtonPressed(_ sender: UIButton) {
@@ -75,7 +132,32 @@ class CreateHabitViewController: UIViewController {
         goalsButton.setButtonBorderColor()
     }
     
+    private func alertDonePressed(datePicker: UIDatePicker, tag: Int) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let dateString = dateFormatter.string(from: datePicker.date)
+        if tag == 0 {
+            self.startDateButton.setTitle(dateString, for: .normal)
+            self.startDateButton.setTitleColor(UIColor(named: "text"), for: .normal)
+        }
+        else {
+            self.endDateButton.setTitle(dateString, for: .normal)
+            self.endDateButton.setTitleColor(UIColor(named: "text"), for: .normal)
+        }
+    }
+    
 }
+
+//extension CreateHabitViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        1
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return goalsArray.count
+//    }
+//
+//}
 
 extension CreateHabitViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     

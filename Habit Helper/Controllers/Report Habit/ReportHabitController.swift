@@ -16,7 +16,6 @@ class ReportHabitController: UIViewController {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var starsCountLabel: UILabel!
     
     @IBAction func previousDateButtonPressed(_ sender: UIButton) {
         date = date.monthAgo
@@ -49,12 +48,12 @@ class ReportHabitController: UIViewController {
     
     private func setDate() {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM yyyy"
+        dateFormatter.dateFormat = "MMMM yyyy"
         dateLabel.text = dateFormatter.string(from: date)
     }
 }
 
-extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -69,5 +68,9 @@ extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataS
         cell.setDate(date)
         cell.setup()
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
 }
