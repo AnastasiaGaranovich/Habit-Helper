@@ -1,16 +1,20 @@
 import UIKit
 import iOSTools
 
+class DateSelection {
+    var date: Date
+    var selection: Bool
+    
+    init(_ date: Date) {
+        self.date = date
+        selection = false
+    }
+}
+
 class HabitTrackerController: UIViewController {
     let testArray = ["Habit 1", "Habit 2", "Habit 3"]
     
-    private var date = Date() {
-        didSet {
-            setDate()
-        }
-    }
-    
-    private var displayedDates = [Date]()
+    private var displayedDates = [DateSelection]()
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -21,7 +25,7 @@ class HabitTrackerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setDate()
+        generateDates()
         CustomTableCell.registerFor(tableView)
         HabitTrackerDaysCell.registerFor(collectionView)
         setNavigation()
@@ -33,16 +37,12 @@ class HabitTrackerController: UIViewController {
         tabBarController?.tabBar.isHidden = false
     }
     
-    private func setDate() {
+    private func generateDates() {
         displayedDates.removeAll()
-        for i in 0...7 {
-            displayedDates.append(date.dayShift(i - 3))
+        for i in 0...100 {
+            displayedDates.append(DateSelection(Date().dayShift(i - 50)))
         }
         collectionView.reloadData()
-    }
-    
-    private var numberOfDaysInMonth: Int {
-        return Calendar.current.range(of: .day, in: .month, for: self.date)!.count
     }
     
 }
@@ -54,18 +54,18 @@ extension HabitTrackerController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.habitTrackerDaysCell, for: indexPath)!
-        cell.setDate(date: displayedDates[indexPath.row])
-        if indexPath.row == 3 {
-            cell.selectedDayView.isHidden = false
-        }
-        else {
-            cell.selectedDayView.isHidden = true
-        }
+        cell.setDate(date: displayedDates[indexPath.row].date)
+        cell.selectedDayView.isHidden = !displayedDates[indexPath.row].selection
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        date = displayedDates[indexPath.row]
+        for date in displayedDates {
+            date.selection = false
+        }
+        displayedDates[indexPath.row].selection = true
+        collectionView.reloadData()
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
 }
 
