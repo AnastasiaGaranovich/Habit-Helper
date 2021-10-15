@@ -15,10 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="back"/>
-                        <color key="tintColor" name="text"/>
-                        <color key="selectedImageTintColor" name="text"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="J2D-b0-Yay" kind="relationship" relationship="viewControllers" id="ykW-wj-acv"/>
                         <segue destination="kAh-uc-hcn" kind="relationship" relationship="viewControllers" id="F7f-qm-etb"/>
                         <segue destination="n95-T1-cXo" kind="relationship" relationship="viewControllers" id="wyc-Yh-b1A"/>
                         <segue destination="NZd-kC-LuJ" kind="relationship" relationship="viewControllers" id="5H6-XE-QGO"/>
@@ -32,40 +32,49 @@
         <scene sceneID="wZf-HS-BKG">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="NZd-kC-LuJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cBf-Sc-Flk"/>
+                    <tabBarItem key="tabBarItem" title="" id="cBf-Sc-Flk">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dou-3B-KCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="185" y="1176"/>
         </scene>
+        <!--CreateHabits-->
+        <scene sceneID="19I-dE-uyp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateHabits" id="J2D-b0-Yay" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="idv-xT-Yfz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZt-9M-otv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1451" y="1181"/>
+        </scene>
         <!--HabitTracker-->
         <scene sceneID="saQ-As-pJD">
             <objects>
                 <viewControllerPlaceholder storyboardName="HabitTracker" id="kAh-uc-hcn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QUk-Ig-1GI"/>
+                    <tabBarItem key="tabBarItem" title="" id="QUk-Ig-1GI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyh-xF-WdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="1176"/>
+            <point key="canvasLocation" x="-1034" y="1176"/>
         </scene>
         <!--ReportHabit-->
         <scene sceneID="4o8-o7-5LS">
             <objects>
                 <viewControllerPlaceholder storyboardName="ReportHabit" id="n95-T1-cXo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uAq-JE-ltf"/>
+                    <tabBarItem key="tabBarItem" title="" id="uAq-JE-ltf"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk8-mp-S2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1483" y="1176"/>
+            <point key="canvasLocation" x="-357" y="1176"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
         <namedColor name="back">
-            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="text">
-            <color red="0.14100000262260437" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -19,10 +19,6 @@ class HabitTrackerController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBAction func addNewHabitButtonPressed(_ sender: UIBarButtonItem) {
-        push(R.storyboard.createHabits.createHabitViewController()!.setPopOnComplete())
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         generateDates()
