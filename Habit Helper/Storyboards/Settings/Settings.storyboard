@@ -5,14 +5,8 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Nunito-Regular.ttf">
-            <string>Nunito-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="zik-zk-AzU">
@@ -40,19 +34,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-tk-us0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="80"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="5jD-sh-ien"/>
-                                    <constraint firstAttribute="height" constant="80" id="W0A-ip-Hji"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="userInfoButtonPressed:" destination="4Rq-r4-XHK" eventType="touchUpInside" id="M39-1v-eZL"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xwO-3S-dUQ">
-                                <rect key="frame" x="0.0" y="178" width="414" height="684"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" name="back"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="WbO-Zn-S8v">
                                     <rect key="frame" x="0.0" y="93.000000346790671" width="414" height="44"/>
@@ -74,63 +57,19 @@
                                     <outlet property="delegate" destination="4Rq-r4-XHK" id="pzS-xg-vnH"/>
                                 </connections>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-jg-xr5">
-                                <rect key="frame" x="20" y="93" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="ihb-S6-Klq"/>
-                                    <constraint firstAttribute="height" constant="70" id="uLs-ik-ltn"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="060-DT-TgJ">
-                                <rect key="frame" x="120" y="118" width="245" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="3bV-QN-iSD"/>
-                                    <constraint firstAttribute="width" constant="245" id="egp-HG-gao"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IQ1-71-WuJ"/>
                         <color key="backgroundColor" name="back"/>
                         <constraints>
                             <constraint firstItem="xwO-3S-dUQ" firstAttribute="trailing" secondItem="IQ1-71-WuJ" secondAttribute="trailing" id="75J-fb-56U"/>
-                            <constraint firstItem="zNN-jg-xr5" firstAttribute="top" secondItem="IQ1-71-WuJ" secondAttribute="top" constant="5" id="A1p-xV-K2B"/>
                             <constraint firstItem="IQ1-71-WuJ" firstAttribute="bottom" secondItem="xwO-3S-dUQ" secondAttribute="bottom" id="JCe-OR-T4x"/>
-                            <constraint firstItem="zNN-jg-xr5" firstAttribute="leading" secondItem="IQ1-71-WuJ" secondAttribute="leading" constant="20" id="MNt-Qh-9GH"/>
-                            <constraint firstItem="xpa-tk-us0" firstAttribute="trailing" secondItem="IQ1-71-WuJ" secondAttribute="trailing" id="O4j-Cm-8Mg"/>
-                            <constraint firstItem="xpa-tk-us0" firstAttribute="leading" secondItem="IQ1-71-WuJ" secondAttribute="leading" id="X4d-7Q-qMb"/>
-                            <constraint firstItem="xpa-tk-us0" firstAttribute="top" secondItem="IQ1-71-WuJ" secondAttribute="top" id="biu-H6-ipE"/>
-                            <constraint firstItem="060-DT-TgJ" firstAttribute="leading" secondItem="zNN-jg-xr5" secondAttribute="trailing" constant="30" id="n8R-UD-u2S"/>
+                            <constraint firstItem="xwO-3S-dUQ" firstAttribute="top" secondItem="IQ1-71-WuJ" secondAttribute="top" id="Wez-rD-rxp"/>
                             <constraint firstItem="xwO-3S-dUQ" firstAttribute="leading" secondItem="IQ1-71-WuJ" secondAttribute="leading" id="odF-8f-djQ"/>
-                            <constraint firstItem="xwO-3S-dUQ" firstAttribute="top" secondItem="xpa-tk-us0" secondAttribute="bottom" constant="10" id="pGH-fU-y6C"/>
-                            <constraint firstItem="060-DT-TgJ" firstAttribute="top" secondItem="IQ1-71-WuJ" secondAttribute="top" constant="30" id="qdh-FI-k7P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ckq-mR-R6c">
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="XTW-c3-36W">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rx7-BZ-8NO">
-                                <rect key="frame" x="362" y="6" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="logout">
-                                    <color key="titleColor" name="buttons"/>
-                                </state>
-                                <connections>
-                                    <action selector="logOutButtonPressed:" destination="4Rq-r4-XHK" eventType="touchUpInside" id="47s-Hu-YHk"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" name="buttons"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Ckq-mR-R6c"/>
                     <connections>
                         <outlet property="tableView" destination="xwO-3S-dUQ" id="8BL-Wf-MeS"/>
-                        <outlet property="userNameLabel" destination="060-DT-TgJ" id="qw6-yU-SWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21T-co-uVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,15 +110,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logout" width="22" height="22"/>
         <namedColor name="back">
             <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="buttons">
-            <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
