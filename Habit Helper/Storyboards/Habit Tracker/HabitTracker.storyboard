@@ -13,9 +13,7 @@
         <scene sceneID="LAq-us-F25">
             <objects>
                 <navigationController id="8qh-yF-yUZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="checklist" selectedImage="checklist" id="3aj-TN-oNQ">
-                        <color key="badgeColor" name="text"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" id="3aj-TN-oNQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPG-mi-Ovw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -103,14 +101,7 @@
                             <constraint firstItem="PJW-kx-YMf" firstAttribute="bottom" secondItem="swi-Q9-3jj" secondAttribute="bottom" id="uVk-Bu-IW1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Q45-zF-WoB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lcJ-xk-jgA">
-                            <color key="tintColor" name="buttons"/>
-                            <connections>
-                                <action selector="addNewHabitButtonPressed:" destination="M5R-0g-Eio" id="Pvx-iA-V2I"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Q45-zF-WoB"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="rhK-su-NPo" id="PCt-Uk-EcB"/>
@@ -123,15 +114,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checklist" width="32" height="32"/>
         <namedColor name="back">
             <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="buttons">
-            <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="text">
-            <color red="0.14100000262260437" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

@@ -18,7 +18,7 @@
         <scene sceneID="zik-zk-AzU">
             <objects>
                 <navigationController id="xzu-cy-la3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="gear" selectedImage="gear" id="xNX-To-frP"/>
+                    <tabBarItem key="tabBarItem" title="" id="xNX-To-frP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G8C-fX-s7D">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -171,7 +171,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" width="32" height="32"/>
         <image name="logout" width="22" height="22"/>
         <namedColor name="back">
             <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
