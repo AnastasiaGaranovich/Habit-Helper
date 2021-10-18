@@ -77,8 +77,6 @@ extension HabitTrackerController: UITableViewDataSource, UITableViewDelegate {
         //        cell.habitName.text = AppData.user.habits[indexPath.row].habitName
         cell.habitName.text = testArray[indexPath.row]
         cell.progressView.backgroundColor = UIColor(named: "buttons")
-        cell.borderWidth = 2.5
-        cell.borderColor = UIColor(named: "back")!
         return cell
     }
     

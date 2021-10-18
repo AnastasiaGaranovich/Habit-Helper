@@ -23,7 +23,7 @@
             <objects>
                 <navigationController id="9Fo-cC-WbZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="5QL-KT-y2r"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O0M-Jq-DVa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,7 +46,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of habit" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvg-LQ-V0p">
                                 <rect key="frame" x="57" y="30" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="OMw-c2-bBz"/>
                                     <constraint firstAttribute="width" constant="300" id="RPb-qj-ZUi"/>
@@ -67,7 +67,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-43-bfK">
                                 <rect key="frame" x="20" y="243" width="369" height="100"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="HYf-67-Zlz"/>
                                 </constraints>
@@ -101,7 +101,7 @@
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="roK-Dj-PLC">
                                 <rect key="frame" x="20" y="409" width="374" height="100"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mMK-cu-9Qd"/>
                                 </constraints>
@@ -165,7 +165,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrN-Mb-PYx">
-                                <rect key="frame" x="57" y="670" width="300" height="50"/>
+                                <rect key="frame" x="57" y="665" width="300" height="50"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="FW5-Xc-PDo"/>
@@ -186,7 +186,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd9-Ct-W1u">
                                 <rect key="frame" x="30" y="590" width="100" height="40"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="B27-Wp-ZuI"/>
                                     <constraint firstAttribute="width" constant="100" id="r2A-ew-MjI"/>
@@ -206,7 +206,7 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-S3-KCF">
                                 <rect key="frame" x="157" y="590" width="100" height="40"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="MXi-yn-ysE"/>
                                     <constraint firstAttribute="height" constant="40" id="d86-nC-tas"/>
@@ -226,7 +226,7 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdH-cb-Nxb">
                                 <rect key="frame" x="284" y="590" width="100" height="40"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JBX-nf-xJj"/>
                                     <constraint firstAttribute="width" constant="100" id="uqM-WQ-ksx"/>
@@ -246,7 +246,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oxd-1n-rpG"/>
-                        <color key="backgroundColor" name="back"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gd9-Ct-W1u" firstAttribute="centerY" secondItem="hIH-S3-KCF" secondAttribute="centerY" id="24v-3C-hZj"/>
                             <constraint firstItem="FLM-qM-HiC" firstAttribute="top" secondItem="6i9-yE-baA" secondAttribute="bottom" constant="30" id="5F2-wt-nFB"/>
@@ -259,7 +259,7 @@
                             <constraint firstItem="6i9-yE-baA" firstAttribute="top" secondItem="6zN-n3-HhL" secondAttribute="bottom" constant="10" id="OEa-Ln-F0h"/>
                             <constraint firstItem="roK-Dj-PLC" firstAttribute="top" secondItem="hKa-5s-c0P" secondAttribute="bottom" constant="15" id="Ooo-6w-5ah"/>
                             <constraint firstItem="dvg-LQ-V0p" firstAttribute="top" secondItem="oxd-1n-rpG" secondAttribute="top" constant="30" id="QeB-7E-Pgx"/>
-                            <constraint firstItem="IrN-Mb-PYx" firstAttribute="top" secondItem="Gd9-Ct-W1u" secondAttribute="bottom" constant="40" id="ShQ-Fr-ayR"/>
+                            <constraint firstItem="IrN-Mb-PYx" firstAttribute="top" secondItem="Gd9-Ct-W1u" secondAttribute="bottom" constant="35" id="ShQ-Fr-ayR"/>
                             <constraint firstItem="Znq-YU-3Bg" firstAttribute="top" secondItem="roK-Dj-PLC" secondAttribute="bottom" constant="30" id="TRU-5A-lpj"/>
                             <constraint firstItem="6zN-n3-HhL" firstAttribute="centerX" secondItem="nzg-4o-CNY" secondAttribute="centerX" id="Wqg-8d-wEF"/>
                             <constraint firstItem="Znq-YU-3Bg" firstAttribute="centerX" secondItem="nzg-4o-CNY" secondAttribute="centerX" id="Xhz-iY-xgP"/>
@@ -295,9 +295,6 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="back">
-            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="buttons">
             <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

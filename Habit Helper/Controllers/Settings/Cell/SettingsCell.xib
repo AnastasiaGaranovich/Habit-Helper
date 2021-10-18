@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,7 +21,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46f-fs-YRC">
-                        <rect key="frame" x="30" y="11.5" width="324.5" height="21"/>
+                        <rect key="frame" x="30" y="9.5" width="324.5" height="25"/>
                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,7 +33,7 @@
                         </connections>
                     </button>
                 </subviews>
-                <color key="backgroundColor" name="back"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="qWz-56-XFc" firstAttribute="leading" secondItem="8Ex-OC-Uxr" secondAttribute="leading" constant="5" id="BCw-5Z-Bqj"/>
                     <constraint firstAttribute="trailing" secondItem="qWz-56-XFc" secondAttribute="trailing" constant="5" id="O3T-yk-jjv"/>
@@ -45,7 +44,7 @@
                     <constraint firstAttribute="trailing" secondItem="46f-fs-YRC" secondAttribute="trailing" constant="30" id="x7g-jX-qaZ"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" name="back"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="cellButton" destination="qWz-56-XFc" id="92B-nQ-idf"/>
                 <outlet property="settingLabel" destination="46f-fs-YRC" id="Zpe-KE-bRW"/>
@@ -53,9 +52,4 @@
             <point key="canvasLocation" x="160.86956521739131" y="-31.473214285714285"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <namedColor name="back">
-            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-    </resources>
 </document>

@@ -26,7 +26,7 @@
                         <rect key="frame" x="17.5" y="17.5" width="45" height="45"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SH-MI-3aY">
-                                <rect key="frame" x="11" y="9" width="23" height="27.5"/>
+                                <rect key="frame" x="11" y="11" width="23" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="gmf-eu-awd"/>
                                 </constraints>
@@ -69,7 +69,7 @@
                     <constraint firstItem="E3d-IY-6MV" firstAttribute="centerY" secondItem="Q3F-tP-AYj" secondAttribute="centerY" id="ugF-nn-DUC"/>
                 </constraints>
             </collectionViewCellContentView>
-            <color key="backgroundColor" name="back"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <size key="customSize" width="274" height="243"/>
             <connections>
                 <outlet property="dayLabel" destination="1SH-MI-3aY" id="LsW-lR-M1h"/>
@@ -80,11 +80,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="back">
-            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="border">
-            <color red="0.88235294117647056" green="0.94117647058823528" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.88200002908706665" green="0.94099998474121094" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

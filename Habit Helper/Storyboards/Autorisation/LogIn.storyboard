@@ -42,8 +42,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Sign In" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nr-Eo-ddS">
-                                <rect key="frame" x="57" y="408" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <rect key="frame" x="57" y="398" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="4hD-4M-pyH"/>
@@ -61,8 +61,8 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-cP-ePe">
-                                <rect key="frame" x="57" y="508" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <rect key="frame" x="57" y="498" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rQg-oH-bp4"/>
@@ -80,7 +80,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-Rv-0sm">
-                                <rect key="frame" x="137" y="578" width="140" height="29"/>
+                                <rect key="frame" x="137" y="568" width="140" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="nYE-NB-CTJ"/>
                                 </constraints>
@@ -94,7 +94,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNw-zt-hrt">
-                                <rect key="frame" x="57" y="663" width="300" height="50"/>
+                                <rect key="frame" x="57" y="653" width="300" height="50"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5WT-jg-Jtm"/>
@@ -115,20 +115,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxg-Id-cQv">
-                                <rect key="frame" x="118" y="773" width="178.5" height="16.5"/>
+                                <rect key="frame" x="118" y="763" width="178.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGray3Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9x-Yv-e3Q">
-                                <rect key="frame" x="31" y="603" width="0.0" height="0.0"/>
+                                <rect key="frame" x="31" y="593" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU3-rf-uWI">
-                                <rect key="frame" x="167" y="794.5" width="80" height="35"/>
-                                <color key="backgroundColor" name="back"/>
+                                <rect key="frame" x="167" y="784.5" width="80" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="F0I-rt-gpr"/>
                                     <constraint firstAttribute="width" constant="80" id="L1X-8y-O8y"/>
@@ -146,15 +146,24 @@
                                     <action selector="signUpButtonPressed:" destination="o8o-Im-96Q" eventType="touchUpInside" id="uVN-hW-GKP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="73U-jb-Uax">
+                                <rect key="frame" x="107" y="143" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="acb-rc-5pg"/>
+                                    <constraint firstAttribute="width" constant="200" id="msF-Tm-txk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nH1-gT-eVS"/>
-                        <color key="backgroundColor" name="back"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5nr-Eo-ddS" firstAttribute="centerX" secondItem="Ofg-qD-ZJt" secondAttribute="centerX" id="5Ha-Ba-wcX"/>
+                            <constraint firstItem="73U-jb-Uax" firstAttribute="centerX" secondItem="Ofg-qD-ZJt" secondAttribute="centerX" id="7Rs-8U-koT"/>
                             <constraint firstItem="rxg-Id-cQv" firstAttribute="top" secondItem="rNw-zt-hrt" secondAttribute="bottom" constant="60" id="DDE-EI-ipp"/>
                             <constraint firstItem="rxg-Id-cQv" firstAttribute="centerX" secondItem="Ofg-qD-ZJt" secondAttribute="centerX" id="EC6-bm-npm"/>
-                            <constraint firstItem="5nr-Eo-ddS" firstAttribute="top" secondItem="nH1-gT-eVS" secondAttribute="top" constant="320" id="LIN-Iz-m5P"/>
+                            <constraint firstItem="5nr-Eo-ddS" firstAttribute="top" secondItem="73U-jb-Uax" secondAttribute="bottom" constant="55" id="Et9-CR-Imx"/>
+                            <constraint firstItem="73U-jb-Uax" firstAttribute="top" secondItem="nH1-gT-eVS" secondAttribute="top" constant="55" id="FEx-yC-T9Y"/>
                             <constraint firstItem="qU3-rf-uWI" firstAttribute="top" secondItem="rxg-Id-cQv" secondAttribute="bottom" constant="5" id="MvJ-Ip-uGv"/>
                             <constraint firstItem="bTp-Rv-0sm" firstAttribute="centerX" secondItem="Ofg-qD-ZJt" secondAttribute="centerX" id="O5u-96-U1A"/>
                             <constraint firstItem="sNp-cP-ePe" firstAttribute="top" secondItem="5nr-Eo-ddS" secondAttribute="bottom" constant="40" id="Okz-wH-lPY"/>
@@ -181,11 +190,9 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="back">
-            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
+        <image name="logo" width="1024" height="1024"/>
         <namedColor name="buttons">
-            <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
