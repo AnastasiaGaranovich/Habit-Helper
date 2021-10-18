@@ -26,8 +26,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQr-2g-a3G">
-                                <rect key="frame" x="57" y="328" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <rect key="frame" x="57" y="368" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1hD-rh-CrY"/>
                                     <constraint firstAttribute="height" constant="60" id="LoQ-Zn-nKy"/>
@@ -45,8 +45,8 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxz-Gy-LwK">
-                                <rect key="frame" x="57" y="428" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <rect key="frame" x="57" y="468" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="syd-md-G0R"/>
                                     <constraint firstAttribute="height" constant="60" id="yaE-pb-bqi"/>
@@ -64,7 +64,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-5L-3JJ">
-                                <rect key="frame" x="57" y="603" width="300" height="50"/>
+                                <rect key="frame" x="57" y="643" width="300" height="50"/>
                                 <color key="backgroundColor" name="buttons"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0TW-Qi-Tb0"/>
@@ -83,16 +83,25 @@
                                     <action selector="signUpButtonPressed:" destination="SIg-8I-e9A" eventType="touchUpInside" id="RwO-5u-nKM"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-bQ-vig">
+                                <rect key="frame" x="107" y="128" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Gse-HS-b9t"/>
+                                    <constraint firstAttribute="height" constant="200" id="iTq-cS-NJk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SNY-ZR-qf9"/>
-                        <color key="backgroundColor" name="back"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sxz-Gy-LwK" firstAttribute="centerX" secondItem="GRU-CZ-Dtp" secondAttribute="centerX" id="17z-oR-1Mt"/>
                             <constraint firstItem="mPP-5L-3JJ" firstAttribute="centerX" secondItem="GRU-CZ-Dtp" secondAttribute="centerX" id="Ivv-yd-7bS"/>
+                            <constraint firstItem="O2t-bQ-vig" firstAttribute="top" secondItem="SNY-ZR-qf9" secondAttribute="top" constant="40" id="MgM-kJ-Olp"/>
+                            <constraint firstItem="BQr-2g-a3G" firstAttribute="top" secondItem="O2t-bQ-vig" secondAttribute="bottom" constant="40" id="NNl-WR-fFa"/>
                             <constraint firstItem="BQr-2g-a3G" firstAttribute="centerX" secondItem="GRU-CZ-Dtp" secondAttribute="centerX" id="bHX-06-MEk"/>
                             <constraint firstItem="sxz-Gy-LwK" firstAttribute="top" secondItem="BQr-2g-a3G" secondAttribute="bottom" constant="40" id="bKd-DZ-1vF"/>
+                            <constraint firstItem="O2t-bQ-vig" firstAttribute="centerX" secondItem="GRU-CZ-Dtp" secondAttribute="centerX" id="fLg-m6-fbe"/>
                             <constraint firstItem="mPP-5L-3JJ" firstAttribute="top" secondItem="sxz-Gy-LwK" secondAttribute="bottom" constant="115" id="hsa-uD-PGa"/>
-                            <constraint firstItem="BQr-2g-a3G" firstAttribute="top" secondItem="SNY-ZR-qf9" secondAttribute="top" constant="240" id="nJb-VD-fAd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Zbb-5g-FXZ"/>
@@ -134,7 +143,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-M7-FZ7">
                                 <rect key="frame" x="57" y="211.5" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="JCY-72-uQb"/>
                                     <constraint firstAttribute="width" constant="300" id="v4i-jp-s2e"/>
@@ -183,6 +192,7 @@
                                     <segment title="Another"/>
                                     <segment title="Man"/>
                                 </segments>
+                                <color key="tintColor" name="buttons"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-pY-xTj">
                                 <rect key="frame" x="137.5" y="118" width="139.5" height="23.5"/>
@@ -192,7 +202,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-N7-Jn8">
                                 <rect key="frame" x="57" y="311.5" width="300" height="60"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Fem-JH-9e7"/>
                                     <constraint firstAttribute="width" constant="300" id="h1a-zi-7nm"/>
@@ -212,7 +222,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TyC-mI-HkG"/>
-                        <color key="backgroundColor" name="back"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FU9-N7-Jn8" firstAttribute="centerX" secondItem="BEs-Mh-Nct" secondAttribute="centerX" id="0AZ-hQ-BFN"/>
                             <constraint firstItem="5DA-By-PJy" firstAttribute="top" secondItem="FU9-N7-Jn8" secondAttribute="bottom" constant="40" id="0yQ-vn-GP3"/>
@@ -240,17 +250,18 @@
     </scenes>
     <color key="tintColor" name="buttons"/>
     <resources>
+        <image name="logo" width="1024" height="1024"/>
         <namedColor name="back">
-            <color red="0.98431372549019602" green="0.9882352941176471" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="buttons">
-            <color red="0.50196078431372548" green="0.84705882352941175" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="text">
             <color red="0.14100000262260437" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textFields">
-            <color red="0.93333333333333335" green="0.96470588235294119" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.93300002813339233" green="0.9649999737739563" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

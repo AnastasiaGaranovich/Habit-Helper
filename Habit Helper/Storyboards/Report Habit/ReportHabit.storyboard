@@ -19,12 +19,12 @@
             <objects>
                 <viewController storyboardIdentifier="ReportHabitController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TDP-og-080" customClass="ReportHabitController" customModule="Habit_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zey-nb-TS4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GId-8l-MKt">
                                 <rect key="frame" x="5" y="151" width="404" height="662"/>
-                                <color key="backgroundColor" name="back"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wGx-CT-6bI">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -78,7 +78,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Omg-Yy-0DO"/>
-                        <color key="backgroundColor" name="back"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gX8-39-Mkt" firstAttribute="centerX" secondItem="Zey-nb-TS4" secondAttribute="centerX" id="JTF-I8-0i3"/>
                             <constraint firstItem="gX8-39-Mkt" firstAttribute="leading" secondItem="YRG-kT-7ce" secondAttribute="trailing" constant="68" id="Jq1-TC-lhE"/>
@@ -93,7 +93,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="lJW-iJ-mWq"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="GId-8l-MKt" id="ei9-ex-YE3"/>
                         <outlet property="dateLabel" destination="gX8-39-Mkt" id="AXg-z0-fT7"/>
@@ -107,9 +107,6 @@
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
-        <namedColor name="back">
-            <color red="0.98400002717971802" green="0.98799997568130493" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="buttons">
             <color red="0.50199997425079346" green="0.84700000286102295" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

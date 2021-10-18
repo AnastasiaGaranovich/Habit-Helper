@@ -64,7 +64,7 @@ extension ReportHabitController: UICollectionViewDelegate, UICollectionViewDataS
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.monthCell, for: indexPath)!
-        cell.setCellBorderColor(color: "border")
+        cell.setCellBorderColor(color: "buttons")
         cell.setDate(date)
         cell.setup()
         return cell

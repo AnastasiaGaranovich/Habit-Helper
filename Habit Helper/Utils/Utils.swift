@@ -12,7 +12,6 @@ extension UIViewController {
             fatalError("No navigation controller")
         }
         nav.navigationBar.isTranslucent = false
-        nav.navigationBar.barTintColor = UIColor(named: "back")
         nav.navigationBar.shadowImage = UIImage()
         nav.navigationBar.backgroundColor = .clear
         nav.view.backgroundColor = .clear
