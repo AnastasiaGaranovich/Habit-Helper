@@ -11,8 +11,14 @@ enum SelectedButtonTag: Int {
 }
 
 class SettingsViewController: UIViewController {
+    let items = ["Language", "Notifications", "Security settings", "Usage Tips", "Rate"]
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        AppData.isLogined = false
+        jumpTo(R.storyboard.logIn.instantiateInitialViewController()!)
+    }
     
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
@@ -43,12 +49,9 @@ class SettingsViewController: UIViewController {
         }
     }
     
-    let items = ["Language", "Notifications", "Security settings", "Usage Tips", "Rate"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setNavigation()
-        //navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = false
         SettingsCell.registerFor(tableView)
     }
