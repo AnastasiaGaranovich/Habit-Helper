@@ -24,6 +24,8 @@
 		1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2008261243E30009ED88 /* SignUpViewController.swift */; };
 		1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E200D261244250009ED88 /* CreateAccountViewController.swift */; };
 		1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E2012261244550009ED88 /* CreateAnimalViewController.swift */; };
+		1BB525E3271F6687008603B3 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */; };
+		1BB525E4271F668C008603B3 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF34326B196B20055F130 /* Nunito-ExtraLight.ttf */; };
 		1BB8D1772699A2750039A747 /* HabitTracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D1762699A2750039A747 /* HabitTracker.storyboard */; };
 		1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D1792699A2C30039A747 /* Settings.storyboard */; };
 		1BB8D17D2699A2F20039A747 /* ReportHabit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D17C2699A2F20039A747 /* ReportHabit.storyboard */; };
@@ -629,6 +631,7 @@
 				1BB8D1772699A2750039A747 /* HabitTracker.storyboard in Resources */,
 				5D9D9CA32561674300F5FEC0 /* MonthCell.xib in Resources */,
 				5D7BC7BE254718D900184BB4 /* LaunchScreen.storyboard in Resources */,
+				1BB525E3271F6687008603B3 /* Nunito-Regular.ttf in Resources */,
 				1BB8D17A2699A2C30039A747 /* Settings.storyboard in Resources */,
 				1B5AF34626BAA6460055F130 /* HabitTrackerDaysCell.xib in Resources */,
 				1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */,
@@ -644,6 +647,7 @@
 				1BB8D1802699A3100039A747 /* Animal.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
+				1BB525E4271F668C008603B3 /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,7 +943,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = L363K9J2RM;
 				INFOPLIST_FILE = "Habit Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -959,7 +963,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = L363K9J2RM;
 				INFOPLIST_FILE = "Habit Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
