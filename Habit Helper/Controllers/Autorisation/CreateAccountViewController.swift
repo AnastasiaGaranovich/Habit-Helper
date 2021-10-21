@@ -30,6 +30,7 @@ class CreateAccountViewController: UIViewController {
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
     }
+    
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         push(R.storyboard.createHabits.createHabitViewController()!)
     }
