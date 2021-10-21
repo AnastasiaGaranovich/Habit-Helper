@@ -20,11 +20,11 @@
         <scene sceneID="LAq-us-F25">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uer-pB-1fA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController navigationBarHidden="YES" id="8qh-yF-yUZ" sceneMemberID="viewController">
+                <navigationController id="8qh-yF-yUZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="3aj-TN-oNQ"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPG-mi-Ovw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
