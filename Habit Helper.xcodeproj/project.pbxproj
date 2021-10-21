@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B084583269F5CE800BE79F2 /* R.generated.swift */; };
+		1B42C3ED2721ED48008505A4 /* CongratulationScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B42C3EC2721ED48008505A4 /* CongratulationScreen.storyboard */; };
+		1B42C3F02721EF56008505A4 /* CongratulationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */; };
+		1B42C3F22721F03B008505A4 /* CongratulationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */; };
 		1B4771B326E1247B002EF0E1 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4771B226E1247B002EF0E1 /* AnimalCell.swift */; };
 		1B5AF33C26AAABDA0055F130 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */; };
 		1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */; };
@@ -83,6 +86,9 @@
 
 /* Begin PBXFileReference section */
 		1B084583269F5CE800BE79F2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1B42C3EC2721ED48008505A4 /* CongratulationScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CongratulationScreen.storyboard; sourceTree = "<group>"; };
+		1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationScreen.swift; sourceTree = "<group>"; };
+		1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CongratulationScreen.xib; sourceTree = "<group>"; };
 		1B4771B226E1247B002EF0E1 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		1B5AF33B26AAABDA0055F130 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
 		1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +179,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B42C3EB2721ECEB008505A4 /* CongratulationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B42C3EC2721ED48008505A4 /* CongratulationScreen.storyboard */,
+			);
+			path = CongratulationScreen;
+			sourceTree = "<group>";
+		};
+		1B42C3EE2721EF3E008505A4 /* CongratulationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */,
+				1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */,
+			);
+			path = CongratulationScreen;
+			sourceTree = "<group>";
+		};
 		1B4771B126E12450002EF0E1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +487,7 @@
 		5DDED53625DD97630027E070 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				1B42C3EB2721ECEB008505A4 /* CongratulationScreen */,
 				1B5AF33A26AAABB50055F130 /* UserInfo */,
 				1BB8D1892699A7F70039A747 /* Create Animal */,
 				1BB8D1852699A7200039A747 /* Tab Bar */,
@@ -491,6 +515,7 @@
 		5DDED53825DD97B80027E070 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B42C3EE2721EF3E008505A4 /* CongratulationScreen */,
 				1BB8D1902699A9040039A747 /* Create Habit */,
 				1BB8D18F2699A8F80039A747 /* Animal */,
 				1BB8D18E2699A8E90039A747 /* Create Animal */,
@@ -643,10 +668,12 @@
 				5D7BC7B6254718D700184BB4 /* Main.storyboard in Resources */,
 				1BB8D17D2699A2F20039A747 /* ReportHabit.storyboard in Resources */,
 				1B9E1FF8261234320009ED88 /* CreateHabits.storyboard in Resources */,
+				1B42C3F22721F03B008505A4 /* CongratulationScreen.xib in Resources */,
 				1BF5FC8A26F27209004B33F6 /* FaceIDLocked.storyboard in Resources */,
 				1BB8D1802699A3100039A747 /* Animal.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
+				1B42C3ED2721ED48008505A4 /* CongratulationScreen.storyboard in Resources */,
 				1BB525E4271F668C008603B3 /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,6 +781,7 @@
 				1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,
+				1B42C3F02721EF56008505A4 /* CongratulationScreen.swift in Sources */,
 				1BD1D76D2614920C00789C59 /* Utils.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */,

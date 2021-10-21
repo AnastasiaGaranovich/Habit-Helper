@@ -1,4 +1,5 @@
 import UIKit
+import SwiftyTools
 
 fileprivate let colors = [#colorLiteral(red: 0.1413740516, green: 0.7993801236, blue: 0.8106815219, alpha: 1), #colorLiteral(red: 0.6976035237, green: 0.2504223585, blue: 0.07817580551, alpha: 1), #colorLiteral(red: 0.3142956793, green: 0.815061748, blue: 0.4724518061, alpha: 1), #colorLiteral(red: 0.9385383725, green: 0.6548688412, blue: 0.3524156809, alpha: 1), #colorLiteral(red: 0.01053562947, green: 0.6355637312, blue: 0.9967387319, alpha: 1), #colorLiteral(red: 0.9667804837, green: 0.2779423594, blue: 0.2843114734, alpha: 1), #colorLiteral(red: 0.2623673081, green: 0.880939424, blue: 0.7340664268, alpha: 1), #colorLiteral(red: 0.09583013505, green: 0.4570071101, blue: 0.9661403298, alpha: 1), #colorLiteral(red: 0.4001787901, green: 0.5588534474, blue: 0.82034868, alpha: 1), #colorLiteral(red: 0.9172300696, green: 0.5038186908, blue: 0.7353674173, alpha: 1),
                           #colorLiteral(red: 0.9566963315, green: 0.657890141, blue: 0.6689068675, alpha: 1), #colorLiteral(red: 0.6848015189, green: 0.8347877264, blue: 0.8847911954, alpha: 1), #colorLiteral(red: 0.7204694152, green: 0.2701157331, blue: 0.9128898978, alpha: 1), #colorLiteral(red: 0.3253745735, green: 0.6728343368, blue: 0.919305563, alpha: 1), #colorLiteral(red: 0.9671966434, green: 0.4166970849, blue: 0.2103305757, alpha: 1), #colorLiteral(red: 0.3149170578, green: 0.7918435931, blue: 0.3550480604, alpha: 1), #colorLiteral(red: 0.3180869818, green: 0.3398532867, blue: 0.4351640046, alpha: 1), #colorLiteral(red: 0.9674569964, green: 0.2595192194, blue: 0.1041855291, alpha: 1), #colorLiteral(red: 0.8309859633, green: 0.1444538832, blue: 0.4801908731, alpha: 1), #colorLiteral(red: 0.3992031515, green: 0.2803818285, blue: 0.9814835191, alpha: 1),
@@ -118,7 +119,12 @@ class CreateHabitViewController: UIViewController {
             pop()
         }
         else {
-            jumpTo(R.storyboard.main.tabBarController()!)
+            let congrats = CongratulationScreen(frame: CGRect(0, 0, view.frame.width, view.frame.height))
+            self.view.addSubview(congrats)
+            after(5) {
+                congrats.removeFromSuperview()
+                jumpTo(R.storyboard.main.tabBarController()!)
+            }
         }
     }
     
