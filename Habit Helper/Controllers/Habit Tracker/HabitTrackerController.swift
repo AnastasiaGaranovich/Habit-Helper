@@ -18,14 +18,20 @@ class HabitTrackerController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBAction func userInfoButtonPressed(_ sender: UIButton) {
+        push(R.storyboard.userInfo.userInfoViewController()!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         generateDates()
         CustomTableCell.registerFor(tableView)
         HabitTrackerDaysCell.registerFor(collectionView)
-        setNavigation()
         tabBarController?.tabBar.isHidden = false
+        usernameLabel.text = AppData.user.name
     }
     
     override func viewWillAppear(_ animated: Bool) {
