@@ -1,10 +1,3 @@
-//
-//  FaceIDLockedViewController.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 15.09.2021.
-//
-
 import UIKit
 import LocalAuthentication
 import iOSTools
@@ -15,8 +8,10 @@ class FaceIDLockedViewController: UIViewController {
         super.viewDidAppear(animated)
         checkFaceID()
     }
-    
-    private func checkFaceID() {
+}
+
+private extension FaceIDLockedViewController {
+    func checkFaceID() {
         let context = LAContext()
         var error: NSError? = nil
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,

@@ -1,10 +1,3 @@
-//
-//  HabitTrackerDaysCell.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 04.08.2021.
-//
-
 import UIKit
 
 class HabitTrackerDaysCell: UICollectionViewCell {
