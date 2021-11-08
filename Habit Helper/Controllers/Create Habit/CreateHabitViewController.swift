@@ -94,24 +94,24 @@ class CreateHabitViewController: UIViewController {
     }
     
     @IBAction func goalsButtonPressed(_ sender: UIButton) {
-//        let picker = UIPickerView()
-//        picker.delegate = self as UIPickerViewDelegate
-//        picker.dataSource = self as UIPickerViewDataSource
-//        let alert = UIAlertController(title: "Select Date", message: "", preferredStyle: .actionSheet)
-//
-//        // height constraint
-//        let constraintHeight = NSLayoutConstraint(
-//            item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute:
-//                NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: view.frame.height / 3)
-//        alert.view.addConstraint(constraintHeight)
-//        alert.view.addSubview(picker)
-//        picker.frame = CGRect(0, 0, view.frame.size.width, view.frame.height / 3.5)
-//
-//        let ok = UIAlertAction(title: "Done", style: .destructive) { (action) in
-//            //
-//        }
-//        alert.addAction(ok)
-//        present(alert, animated: true, completion: nil)
+        //        let picker = UIPickerView()
+        //        picker.delegate = self as UIPickerViewDelegate
+        //        picker.dataSource = self as UIPickerViewDataSource
+        //        let alert = UIAlertController(title: "Select Date", message: "", preferredStyle: .actionSheet)
+        //
+        //        // height constraint
+        //        let constraintHeight = NSLayoutConstraint(
+        //            item: alert.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute:
+        //                NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: view.frame.height / 3)
+        //        alert.view.addConstraint(constraintHeight)
+        //        alert.view.addSubview(picker)
+        //        picker.frame = CGRect(0, 0, view.frame.size.width, view.frame.height / 3.5)
+        //
+        //        let ok = UIAlertAction(title: "Done", style: .destructive) { (action) in
+        //            //
+        //        }
+        //        alert.addAction(ok)
+        //        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func completeButtonPressed(_ sender: UIButton) {
@@ -130,15 +130,17 @@ class CreateHabitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tabBarController?.tabBar.isHidden = true
+        //tabBarController?.tabBar.isHidden = true
         setNavigation()
         habitNameTextField.setTextFieldBorderColor()
         startDateButton.setButtonBorderColor()
         endDateButton.setButtonBorderColor()
         goalsButton.setButtonBorderColor()
     }
-    
-    private func alertDonePressed(datePicker: UIDatePicker, tag: Int) {
+}
+
+private extension CreateHabitViewController {
+    func alertDonePressed(datePicker: UIDatePicker, tag: Int) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"
         let dateString = dateFormatter.string(from: datePicker.date)
@@ -151,55 +153,13 @@ class CreateHabitViewController: UIViewController {
             self.endDateButton.setTitleColor(UIColor(named: "text"), for: .normal)
         }
     }
-    
 }
-
-//extension CreateHabitViewController: UIPickerViewDataSource, UIPickerViewDelegate {
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        1
-//    }
-//
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        return goalsArray.count
-//    }
-//
-//}
-
-extension CreateHabitViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == colorCollectionView {
-            return nummberOfColors()
-        }
-        else {
-            return numberOfIcons()
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {        if collectionView == colorCollectionView {
-        return colorCellFor(indexPath)
-    }
-    else {
-        return iconCellFor(indexPath)
-    }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 40, height: 40)
-    }
-    
-    //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    //
-    //    }
-    
-}
-
 
 //MARK: - Color Collection
 
 private extension CreateHabitViewController {
     
-    func nummberOfColors() -> Int {
+    func numberOfColors() -> Int {
         colors.count
     }
     
@@ -230,5 +190,45 @@ private extension CreateHabitViewController {
     }
     //    func didSelectColorAt(_ indexPath: IndexPath) {
     // нажатие на ячейку и добавление иконки привычки
+    //    }
+}
+
+//extension CreateHabitViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        1
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return goalsArray.count
+//    }
+//
+//}
+
+extension CreateHabitViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == colorCollectionView {
+            return numberOfColors()
+        }
+        else {
+            return numberOfIcons()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == colorCollectionView {
+            return colorCellFor(indexPath)
+        }
+        else {
+            return iconCellFor(indexPath)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 40, height: 40)
+    }
+    
+    //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    //
     //    }
 }

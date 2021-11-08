@@ -1,10 +1,3 @@
-//
-//  TabBarController.swift
-//  Habit Helper
-//
-//  Created by Анастасия Гаранович on 10.07.2021.
-//
-
 import UIKit
 
 class TabBarController: UITabBarController {
@@ -30,8 +23,10 @@ class TabBarController: UITabBarController {
             self.moveStripe(item)
         }
     }
-    
-    private func moveStripe(_ item: UITabBarItem) {
+}
+
+private extension TabBarController {
+    func moveStripe(_ item: UITabBarItem) {
         let number = -(tabBar.items?.firstIndex(of: item)?.distance(to: 0))! + 1
         if number == 1 {
             self.indicatorImage?.center.x =  tabBar.frame.width/4/2
@@ -44,7 +39,7 @@ class TabBarController: UITabBarController {
         }
     }
     
-    private func setupImages() {
+    func setupImages() {
         tabBar.items![0].image = UIImage(named: "add unactive")?.withRenderingMode(.alwaysOriginal)
         tabBar.items![1].image = UIImage(named: "profile unactive")?.withRenderingMode(.alwaysOriginal)
         tabBar.items![2].image = UIImage(named: "calendar unactive")?.withRenderingMode(.alwaysOriginal)
@@ -56,7 +51,7 @@ class TabBarController: UITabBarController {
         tabBar.items![3].selectedImage = UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal)
     }
     
-    private func createSelectionIndicator(color: UIColor, size: CGSize, lineHeight: CGFloat) -> UIImage {
+    func createSelectionIndicator(color: UIColor, size: CGSize, lineHeight: CGFloat) -> UIImage {
         let rect: CGRect = CGRect(x: 0, y: 0, width: size.width, height: lineHeight)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         color.setFill()

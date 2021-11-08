@@ -22,6 +22,7 @@
 		1B75B21927395B8F0093433E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21827395B8F0093433E /* UIImage.swift */; };
 		1B75B21B27395BDB0093433E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21A27395BDB0093433E /* UIButton.swift */; };
 		1B75B21D27395BFF0093433E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21C27395BFF0093433E /* Date.swift */; };
+		1B75B226273962910093433E /* DateSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B225273962910093433E /* DateSelection.swift */; };
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* DayCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* DayCell.swift */; };
@@ -107,6 +108,7 @@
 		1B75B21827395B8F0093433E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		1B75B21A27395BDB0093433E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		1B75B21C27395BFF0093433E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		1B75B225273962910093433E /* DateSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelection.swift; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -192,8 +194,8 @@
 		1B42C3EE2721EF3E008505A4 /* CongratulationScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1B75B224273960800093433E /* View */,
 				1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */,
-				1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */,
 			);
 			path = CongratulationScreen;
 			sourceTree = "<group>";
@@ -270,6 +272,14 @@
 				1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */,
 			);
 			path = FaceID;
+			sourceTree = "<group>";
+		};
+		1B75B224273960800093433E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1B8311B826138BC900BA01A6 /* Network */ = {
@@ -461,6 +471,7 @@
 				5D77822425C9C684005B600B /* Habit.swift */,
 				5D77823125C9CC1F005B600B /* User.swift */,
 				5DA1639E260B9C59003B0964 /* AppData.swift */,
+				1B75B225273962910093433E /* DateSelection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -809,6 +820,7 @@
 			files = (
 				1B9E2013261244550009ED88 /* CreateAnimalViewController.swift in Sources */,
 				5DD41290254735420017C0EC /* AnimalViewController.swift in Sources */,
+				1B75B226273962910093433E /* DateSelection.swift in Sources */,
 				1B9D55AC26172746006E8A7A /* AnimalSettingsViewController.swift in Sources */,
 				5D7BC7B9254718D700184BB4 /* Habit_Helper.xcdatamodeld in Sources */,
 				5D71CF172549A8FE002DCA76 /* SettingsCell.swift in Sources */,

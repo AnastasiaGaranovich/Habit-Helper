@@ -1,16 +1,6 @@
 import UIKit
 import iOSTools
 
-class DateSelection {
-    var date: Date
-    var selection: Bool
-    
-    init(_ date: Date) {
-        self.date = date
-        selection = false
-    }
-}
-
 class HabitTrackerController: UIViewController {
     let testArray = ["Habit 1", "Habit 2", "Habit 3"]
     
@@ -38,15 +28,16 @@ class HabitTrackerController: UIViewController {
         super.viewWillAppear(animated)
         tabBarController?.tabBar.isHidden = false
     }
-    
-    private func generateDates() {
+}
+
+private extension HabitTrackerController {
+    func generateDates() {
         displayedDates.removeAll()
         for i in 0...100 {
             displayedDates.append(DateSelection(Date().dayShift(i - 50)))
         }
         collectionView.reloadData()
     }
-    
 }
 
 extension HabitTrackerController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
