@@ -191,13 +191,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B42C3EE2721EF3E008505A4 /* CongratulationScreen */ = {
+		1B42C3EE2721EF3E008505A4 /* Congratulation */ = {
 			isa = PBXGroup;
 			children = (
 				1B75B224273960800093433E /* View */,
 				1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */,
 			);
-			path = CongratulationScreen;
+			path = Congratulation;
 			sourceTree = "<group>";
 		};
 		1B4771B126E12450002EF0E1 /* Cell */ = {
@@ -216,12 +216,12 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
-		1B5AF33F26AAB0350055F130 /* UserInfo */ = {
+		1B5AF33F26AAB0350055F130 /* User Info */ = {
 			isa = PBXGroup;
 			children = (
 				1B5AF33D26AAB02D0055F130 /* UserInfoViewController.swift */,
 			);
-			path = UserInfo;
+			path = "User Info";
 			sourceTree = "<group>";
 		};
 		1B5AF34026AAC51E0055F130 /* Cell */ = {
@@ -575,7 +575,7 @@
 			children = (
 				1B75B22327395D700093433E /* FaceID */,
 				1B75B22227395D5D0093433E /* Tab Bar */,
-				1B42C3EE2721EF3E008505A4 /* CongratulationScreen */,
+				1B42C3EE2721EF3E008505A4 /* Congratulation */,
 				1BB8D1902699A9040039A747 /* Create Habit */,
 				1BB8D18F2699A8F80039A747 /* Animal */,
 				1BB8D18E2699A8E90039A747 /* Create Animal */,
@@ -583,7 +583,7 @@
 				1BB8D1882699A7C20039A747 /* Autorisation */,
 				1BB8D1872699A7A70039A747 /* Report Habit */,
 				1BB8D1862699A76B0039A747 /* Settings */,
-				1B5AF33F26AAB0350055F130 /* UserInfo */,
+				1B5AF33F26AAB0350055F130 /* User Info */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
