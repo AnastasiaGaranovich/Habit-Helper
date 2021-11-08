@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B084583269F5CE800BE79F2 /* R.generated.swift */; };
-		1B42C3ED2721ED48008505A4 /* CongratulationScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B42C3EC2721ED48008505A4 /* CongratulationScreen.storyboard */; };
 		1B42C3F02721EF56008505A4 /* CongratulationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */; };
 		1B42C3F22721F03B008505A4 /* CongratulationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */; };
 		1B4771B326E1247B002EF0E1 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4771B226E1247B002EF0E1 /* AnimalCell.swift */; };
@@ -17,6 +16,12 @@
 		1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34126B00F2F0055F130 /* ColorCell.swift */; };
 		1B5AF34626BAA6460055F130 /* HabitTrackerDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */; };
 		1B5AF34826BAA9F40055F130 /* HabitTrackerDaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */; };
+		1B75B21327395B060093433E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21227395B060093433E /* UIViewController.swift */; };
+		1B75B21527395B350093433E /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21427395B350093433E /* UITextField.swift */; };
+		1B75B21727395B690093433E /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21627395B690093433E /* UICollectionViewCell.swift */; };
+		1B75B21927395B8F0093433E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21827395B8F0093433E /* UIImage.swift */; };
+		1B75B21B27395BDB0093433E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21A27395BDB0093433E /* UIButton.swift */; };
+		1B75B21D27395BFF0093433E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B21C27395BFF0093433E /* Date.swift */; };
 		1B8311BA26138C0500BA01A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8311B926138C0500BA01A6 /* Network.swift */; };
 		1B8AE1352615C80C00E1B160 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE1342615C80C00E1B160 /* DayCell.xib */; };
 		1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE1392615C9D300E1B160 /* DayCell.swift */; };
@@ -36,7 +41,7 @@
 		1BB8D1832699A33D0039A747 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D1822699A33D0039A747 /* LogIn.storyboard */; };
 		1BB8D18B2699A8190039A747 /* CreateAnimal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8D18A2699A8190039A747 /* CreateAnimal.storyboard */; };
 		1BB8D1942699AA070039A747 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8D1932699AA070039A747 /* TabBarController.swift */; };
-		1BD1D76D2614920C00789C59 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76C2614920C00789C59 /* Utils.swift */; };
+		1BD1D76D2614920C00789C59 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1D76C2614920C00789C59 /* String.swift */; };
 		1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3AA0F261B85D800A10CFA /* IconCell.swift */; };
 		1BF5FC8A26F27209004B33F6 /* FaceIDLocked.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */; };
 		1BF5FC8C26F27258004B33F6 /* FaceIDLockedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */; };
@@ -86,7 +91,6 @@
 
 /* Begin PBXFileReference section */
 		1B084583269F5CE800BE79F2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		1B42C3EC2721ED48008505A4 /* CongratulationScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CongratulationScreen.storyboard; sourceTree = "<group>"; };
 		1B42C3EF2721EF56008505A4 /* CongratulationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationScreen.swift; sourceTree = "<group>"; };
 		1B42C3F12721F03B008505A4 /* CongratulationScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CongratulationScreen.xib; sourceTree = "<group>"; };
 		1B4771B226E1247B002EF0E1 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
@@ -97,6 +101,12 @@
 		1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		1B5AF34526BAA6460055F130 /* HabitTrackerDaysCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTrackerDaysCell.xib; sourceTree = "<group>"; };
 		1B5AF34726BAA9F40055F130 /* HabitTrackerDaysCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerDaysCell.swift; sourceTree = "<group>"; };
+		1B75B21227395B060093433E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1B75B21427395B350093433E /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		1B75B21627395B690093433E /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		1B75B21827395B8F0093433E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		1B75B21A27395BDB0093433E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		1B75B21C27395BFF0093433E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		1B8311B926138C0500BA01A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1B8AE1342615C80C00E1B160 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		1B8AE1392615C9D300E1B160 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
@@ -114,7 +124,7 @@
 		1BB8D1822699A33D0039A747 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		1BB8D18A2699A8190039A747 /* CreateAnimal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAnimal.storyboard; sourceTree = "<group>"; };
 		1BB8D1932699AA070039A747 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		1BD1D76C2614920C00789C59 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1BD1D76C2614920C00789C59 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		1BE3AA0F261B85D800A10CFA /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceIDLocked.storyboard; sourceTree = "<group>"; };
 		1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDLockedViewController.swift; sourceTree = "<group>"; };
@@ -179,14 +189,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B42C3EB2721ECEB008505A4 /* CongratulationScreen */ = {
-			isa = PBXGroup;
-			children = (
-				1B42C3EC2721ED48008505A4 /* CongratulationScreen.storyboard */,
-			);
-			path = CongratulationScreen;
-			sourceTree = "<group>";
-		};
 		1B42C3EE2721EF3E008505A4 /* CongratulationScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +229,47 @@
 				1B5AF34126B00F2F0055F130 /* ColorCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B75B21127395AB60093433E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1B5AF34326B196B20055F130 /* Nunito-ExtraLight.ttf */,
+				1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1B75B22027395D130093433E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		1B75B22127395D220093433E /* FaceID */ = {
+			isa = PBXGroup;
+			children = (
+				1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */,
+			);
+			path = FaceID;
+			sourceTree = "<group>";
+		};
+		1B75B22227395D5D0093433E /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8D1932699AA070039A747 /* TabBarController.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		1B75B22327395D700093433E /* FaceID */ = {
+			isa = PBXGroup;
+			children = (
+				1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */,
+			);
+			path = FaceID;
 			sourceTree = "<group>";
 		};
 		1B8311B826138BC900BA01A6 /* Network */ = {
@@ -381,19 +424,24 @@
 		1BB8D1912699A9240039A747 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
-				1B5AF34426B196E20055F130 /* Nunito-Regular.ttf */,
-				1B5AF34326B196B20055F130 /* Nunito-ExtraLight.ttf */,
+				1B75B21127395AB60093433E /* Fonts */,
 				5D7BC7BA254718D900184BB4 /* Assets.xcassets */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		1BB8D1922699A9470039A747 /* Utils */ = {
+		1BB8D1922699A9470039A747 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1BD1D76C2614920C00789C59 /* Utils.swift */,
+				1BD1D76C2614920C00789C59 /* String.swift */,
+				1B75B21227395B060093433E /* UIViewController.swift */,
+				1B75B21427395B350093433E /* UITextField.swift */,
+				1B75B21627395B690093433E /* UICollectionViewCell.swift */,
+				1B75B21827395B8F0093433E /* UIImage.swift */,
+				1B75B21A27395BDB0093433E /* UIButton.swift */,
+				1B75B21C27395BFF0093433E /* Date.swift */,
 			);
-			path = Utils;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5D37C19625488287008C24EA /* Cell */ = {
@@ -408,6 +456,7 @@
 		5D77822325C9C661005B600B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1B8311B826138BC900BA01A6 /* Network */,
 				5D77821E25C9C1D5005B600B /* Animal.swift */,
 				5D77822425C9C684005B600B /* Habit.swift */,
 				5D77823125C9CC1F005B600B /* User.swift */,
@@ -441,9 +490,8 @@
 		5D7BC7AD254718D700184BB4 /* Habit Helper */ = {
 			isa = PBXGroup;
 			children = (
-				1BB8D1922699A9470039A747 /* Utils */,
+				1BB8D1922699A9470039A747 /* Extensions */,
 				1BB8D1912699A9240039A747 /* Resourses */,
-				1B8311B826138BC900BA01A6 /* Network */,
 				5DDED53825DD97B80027E070 /* Controllers */,
 				5DDED53725DD978A0027E070 /* Delegates */,
 				5D77822325C9C661005B600B /* Model */,
@@ -487,7 +535,8 @@
 		5DDED53625DD97630027E070 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				1B42C3EB2721ECEB008505A4 /* CongratulationScreen */,
+				1B75B22127395D220093433E /* FaceID */,
+				1B75B22027395D130093433E /* Launch */,
 				1B5AF33A26AAABB50055F130 /* UserInfo */,
 				1BB8D1892699A7F70039A747 /* Create Animal */,
 				1BB8D1852699A7200039A747 /* Tab Bar */,
@@ -497,8 +546,6 @@
 				1BB8D17B2699A2D60039A747 /* Report Habit */,
 				1BB8D1782699A2B50039A747 /* Settings */,
 				1BB8D1752699A2580039A747 /* Habit Tracker */,
-				5D7BC7BC254718D900184BB4 /* LaunchScreen.storyboard */,
-				1BF5FC8926F27209004B33F6 /* FaceIDLocked.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -515,6 +562,8 @@
 		5DDED53825DD97B80027E070 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B75B22327395D700093433E /* FaceID */,
+				1B75B22227395D5D0093433E /* Tab Bar */,
 				1B42C3EE2721EF3E008505A4 /* CongratulationScreen */,
 				1BB8D1902699A9040039A747 /* Create Habit */,
 				1BB8D18F2699A8F80039A747 /* Animal */,
@@ -523,9 +572,7 @@
 				1BB8D1882699A7C20039A747 /* Autorisation */,
 				1BB8D1872699A7A70039A747 /* Report Habit */,
 				1BB8D1862699A76B0039A747 /* Settings */,
-				1BB8D1932699AA070039A747 /* TabBarController.swift */,
 				1B5AF33F26AAB0350055F130 /* UserInfo */,
-				1BF5FC8B26F27258004B33F6 /* FaceIDLockedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -673,7 +720,6 @@
 				1BB8D1802699A3100039A747 /* Animal.storyboard in Resources */,
 				5D2DDFE82548565000EEC0BC /* CustomTableCell.xib in Resources */,
 				5D71CF1C2549AD54002DCA76 /* SettingsCell.xib in Resources */,
-				1B42C3ED2721ED48008505A4 /* CongratulationScreen.storyboard in Resources */,
 				1BB525E4271F668C008603B3 /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,30 +815,36 @@
 				5D77821F25C9C1D5005B600B /* Animal.swift in Sources */,
 				1B5AF34826BAA9F40055F130 /* HabitTrackerDaysCell.swift in Sources */,
 				1B8311BA26138C0500BA01A6 /* Network.swift in Sources */,
+				1B75B21327395B060093433E /* UIViewController.swift in Sources */,
 				5D77823225C9CC1F005B600B /* User.swift in Sources */,
 				1B8AE13A2615C9D300E1B160 /* DayCell.swift in Sources */,
 				5D9D9CA8256168E900F5FEC0 /* MonthCell.swift in Sources */,
 				1B9D55B12617277E006E8A7A /* BackgroundViewController.swift in Sources */,
 				1B9E2009261243E30009ED88 /* SignUpViewController.swift in Sources */,
+				1B75B21727395B690093433E /* UICollectionViewCell.swift in Sources */,
 				1B5AF33E26AAB02D0055F130 /* UserInfoViewController.swift in Sources */,
 				5D9D9CAD25616A5500F5FEC0 /* ReportHabitController.swift in Sources */,
+				1B75B21527395B350093433E /* UITextField.swift in Sources */,
 				5D7BC7B3254718D700184BB4 /* LoginController.swift in Sources */,
 				1BF5FC8C26F27258004B33F6 /* FaceIDLockedViewController.swift in Sources */,
 				1B084584269F5CE800BE79F2 /* R.generated.swift in Sources */,
 				5D2DDFDE25484D8A00EEC0BC /* HabitTrackerController.swift in Sources */,
 				1B9E200E261244250009ED88 /* CreateAccountViewController.swift in Sources */,
 				1B42C3F02721EF56008505A4 /* CongratulationScreen.swift in Sources */,
-				1BD1D76D2614920C00789C59 /* Utils.swift in Sources */,
+				1BD1D76D2614920C00789C59 /* String.swift in Sources */,
+				1B75B21B27395BDB0093433E /* UIButton.swift in Sources */,
 				5D7BC7AF254718D700184BB4 /* AppDelegate.swift in Sources */,
 				1BE3AA10261B85D800A10CFA /* IconCell.swift in Sources */,
 				1B5AF34226B00F2F0055F130 /* ColorCell.swift in Sources */,
 				1B4771B326E1247B002EF0E1 /* AnimalCell.swift in Sources */,
 				5D77822525C9C684005B600B /* Habit.swift in Sources */,
 				5D7BC7B1254718D700184BB4 /* SceneDelegate.swift in Sources */,
+				1B75B21927395B8F0093433E /* UIImage.swift in Sources */,
 				5DA1639F260B9C59003B0964 /* AppData.swift in Sources */,
 				5D2DDFE32548532200EEC0BC /* CustomTableCell.swift in Sources */,
 				1BB8D1942699AA070039A747 /* TabBarController.swift in Sources */,
 				1B9E1FFD26123B2F0009ED88 /* CreateHabitViewController.swift in Sources */,
+				1B75B21D27395BFF0093433E /* Date.swift in Sources */,
 				5D71CF122549A0AF002DCA76 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
